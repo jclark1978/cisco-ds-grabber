@@ -1,0 +1,767 @@
+<!-- Cisco Secure Firewall Threat Defense Virtual Data Sheet | https://www.cisco.com/c/en/us/products/collateral/security/firewalls/threat-defense-virtual-ds.html | Updated 2026-04-20 -->
+<div id="eot-doc-wrapper">
+
+<code>
+<link href="wemdcmt.css"/>
+<link href="/etc/designs/cdc/transformation/wemdcmt.css"/></code>
+<div class="WordSection1">
+<p class="pBody"> <br/> </p>
+<p class="pToC_Subhead1"><a name="_Toc227358333"></a><a name="_Toc227240051">Introduction</a></p>
+<p class="pBody">Cisco<sup class="cSuperscript">®</sup> Secure Firewall Threat Defense Virtual delivers next-generation firewall capabilities purpose-built for public, private, and hybrid cloud environments. It provides robust, scalable security and simplified management without the constraints of physical hardware.</p>
+<p class="pBody">Secure Firewall Threat Defense Virtual extends Cisco Hybrid Mesh Firewall architecture to the cloud, delivering AI-powered threat inspection and uniform security policy enforcement across workloads, regardless of where they reside. It integrates seamlessly with cloud-native networking constructs to enhance application performance and ensure reliable, secure access for users and workloads alike.</p>
+<p class="pTableCaptionCMT"><b>Table 1.<span>        </span></b>Key capabilities of Secure Firewall Threat Defense Virtual</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="2"> <p class="Cellhead1">Secure Firewall Threat Defense Virtual</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Robust connectivity and portability</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Deploy appliances everywhere, from your data center to your branch office, with the portability of one license to support virtual deployments across public or private clouds. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Automatically scale firewall capacity in response to real-time traffic demands with native auto-scale support, while clustering delivers high-performance throughput and resilience across distributed cloud environments. 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Superior visibility</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Leverage the AI-powered Encrypted Visibility Engine (EVE) to gain insights into and control over encrypted traffic, including Transport Layer Security (TLS) 1.3, thereby eliminating the need to decrypt traffic. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Protect networks against zero-day vulnerabilities with SnortML, a machine learning-based exploit detection technology integrated into the industry-leading Snort 3 intrusion prevention system (IPS) and powered by the 
+         <a href="https://talosintelligence.com/">Cisco Talos Intelligence Group</a>. 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Simplified management</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Manage hundreds of firewalls across various global branch locations using a single unified manager, available in both on-premises and cloud-delivered platforms. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Accelerate and simplify firewall deployment across public cloud environments with Cisco Multicloud Defense, providing centralized orchestration, consistent policy management, and streamlined operations. 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Seamless integration</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Achieve comprehensive, end-to-end protection through native integration with Cisco Umbrella 
+         <sup class="cSuperscript">®</sup>, Cisco Secure Access, and Cisco Endpoint Security. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Optimize application performance and user experience through seamlessly integrated SD-WAN capabilities, accelerated by Zero-Touch Provisioning (ZTP). 
+        </div> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc227358334"></a><a name="_Toc227240052">Flexible performance-based licensing</a></p>
+<p class="pBody">Cisco's virtual firewall appliance leverages a performance-based licensing model designed to deliver deployment flexibility across a wide range of infrastructure environments, including public, private, and hybrid-cloud deployments.</p>
+<p class="pBody">Each performance license tier enforces two key parameters:</p>
+<p class="pBulletCMT"><span>●<span>     </span></span><b>Throughput (Rate Limit)</b> — Controls the maximum firewall inspection throughput via an integrated rate limiter, ensuring predictable and consistent performance aligned to the selected tier.</p>
+<p class="pBulletCMT"><span>●<span>     </span></span><b>Remote Access (RA) VPN Session Limit</b> — Defines the maximum number of concurrent Remote Access VPN sessions supported under the license tier.</p>
+<p class="pTableCaptionCMT"><b>Table 2.<span>        </span></b>Performance License Tiers</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Performance Tier</p> </td>
+<td> <p class="Cellhead1">Throughput (Rate Limit)</p> </td>
+<td> <p class="Cellhead1">RA VPN Session Limit</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDv5</b></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">50 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDv10</b></p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">250 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDv20</b></p> </td>
+<td> <p class="pChart_bodyCMT">3 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">250 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDv30</b></p> </td>
+<td> <p class="pChart_bodyCMT">5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">250 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDv50</b></p> </td>
+<td> <p class="pChart_bodyCMT">10 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">750 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDv100</b></p> </td>
+<td> <p class="pChart_bodyCMT">16 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10,000 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDvU (Unlimited)</b></p> </td>
+<td> <p class="pChart_bodyCMT">No Rate Limiter</p> </td>
+<td> <p class="pChart_bodyCMT">32,000 Sessions</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody"><b>Important:</b> Secure Firewall Threat Defense Virtual performance tiers have no impact on the underlying compute resources (vCPUs and memory) assigned to the virtual appliance or the compute instance / shape selected in public cloud environments. The allocated compute resources drive appliance scale for capabilities such as routing table size, access control rules, and more. This decoupled approach gives customers the flexibility to independently size their virtual firewall with the compute resources needed to meet their specific requirements, while selecting the performance license tier that aligns with their throughput and VPN session needs.</p>
+<p class="pToC_Subhead1"><a name="_Toc227358335"></a><a name="_Toc227240053">Deployment and System Requirements</a></p>
+<p class="pBody">Secure Firewall Threat Defense Virtual is available across all major public cloud marketplaces and supports deployment on the industry’s leading hypervisor platforms:</p>
+<p class="pTableCaptionCMT"><b>Table 3.<span>        </span></b>Deployment Environment Summary</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Category</p> </td>
+<td> <p class="Cellhead1">Supported Platforms</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Private Cloud/On-Premises</b></p> </td>
+<td> <p class="pChart_bodyCMT">VMware, KVM, OpenStack, Nutanix, Microsoft Hyper-V</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Public Cloud</b></p> </td>
+<td> <p class="pChart_bodyCMT">AWS, Azure, GCP, OCI, Alibaba Cloud, Megaport, Equinix</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Minimum System Requirements</b></p> </td>
+<td> <p class="pChart_bodyCMT">4 vCPUs | 8 GB RAM | 100 GB Disk</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum System Requirements</b></p> </td>
+<td> <p class="pChart_bodyCMT">64 vCPUs | 128 GB RAM | 500 GB Disk</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 4.<span>        </span></b>Deployment Environment (Public Cloud) Compatibility Matrix</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Category</p> </td>
+<td> <p class="Cellhead1">AWS</p> </td>
+<td> <p class="Cellhead1">Azure</p> </td>
+<td> <p class="Cellhead1">GCP</p> </td>
+<td> <p class="Cellhead1">OCI</p> </td>
+<td> <p class="Cellhead1">Alibaba</p> </td>
+<td> <p class="Cellhead1">Megaport</p> </td>
+<td> <p class="Cellhead1">Equinix</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>BYOL (Bring Your Own License)</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>PAYG (Pay As You Go)</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Auto-Scale</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High Availability (Clustering)</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Orchestration via Cisco Multicloud Defense</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Management via Cisco Firewall Management Center</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Management via Cisco Firewall Device Manager</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 5.<span>        </span></b>Deployment Environment (Private Cloud) Compatibility Matrix</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Category</p> </td>
+<td> <p class="Cellhead1">VMware</p> </td>
+<td> <p class="Cellhead1">KVM</p> </td>
+<td> <p class="Cellhead1">Nutanix</p> </td>
+<td> <p class="Cellhead1">OpenStack</p> </td>
+<td> <p class="Cellhead1">Hyper-V</p> </td>
+<td> <p class="Cellhead1">HyperFlex</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>BYOL (Bring Your Own License)</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High Availability (Active / Standby)</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High Availability (Clustering)</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Management via Firewall Management Center</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Management via Firewall Device Manager</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody"><b>Note:</b> For more information on each of the supported deployment environments, please reference the corresponding <a href="https://www.cisco.com/c/en/us/support/security/firepower-ngfw-virtual/products-installation-guides-list.html">Getting Started Guide</a> and the <a href="https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/compatibility/threat-defense-compatibility.html">Secure Firewall Threat Defense Compatibility Guide</a>.</p>
+<p class="pToC_Subhead1"><a name="_Toc227358336"></a><a name="_Toc227240054">Performance and Scale</a></p>
+<p class="pBody">Your performance may vary from the below. These should be considered general guidelines. Your actual performance will depend on the environment, including traffic type and profile, CPU type, CPU speed, cache, number of interfaces, etc. For a complete list of supported compute instances and shapes, please reference the corresponding <a href="https://www.cisco.com/c/en/us/support/security/firepower-ngfw-virtual/products-installation-guides-list.html">Getting Started Guide</a>.</p>
+<p class="pTableCaptionCMT"><b>Table 6.<span>        </span></b>Performance specifications for Secure Firewall Threat Defense Virtual (ESXi/KVM/OpenStack) version 10.0+ running Snort3 and SR-IOV:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">4 x vCPU</p> </td>
+<td> <p class="Cellhead1">8 x vCPU</p> </td>
+<td> <p class="Cellhead1">12 x vCPU</p> </td>
+<td> <p class="Cellhead1">16 x vCPU</p> </td>
+<td> <p class="Cellhead1">32 x vCPU</p> </td>
+<td> <p class="Cellhead1">64 x vCPU</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7.2Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">19Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">26Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">59Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">90Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">4.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">18Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">25Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">55Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">85Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2.2Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">3.2Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">6Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">35Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">67Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">100K</p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">500K</p> </td>
+<td> <p class="pChart_bodyCMT">2M</p> </td>
+<td> <p class="pChart_bodyCMT">4M</p> </td>
+<td> <p class="pChart_bodyCMT">8M</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">27K</p> </td>
+<td> <p class="pChart_bodyCMT">44K</p> </td>
+<td> <p class="pChart_bodyCMT">80K</p> </td>
+<td> <p class="pChart_bodyCMT">135K</p> </td>
+<td> <p class="pChart_bodyCMT">300K</p> </td>
+<td> <p class="pChart_bodyCMT">500K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+<td> <p class="pChart_bodyCMT">20K</p> </td>
+<td> <p class="pChart_bodyCMT">32K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum virtual router instances (VRF)</b></p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering<sup class="cSuperscript">*</sup></b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 7.<span>        </span></b>Performance specifications for Secure Firewall Threat Defense Virtual (AWS) version 10.0+ running Snort3 and SR-IOV:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">4 x vCPU</p> </td>
+<td> <p class="Cellhead1">8 x vCPU</p> </td>
+<td> <p class="Cellhead1">16 x vCPU</p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1">c5n.xlarge</p> </td>
+<td> <p class="Cellhead1">c5n.2xlarge</p> </td>
+<td> <p class="Cellhead1">c5n.4xlarge</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">4Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.1Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">12Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">3Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.1Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">12Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7.2Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">2M</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">13K</p> </td>
+<td> <p class="pChart_bodyCMT">30K</p> </td>
+<td> <p class="pChart_bodyCMT">80K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 8.<span>        </span></b>Performance specifications for Secure Firewall Threat Defense Virtual (Azure) version 10.0+ running Snort3 and SR-IOV:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">4 x vCPU</p> </td>
+<td> <p class="Cellhead1">8 x vCPU</p> </td>
+<td> <p class="Cellhead1">16 x vCPU</p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1">Standard_D3_v2</p> </td>
+<td> <p class="Cellhead1">Standard_D8_v5</p> </td>
+<td> <p class="Cellhead1">Standard_D16_v5</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2.7Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">5.7Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">11Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2.6Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">5.6Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10.5Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">1.6Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">3.4Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8.5Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">2M</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">20K</p> </td>
+<td> <p class="pChart_bodyCMT">38K</p> </td>
+<td> <p class="pChart_bodyCMT">100K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 9.<span>        </span></b>Performance specifications for Secure Firewall Threat Defense Virtual (GCP) version 10.0+ running Snort3 and SR-IOV:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">4 x vCPU</p> </td>
+<td> <p class="Cellhead1">8 x vCPU</p> </td>
+<td> <p class="Cellhead1">16 x vCPU</p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1">C2-Standard-4</p> </td>
+<td> <p class="Cellhead1">C2-Standard-8</p> </td>
+<td> <p class="Cellhead1">C2-Standard-16</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">4.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">12.5Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2.7Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">12Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">3Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">3Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7.5Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">2M</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">13K</p> </td>
+<td> <p class="pChart_bodyCMT">32K</p> </td>
+<td> <p class="pChart_bodyCMT">95K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 10.<span>     </span></b>Performance specifications for Secure Firewall Threat Defense Virtual (OCI) version 10.0+ running Snort3 and SR-IOV:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1">Metric</p> </td>
+<td colspan="2"> <p class="Cellhead1">VM.Standard3</p> </td>
+<td colspan="3"> <p class="Cellhead1">VM.Standard.A1</p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1">8 x vCPU</p> <p class="Cellhead1">(4 x OCPUs)</p> </td>
+<td> <p class="Cellhead1">16 x vCPU</p> <p class="Cellhead1">(8 x OCPUs)</p> </td>
+<td> <p class="Cellhead1">4 x vCPU</p> <p class="Cellhead1">(4 x OCPUs)</p> </td>
+<td> <p class="Cellhead1">8 x vCPU</p> <p class="Cellhead1">(8 x OCPUs)</p> </td>
+<td> <p class="Cellhead1">16 x vCPU</p> <p class="Cellhead1">(16 x OCPUs)</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">4Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8.1Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">3Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">13Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">4Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8.1Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">3Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">13Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">3.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7.9Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">1.8Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">2M</p> </td>
+<td> <p class="pChart_bodyCMT">100K</p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">2M</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">40K</p> </td>
+<td> <p class="pChart_bodyCMT">120K</p> </td>
+<td> <p class="pChart_bodyCMT">20K</p> </td>
+<td> <p class="pChart_bodyCMT">32K</p> </td>
+<td> <p class="pChart_bodyCMT">100K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 11.<span>     </span></b>Performance specifications for Secure Firewall Threat Defense Virtual (Alibaba) version 10.0+ running Snort3 and SR-IOV:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">4 x vCPU</p> </td>
+<td> <p class="Cellhead1">8 x vCPU</p> </td>
+<td> <p class="Cellhead1">16 x vCPU</p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1">g5ne.xlarge</p> </td>
+<td> <p class="Cellhead1">g5ne.2xlarge</p> </td>
+<td> <p class="Cellhead1">g5ne.4xlarge</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">3.1Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">3.7Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">9.6Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2.1Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">3.6Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">9Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2.2Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">6.1Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">2M</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+<td> <p class="pChart_bodyCMT">25K</p> </td>
+<td> <p class="pChart_bodyCMT">70K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc227358337"></a><a name="_Toc227240055">Ordering information</a></p>
+<p class="pBody">Performance tiered licensing is available starting from Firewall Threat Defense Virtual version 7.0. The new licensing model also includes Base License as a subscription. For information on licenses, subscriptions, and other options associated with the product, refer to the <a href="https://www.cisco.com/c/en/us/products/collateral/security/secure-firewall/guide-c07-737902.html">Network Security Ordering Guide</a>.</p>
+<p class="pTableCaptionCMT"><b>Table 12.<span>     </span></b>Ordering information for Secure Firewall Threat Defense Virtual</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Product ID</p> </td>
+<td> <p class="Cellhead1">Description</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDV-SEC-SUB</b></p> </td>
+<td> <p class="pChart_bodyCMT">Secure Firewall Threat Defense Virtual Subscription</p> </td>
+</tr>
+<tr>
+<td colspan="2"> <p class="pChart_bodyCMT">Once the above PID is selected, you can choose the appropriate performance tier along with one or more of the available add-on subscription licenses (T-Threat, M-Malware Defense, and URL Filtering).</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc227358338"></a><a name="_Toc227240056"></a><a name="_Toc226282542">Cisco environmental sustainability</a></p>
+<p class="pBody">Information about Cisco’s environmental sustainability policies and initiatives for our products, solutions, operations, and extended operations or supply chain is provided in the “Environmental Sustainability” section of Cisco’s <a href="https://www.cisco.com/site/us/en/about/purpose/fy24-report/index.html">Corporate Social Responsibility</a> (CSR) report.</p>
+<p class="pBody">Reference links to information about key environmental sustainability topics (mentioned in the “Environment Sustainability” section of the CSR Report) are provided in the following table:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Sustainability topic</p> </td>
+<td> <p class="Cellhead1">Reference</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Information on product material content laws and regulations</b></p> </td>
+<td> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html">Materials</a></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Information on electronic waste laws and regulations, including products, batteries, and packaging</b></p> </td>
+<td> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html">WEEE compliance</a></p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody">Cisco makes the packaging data available for informational purposes only. It may not reflect the most current legal developments, and Cisco does not represent, warrant, or guarantee that it is complete, accurate, or up to date. This information is subject to change without notice.</p>
+<p class="pBody"> </p>
+</div>
+<cdc:do></cdc:do>
+<div class="row full visitedlinks">
+<div class="col full">
+</div>
+</div>
+</div>

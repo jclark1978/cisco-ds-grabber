@@ -1,0 +1,113 @@
+model_id,model,series,form_factor,image,platform,fw_avc_throughput_mbps,ngfw_throughput_mbps,ips_throughput_mbps,avc_ips_throughput_mbps,tls_throughput_mbps,ipsec_throughput_mbps,fw_throughput_mbps,fw_throughput_multiprotocol_mbps,concurrent_sessions,new_sessions_per_sec,vpn_peers_max,rack_units,power_max_w,weight_kg,source_updated
+asav5-aws,ASAv5 (AWS),ASA Virtual,virtual,asa,AWS,,,,,,100,100,100,50000,12500,50,,,,2024-10-25
+asav10-aws,ASAv10 (AWS),ASA Virtual,virtual,asa,AWS,,,,,,1000,1000,1000,100000,60000,250,,,,2024-10-25
+asav30-aws,ASAv30 (AWS),ASA Virtual,virtual,asa,AWS,,,,,,2000,2000,2000,500000,80000,750,,,,2024-10-25
+asav50-aws,ASAv50 (AWS),ASA Virtual,virtual,asa,AWS,,,,,,4500,10000,4500,2000000,120000,10000,,,,2024-10-25
+asav100-aws,ASAv100 (AWS),ASA Virtual,virtual,asa,AWS,,,,,,8000,20000,7000,4000000,200000,20000,,,,2024-10-25
+asav5-azure,ASAv5 (Azure),ASA Virtual,virtual,asa,Azure,,,,,,100,100,100,50000,4000,50,,,,2024-10-25
+asav10-azure,ASAv10 (Azure),ASA Virtual,virtual,asa,Azure,,,,,,1000,1000,1000,100000,4000,250,,,,2024-10-25
+asav30-azure,ASAv30 (Azure),ASA Virtual,virtual,asa,Azure,,,,,,2000,2000,2000,500000,4000,750,,,,2024-10-25
+asav50-azure,ASAv50 (Azure),ASA Virtual,virtual,asa,Azure,,,,,,4000,5500,4600,2000000,8000,10000,,,,2024-10-25
+asav100-azure,ASAv100 (Azure),ASA Virtual,virtual,asa,Azure,,,,,,8000,11000,6000,4000000,14000,20000,,,,2024-10-25
+asav5-esxi-kvm-openstack,ASAv5 (ESXi/KVM/OpenStack),ASA Virtual,virtual,asa,ESXi/KVM/OpenStack,,,,,,100,100,100,50000,12500,50,,,,2024-10-25
+asav10-esxi-kvm-openstack,ASAv10 (ESXi/KVM/OpenStack),ASA Virtual,virtual,asa,ESXi/KVM/OpenStack,,,,,,1000,1000,1000,100000,40000,250,,,,2024-10-25
+asav30-esxi-kvm-openstack,ASAv30 (ESXi/KVM/OpenStack),ASA Virtual,virtual,asa,ESXi/KVM/OpenStack,,,,,,2000,2000,2000,500000,160000,750,,,,2024-10-25
+asav50-esxi-kvm-openstack,ASAv50 (ESXi/KVM/OpenStack),ASA Virtual,virtual,asa,ESXi/KVM/OpenStack,,,,,,6000,10000,10000,2000000,270000,10000,,,,2024-10-25
+asav100-esxi-kvm-openstack,ASAv100 (ESXi/KVM/OpenStack),ASA Virtual,virtual,asa,ESXi/KVM/OpenStack,,,,,,12000,20000,20000,4000000,600000,20000,,,,2024-10-25
+asav-u-esxi-kvm-openstack,ASAv-U (ESXi/KVM/OpenStack),ASA Virtual,virtual,asa,ESXi/KVM/OpenStack,,,,,,30000,90000,60000,8000000,1000000,30000,,,,2024-10-25
+asav5-gcp,ASAv5 (GCP),ASA Virtual,virtual,asa,GCP,,,,,,100,100,100,50000,12500,50,,,,2024-10-25
+asav10-gcp,ASAv10 (GCP),ASA Virtual,virtual,asa,GCP,,,,,,1000,1000,1000,100000,48000,250,,,,2024-10-25
+asav30-gcp,ASAv30 (GCP),ASA Virtual,virtual,asa,GCP,,,,,,2000,2000,2000,500000,48000,750,,,,2024-10-25
+asav50-gcp,ASAv50 (GCP),ASA Virtual,virtual,asa,GCP,,,,,,5000,7600,6000,2000000,82000,10000,,,,2024-10-25
+asav100-gcp,ASAv100 (GCP),ASA Virtual,virtual,asa,GCP,,,,,,9500,16000,10000,4000000,160000,20000,,,,2024-10-25
+asav5-oci,ASAv5 (OCI),ASA Virtual,virtual,asa,OCI,,,,,,100,100,100,50000,12500,50,,,,2024-10-25
+asav10-oci,ASAv10 (OCI),ASA Virtual,virtual,asa,OCI,,,,,,1000,1000,1000,100000,120000,250,,,,2024-10-25
+asav30-oci,ASAv30 (OCI),ASA Virtual,virtual,asa,OCI,,,,,,2000,2000,2000,500000,250000,750,,,,2024-10-25
+asav50-oci,ASAv50 (OCI),ASA Virtual,virtual,asa,OCI,,,,,,7500,8000,8000,2000000,450000,10000,,,,2024-10-25
+asav100-oci,ASAv100 (OCI),ASA Virtual,virtual,asa,OCI,,,,,,7500,8000,8000,4000000,450000,20000,,,,2024-10-25
+firepower-1010,Firepower 1010,Firepower 1000,appliance,ftd,,890,880,900,,195,400,,,100000,6000,75,,115,1.4,2023-10-23
+firepower-1010,Firepower 1010,Firepower 1000,appliance,asa,,,,,,,500,2000,1400,100000,25000,75,,115,1.4,2023-10-23
+firepower-1010e,Firepower 1010E,Firepower 1000,appliance,ftd,,890,880,900,,195,400,,,100000,6000,75,,55,1.4,2023-10-23
+firepower-1010e,Firepower 1010E,Firepower 1000,appliance,asa,,,,,,,500,2000,1400,100000,25000,75,,55,1.4,2023-10-23
+firepower-1120,Firepower 1120,Firepower 1000,appliance,ftd,,2300,2300,2600,,850,1200,,,200000,15000,150,1,100,3.6,2023-10-23
+firepower-1120,Firepower 1120,Firepower 1000,appliance,asa,,,,,,,1000,4500,2500,200000,75000,150,1,100,3.6,2023-10-23
+firepower-1140,Firepower 1140,Firepower 1000,appliance,ftd,,3300,3300,3500,,1200,1400,,,400000,22000,400,1,100,3.6,2023-10-23
+firepower-1140,Firepower 1140,Firepower 1000,appliance,asa,,,,,,,1200,6000,3500,400000,100000,400,1,100,3.6,2023-10-23
+firepower-1150,Firepower 1150,Firepower 1000,appliance,ftd,,5300,4900,6100,,1400,2400,,,600000,28000,800,1,100,3.6,2023-10-23
+firepower-1150,Firepower 1150,Firepower 1000,appliance,asa,,,,,,,1700,7500,4500,600000,150000,800,1,100,3.6,2023-10-23
+firepower-9300-3x-sm-56,Firepower 9300 3x SM-56,Firepower 9300,appliance,ftd,,190000,190000,190000,,28000,110000,,,60000000,1100000,60000,3,,47.7,2024-10-29
+firepower-9300-3x-sm-56,Firepower 9300 3x SM-56,Firepower 9300,appliance,asa,,,,,,,74000,235000,172000,195000000,4750000,60000,3,,47.7,2024-10-29
+firepower-9300-sm-40,Firepower 9300 SM-40,Firepower 9300,appliance,ftd,,55000,55000,60000,,10000,27000,,,35000000,380000,20000,3,,47.7,2024-10-29
+firepower-9300-sm-40,Firepower 9300 SM-40,Firepower 9300,appliance,asa,,,,,,,25000,80000,55000,55000000,1600000,20000,3,,47.7,2024-10-29
+firepower-9300-sm-48,Firepower 9300 SM-48,Firepower 9300,appliance,ftd,,65000,65000,68000,,11000,33000,,,35000000,450000,20000,3,,47.7,2024-10-29
+firepower-9300-sm-48,Firepower 9300 SM-48,Firepower 9300,appliance,asa,,,,,,,27000,80000,60000,60000000,1800000,20000,3,,47.7,2024-10-29
+firepower-9300-sm-56,Firepower 9300 SM-56,Firepower 9300,appliance,ftd,,70000,68000,73000,,12000,36000,,,35000000,490000,20000,3,,47.7,2024-10-29
+firepower-9300-sm-56,Firepower 9300 SM-56,Firepower 9300,appliance,asa,,,,,,,30000,80000,64000,60000000,2000000,20000,3,,47.7,2024-10-29
+secure-firewall-isa3000-2c2f,Secure Firewall ISA3000-2C2F,Secure Firewall ISA3000,appliance,ftd,,375,350,500,,,50,,,50000,2700,25,,,1.9,2021-07-11
+secure-firewall-isa3000-4c,Secure Firewall ISA3000-4C,Secure Firewall ISA3000,appliance,ftd,,375,350,500,,,50,,,50000,2700,25,,,1.9,2021-07-11
+secure-firewall-1210ce,Secure Firewall 1210CE,Secure Firewall 1200,appliance,ftd,,6000,6000,6000,,1000,5000,,,200000,35000,200,,40,1.38,2025-07-09
+secure-firewall-1210ce,Secure Firewall 1210CE,Secure Firewall 1200,appliance,asa,,,,,,,5500,6500,6000,200000,175000,200,,40,1.38,2025-07-09
+secure-firewall-1210cp,Secure Firewall 1210CP,Secure Firewall 1200,appliance,ftd,,6000,6000,6000,,1000,5000,,,200000,35000,200,,40,1.44,2025-07-09
+secure-firewall-1210cp,Secure Firewall 1210CP,Secure Firewall 1200,appliance,asa,,,,,,,5500,6500,6000,200000,175000,200,,40,1.44,2025-07-09
+secure-firewall-1220cx,Secure Firewall 1220CX,Secure Firewall 1200,appliance,ftd,,9000,9000,9000,,1500,10000,,,300000,50000,300,,40,1.4,2025-07-09
+secure-firewall-1220cx,Secure Firewall 1220CX,Secure Firewall 1200,appliance,asa,,,,,,,12000,15000,12000,300000,250000,300,,40,1.4,2025-07-09
+secure-firewall-1230,Secure Firewall 1230,Secure Firewall 1200,appliance,ftd,,13000,9000,11000,,2500,13000,,,400000,50000,500,1,57,4.24,2025-07-09
+secure-firewall-1230,Secure Firewall 1230,Secure Firewall 1200,appliance,asa,,,,,,,15000,18000,15000,400000,350000,500,1,57,4.24,2025-07-09
+secure-firewall-1240,Secure Firewall 1240,Secure Firewall 1200,appliance,ftd,,18000,12000,15000,,3200,18000,,,600000,70000,1000,1,69,4.24,2025-07-09
+secure-firewall-1240,Secure Firewall 1240,Secure Firewall 1200,appliance,asa,,,,,,,18000,20000,20000,600000,450000,1000,1,69,4.24,2025-07-09
+secure-firewall-1250,Secure Firewall 1250,Secure Firewall 1200,appliance,ftd,,24000,18000,22000,,4100,22000,,,1000000,100000,1500,1,88,4.32,2025-07-09
+secure-firewall-1250,Secure Firewall 1250,Secure Firewall 1200,appliance,asa,,,,,,,24000,20000,20000,1000000,550000,1500,1,88,4.32,2025-07-09
+secure-firewall-220,Secure Firewall 220,Secure Firewall 200,appliance,ftd,,1500,1500,,1500,700,1200,,,30000,6000,50,,19,1.17,2026-10-06
+secure-firewall-220,Secure Firewall 220,Secure Firewall 200,appliance,asa,,,,,,,1500,2000,2000,100000,80000,50,,19,1.17,2026-10-06
+secure-firewall-240p,Secure Firewall 240P,Secure Firewall 200,appliance,ftd,,3200,3000,,3000,900,3000,,,50000,15000,75,,35.6,1.49,2026-10-06
+secure-firewall-240p,Secure Firewall 240P,Secure Firewall 200,appliance,asa,,,,,,,2000,4500,3500,200000,95000,75,,35.6,1.49,2026-10-06
+secure-firewall-3105,Secure Firewall 3105,Secure Firewall 3100,appliance,ftd,,10000,10000,10000,,3200,5500,,,1500000,90000,2000,1,,10.5,2026-10-06
+secure-firewall-3105,Secure Firewall 3105,Secure Firewall 3100,appliance,asa,,,,,,,5500,10000,9000,1500000,150000,2000,1,,10.5,2026-10-06
+secure-firewall-3110,Secure Firewall 3110,Secure Firewall 3100,appliance,ftd,,17000,17000,17000,,4800,8000,,,2000000,130000,3000,1,,10.5,2026-10-06
+secure-firewall-3110,Secure Firewall 3110,Secure Firewall 3100,appliance,asa,,,,,,,8000,18000,15000,2000000,300000,3000,1,,10.5,2026-10-06
+secure-firewall-3120,Secure Firewall 3120,Secure Firewall 3100,appliance,ftd,,21000,21000,21000,,6700,10000,,,4000000,170000,7000,1,,10.5,2026-10-06
+secure-firewall-3120,Secure Firewall 3120,Secure Firewall 3100,appliance,asa,,,,,,,10000,22000,17000,4000000,500000,7000,1,,10.5,2026-10-06
+secure-firewall-3130,Secure Firewall 3130,Secure Firewall 3100,appliance,ftd,,38000,38000,38000,,9100,17800,,,6000000,240000,15000,1,,11.4,2026-10-06
+secure-firewall-3130,Secure Firewall 3130,Secure Firewall 3100,appliance,asa,,,,,,,14000,42000,39000,6000000,875000,15000,1,,11.4,2026-10-06
+secure-firewall-3140,Secure Firewall 3140,Secure Firewall 3100,appliance,ftd,,45000,45000,45000,,11500,22400,,,10000000,300000,20000,1,,11.4,2026-10-06
+secure-firewall-3140,Secure Firewall 3140,Secure Firewall 3100,appliance,asa,,,,,,,17000,49000,43000,10000000,1100000,20000,1,,11.4,2026-10-06
+secure-firewall-4112,Secure Firewall 4112,Secure Firewall 4100,appliance,ftd,,19000,19000,19000,,4500,8500,,,10000000,98000,10000,1,,17.87,2023-09-12
+secure-firewall-4112,Secure Firewall 4112,Secure Firewall 4100,appliance,asa,,,,,,,9000,40000,30000,10000000,400000,10000,1,,17.87,2023-09-12
+secure-firewall-4115,Secure Firewall 4115,Secure Firewall 4100,appliance,ftd,,33000,33000,33000,,6500,12500,,,15000000,210000,15000,1,,17.87,2023-09-12
+secure-firewall-4115,Secure Firewall 4115,Secure Firewall 4100,appliance,asa,,,,,,,15000,80000,40000,15000000,848000,15000,1,,17.87,2023-09-12
+secure-firewall-4125,Secure Firewall 4125,Secure Firewall 4100,appliance,ftd,,45000,45000,45000,,8500,19000,,,25000000,269000,20000,1,,17.87,2023-09-12
+secure-firewall-4125,Secure Firewall 4125,Secure Firewall 4100,appliance,asa,,,,,,,19000,80000,45000,25000000,1100000,20000,1,,17.87,2023-09-12
+secure-firewall-4145,Secure Firewall 4145,Secure Firewall 4100,appliance,ftd,,53000,53000,55000,,10000,24000,,,30000000,365000,20000,1,,17.87,2023-09-12
+secure-firewall-4145,Secure Firewall 4145,Secure Firewall 4100,appliance,asa,,,,,,,23000,80000,50000,40000000,1500000,20000,1,,17.87,2023-09-12
+secure-firewall-4215,Secure Firewall 4215,Secure Firewall 4200,appliance,ftd,,65000,65000,65000,,20000,45000,,,15000000,350000,20000,1,770,19.5,2024-10-29
+secure-firewall-4215,Secure Firewall 4215,Secure Firewall 4200,appliance,asa,,,,,,,50000,90000,65000,40000000,1400000,20000,1,770,19.5,2024-10-29
+secure-firewall-4225,Secure Firewall 4225,Secure Firewall 4200,appliance,ftd,,80000,80000,80000,,30000,80000,,,30000000,600000,25000,1,870,19.5,2024-10-29
+secure-firewall-4225,Secure Firewall 4225,Secure Firewall 4200,appliance,asa,,,,,,,60000,95000,85000,90000000,1700000,25000,1,870,19.5,2024-10-29
+secure-firewall-4245,Secure Firewall 4245,Secure Firewall 4200,appliance,ftd,,140000,140000,140000,,45000,140000,,,60000000,800000,30000,1,1380,20.8,2024-10-29
+secure-firewall-4245,Secure Firewall 4245,Secure Firewall 4200,appliance,asa,,,,,,,70000,180000,100000,180000000,2000000,30000,1,1380,20.8,2024-10-29
+secure-firewall-6120,Secure Firewall 6120,Secure Firewall 6100,appliance,asa,,,,,,,175000,350000,350000,60000000,2500000,45000,2,1400,29.94,2026-10-15
+secure-firewall-6130,Secure Firewall 6130,Secure Firewall 6100,appliance,asa,,,,,,,225000,550000,550000,90000000,3500000,60000,2,1940,29.94,2026-10-15
+secure-firewall-6160,Secure Firewall 6160,Secure Firewall 6100,appliance,ftd,,600000,550000,,550000,100000,450000,,,75000000,1500000,60000,2,2440,29.94,2026-10-15
+secure-firewall-6160,Secure Firewall 6160,Secure Firewall 6100,appliance,asa,,,,,,,300000,650000,650000,240000000,4500000,60000,2,2440,29.94,2026-10-15
+secure-firewall-6170,Secure Firewall 6170,Secure Firewall 6100,appliance,ftd,,700000,600000,,600000,150000,550000,,,120000000,2700000,60000,2,2760,29.94,2026-10-15
+secure-firewall-6170,Secure Firewall 6170,Secure Firewall 6100,appliance,asa,,,,,,,370000,750000,750000,360000000,5500000,60000,2,2760,29.94,2026-10-15
+threat-defense-virtual-4-vcpu-aws,Threat Defense Virtual 4 vCPU (AWS),Threat Defense Virtual,virtual,ftd,AWS,4000,3000,,,,2500,,,250000,13000,250,,,,2026-04-20
+threat-defense-virtual-8-vcpu-aws,Threat Defense Virtual 8 vCPU (AWS),Threat Defense Virtual,virtual,ftd,AWS,4100,4100,,,,2500,,,250000,30000,250,,,,2026-04-20
+threat-defense-virtual-16-vcpu-aws,Threat Defense Virtual 16 vCPU (AWS),Threat Defense Virtual,virtual,ftd,AWS,12000,12000,,,,7200,,,2000000,80000,10000,,,,2026-04-20
+threat-defense-virtual-4-vcpu-alibaba,Threat Defense Virtual 4 vCPU (Alibaba),Threat Defense Virtual,virtual,ftd,Alibaba,3100,2100,,,,2000,,,250000,10000,250,,,,2026-04-20
+threat-defense-virtual-8-vcpu-alibaba,Threat Defense Virtual 8 vCPU (Alibaba),Threat Defense Virtual,virtual,ftd,Alibaba,3700,3600,,,,2200,,,250000,25000,250,,,,2026-04-20
+threat-defense-virtual-16-vcpu-alibaba,Threat Defense Virtual 16 vCPU (Alibaba),Threat Defense Virtual,virtual,ftd,Alibaba,9600,9000,,,,6100,,,2000000,70000,10000,,,,2026-04-20
+threat-defense-virtual-4-vcpu-azure,Threat Defense Virtual 4 vCPU (Azure),Threat Defense Virtual,virtual,ftd,Azure,2700,2600,,,,1600,,,250000,20000,250,,,,2026-04-20
+threat-defense-virtual-8-vcpu-azure,Threat Defense Virtual 8 vCPU (Azure),Threat Defense Virtual,virtual,ftd,Azure,5700,5600,,,,3400,,,250000,38000,250,,,,2026-04-20
+threat-defense-virtual-16-vcpu-azure,Threat Defense Virtual 16 vCPU (Azure),Threat Defense Virtual,virtual,ftd,Azure,11000,10500,,,,8500,,,2000000,100000,10000,,,,2026-04-20
+threat-defense-virtual-4-vcpu-esxi-kvm-openstack,Threat Defense Virtual 4 vCPU (ESXi/KVM/OpenStack),Threat Defense Virtual,virtual,ftd,ESXi/KVM/OpenStack,5000,4500,,,,2200,,,100000,27000,250,,,,2026-04-20
+threat-defense-virtual-8-vcpu-esxi-kvm-openstack,Threat Defense Virtual 8 vCPU (ESXi/KVM/OpenStack),Threat Defense Virtual,virtual,ftd,ESXi/KVM/OpenStack,7200,7000,,,,3200,,,250000,44000,250,,,,2026-04-20
+threat-defense-virtual-12-vcpu-esxi-kvm-openstack,Threat Defense Virtual 12 vCPU (ESXi/KVM/OpenStack),Threat Defense Virtual,virtual,ftd,ESXi/KVM/OpenStack,19000,18000,,,,6000,,,500000,80000,750,,,,2026-04-20
+threat-defense-virtual-16-vcpu-esxi-kvm-openstack,Threat Defense Virtual 16 vCPU (ESXi/KVM/OpenStack),Threat Defense Virtual,virtual,ftd,ESXi/KVM/OpenStack,26000,25000,,,,10500,,,2000000,135000,10000,,,,2026-04-20
+threat-defense-virtual-32-vcpu-esxi-kvm-openstack,Threat Defense Virtual 32 vCPU (ESXi/KVM/OpenStack),Threat Defense Virtual,virtual,ftd,ESXi/KVM/OpenStack,59000,55000,,,,35000,,,4000000,300000,20000,,,,2026-04-20
+threat-defense-virtual-64-vcpu-esxi-kvm-openstack,Threat Defense Virtual 64 vCPU (ESXi/KVM/OpenStack),Threat Defense Virtual,virtual,ftd,ESXi/KVM/OpenStack,90000,85000,,,,67000,,,8000000,500000,32000,,,,2026-04-20
+threat-defense-virtual-4-vcpu-gcp,Threat Defense Virtual 4 vCPU (GCP),Threat Defense Virtual,virtual,ftd,GCP,4500,2700,,,,3000,,,250000,13000,250,,,,2026-04-20
+threat-defense-virtual-8-vcpu-gcp,Threat Defense Virtual 8 vCPU (GCP),Threat Defense Virtual,virtual,ftd,GCP,4500,4500,,,,3000,,,250000,32000,250,,,,2026-04-20
+threat-defense-virtual-16-vcpu-gcp,Threat Defense Virtual 16 vCPU (GCP),Threat Defense Virtual,virtual,ftd,GCP,12500,12000,,,,7500,,,2000000,95000,10000,,,,2026-04-20
+threat-defense-virtual-vm-standard-a1-oci,Threat Defense Virtual VM.Standard.A1 (OCI),Threat Defense Virtual,virtual,ftd,OCI,3000,3000,,,,1800,,,100000,20000,250,,,,2026-04-20
+threat-defense-virtual-vm-standard3-oci,Threat Defense Virtual VM.Standard3 (OCI),Threat Defense Virtual,virtual,ftd,OCI,4000,4000,,,,3500,,,250000,40000,250,,,,2026-04-20

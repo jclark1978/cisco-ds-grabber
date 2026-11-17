@@ -1,0 +1,102 @@
+{
+  "vendor": "Cisco",
+  "model": "ASAv50 (GCP)",
+  "model_id": "asav50-gcp",
+  "family": "Secure Firewall",
+  "series": "ASA Virtual",
+  "form_factor": "virtual",
+  "source": {
+    "title": "Cisco Secure Firewall ASA Virtual (ASAv) Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.pdf",
+    "file": "datasheets/asa-virtual.html",
+    "library_last_updated": "2024-10-25",
+    "sha256": "feb420be1224e9ad2289077efc598b6781907daab8439d18afd52f7a2b1ccdbf"
+  },
+  "default_image": "asa",
+  "images": [
+    "asa"
+  ],
+  "specs_by_image": {
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 7600,
+        "raw": "7.6 Gbps",
+        "label": "Stateful inspection throughput (maximum)",
+        "table": "Table 4",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 6000,
+        "raw": "6 Gbps",
+        "label": "Stateful inspection throughput (multiprotocol)",
+        "table": "Table 4",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+        ],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 5000,
+        "raw": "5 Gbps",
+        "label": "IPsec VPN throughput (AES 450B UDP test)",
+        "table": "Table 4",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning."
+        ],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 82000,
+        "raw": "82,000",
+        "label": "Connections per second",
+        "table": "Table 4",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "concurrent_sessions": {
+        "value": 2000000,
+        "raw": "2,000,000",
+        "label": "Concurrent sessions",
+        "table": "Table 4",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 10000,
+        "raw": "10,000",
+        "label": "IPsec VPN peers",
+        "table": "Table 4",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "ravpn_sessions_max": {
+        "value": 10000,
+        "raw": "10,000",
+        "label": "Cisco AnyConnect or clientless VPN user sessions",
+        "table": "Table 4",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": null,
+  "vm": {
+    "platform": "GCP",
+    "vcpu": null,
+    "instance_type": "c2-standard-8",
+    "license_tier": "10G"
+  },
+  "footnotes": {
+    "Table 4 6": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 4 7": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS.",
+    "Table 4 8": "The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning."
+  }
+}

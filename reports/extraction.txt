@@ -1,0 +1,84 @@
+81 models from 11 datasheets
+
+asa-virtual  (Cisco Secure Firewall ASA Virtual (ASAv) Data Sheet, updated 2024-10-25)
+  perf     asa    72 values  Table 1. Specifications for 9.20 and later- ESXi/KVM/OpenStack
+  perf     asa    35 values  Table 2. Specifications for 9.20 and later- AWS
+  perf     asa    35 values  Table 3. Specifications for 9.20 and later- Azure
+  perf     asa    35 values  Table 4. Specifications for 9.20 and later- GCP
+  perf     asa    35 values  Table 5. Specifications for 9.20 and later- OCI
+
+firepower-1000  (Cisco Firepower 1000 Series Data Sheet, updated 2023-10-23)
+  perf     ftd   110 values  Table 1. Performanc e specifications and feature highlights for Cisco Firepower 1000 with the Threat Defense (
+  perf     asa    65 values  Table 2. ASA Performance and capabilities on Firepower 1000 appliances
+  hardware -     115 values  Table 3. Cisco Firepower 1000 Series hardware specifications
+
+firepower-9300  (Cisco Firepower 9300 Series Data Sheet, updated 2024-10-29)
+  perf     ftd    84 values  Table 1. Performance specifications and feature highlights for Cisco Firepower 9300 with the Cisco Threat Defe
+  perf     asa    52 values  Table 2. ASA software performance and capabilities on Cisco Firepower 9300
+  hardware -      96 values  Table 3. Cisco Firepower 9300 Series hardware specifications
+
+isa3000  (Cisco Secure Firewall ISA3000 Data Sheet, updated 2021-07-11)
+  perf     ftd    26 values  Table 5. Perfo rmance using Cisco Firepower Threat Defense (FTD)
+  hardware -      12 values  Table 7. Phys ical specifications
+
+secure-firewall-1200  (Cisco Secure Firewall 1200 Series Data Sheet Enterprise Security Appliances, updated 2025-07-09)
+  hardware -      23 values  Table 3. 1200 Series Hardware Features – Compact Models
+  hardware -      24 values  Table 4. 1200 Series Hardware Features – 1U Models
+  hardware -      18 values  Table 5. 1200 Series interfaces
+  perf     ftd    36 values  Table 6. Performance - 1200 Series with Threat Defense software
+  perf     asa    24 values  Table 7. Performance - 1200 Series with ASA software
+  perf     ftd    18 values  Table 8. Scalability - 1200 Series with Threat Defense software
+  perf     asa    12 values  Table 9. Scalability - 1200 Series with ASA software
+  hardware -      42 values  Table 10. 1200 Series hardware specifications – compact models
+  hardware -      39 values  Table 11. 1200 Series hardware specifications – 1U models
+
+secure-firewall-200  (Cisco Secure Firewall 200 Series Data Sheet, updated 2026-10-06)
+  perf     ftd    12 values  Table 2. Cisco Secure Firewall 200 performance with Cisco Secure Firepower Threat Defense (FTD) software
+  perf     asa     6 values  Table 3. Cisco Secure Firewall 200 performance with the Cisco Adaptive Security Appliance (ASA) software
+  perf     ftd    14 values  Table 4. Cisco Secure Firewall 200 scalability with the Cisco Secure Firewall Threat Defense (FTD) software
+  perf     asa    12 values  Table 5. Cisco Secure Firewall 200 scalability with the Cisco Adaptive Security Appliance (ASA) software
+  hardware -      58 values  Table 6. Cisco Secure Firewall 200 hardware specifications
+
+secure-firewall-3100  (Cisco Secure Firewall 3100 Series Data Sheet, updated 2026-10-06)
+  perf     ftd   115 values  Table 2. Cisco Secure Firewall 3100 Series performance and capabilities, running on Firewall Threat Defense (F
+  perf     asa    65 values  Table 3. ASA Performance and capabilities on Secure Firewall 3100 appliances
+  hardware -     151 values  Table 4. Cisco Secure Firewall 3100 Series hardware specifications
+
+secure-firewall-4100  (Cisco Firepower 4100 Series Data Sheet, updated 2023-09-12)
+  perf     ftd    92 values  Table 1. Performance specifications and feature highlights for Cisco Secure Firewall 4100 with the Cisco Secur
+  perf     asa    52 values  Table 2. ASA Performance and capabilities on Cisco Secure Firewall 4100 appliances
+  hardware -     124 values  Table 3. Cisco Secure Firewall 4100 Series hardware specifications
+
+secure-firewall-4200  (Cisco Secure Firewall 4200 Datasheet, updated 2024-10-29)
+  perf     ftd    66 values  Table 1. Performance specifications and feature highlights for Cisco Secure Firewall 4200 with the Cisco Secur
+  perf     asa    36 values  Table 2. ASA Performance and capabilities on Cisco Secure Firewall 4200 appliances
+  hardware -      81 values  Table 3. Cisco Secure Firewall 4200 Series hardware specifications
+
+secure-firewall-6100  (Cisco Secure Firewall 6100 Series Data Sheet, updated 2026-10-15)
+  perf     ftd    12 values  Table 2. Cisco Secure Firewall 6100 Series performance with the Cisco Secure Firewall Threat Defense (FTD) sof
+  perf     asa    12 values  Table 3. Cisco Secure Firewall 6100 Series performance with the Cisco Adaptive Security Appliance (ASA) softwa
+  perf     ftd    14 values  Table 4. Cisco Secure Firewall 6100 Series scalability with the Cisco Secure Firewall Threat Defense (FTD) sof
+  perf     asa    24 values  Table 5. Cisco Secure Firewall 6100 Series scalability with the Cisco Adaptive Security Appliance (ASA) softwa
+  hardware -     128 values  Table 6. Cisco Secure Firewall 6100 Series hardware specifications
+threat-defense-container: excluded in labels.yaml
+
+threat-defense-virtual  (Cisco Secure Firewall Threat Defense Virtual Data Sheet, updated 2026-04-20)
+  perf     ftd    48 values  Table 6. Performance specifications for Secure Firewall Threat Defense Virtual (ESXi/KVM/OpenStack) version 10
+  perf     ftd    21 values  Table 7. Performance specifications for Secure Firewall Threat Defense Virtual (AWS) version 10.0+ running Sno
+  perf     ftd    21 values  Table 8. Performance specifications for Secure Firewall Threat Defense Virtual (Azure) version 10.0+ running S
+  perf     ftd    21 values  Table 9. Performance specifications for Secure Firewall Threat Defense Virtual (GCP) version 10.0+ running Sno
+  perf     ftd    14 values  Table 10. Performance specifications for Secure Firewall Threat Defense Virtual (OCI) version 10.0+ running Sn
+  perf     ftd    21 values  Table 11. Performance specifications for Secure Firewall Threat Defense Virtual (Alibaba) version 10.0+ runnin
+
+Models by series:
+  ASA Virtual: ASAv5 (AWS), ASAv10 (AWS), ASAv30 (AWS), ASAv50 (AWS), ASAv100 (AWS), ASAv5 (Azure), ASAv10 (Azure), ASAv30 (Azure), ASAv50 (Azure), ASAv100 (Azure), ASAv5 (ESXi/KVM/OpenStack), ASAv10 (ESXi/KVM/OpenStack), ASAv30 (ESXi/KVM/OpenStack), ASAv50 (ESXi/KVM/OpenStack), ASAv100 (ESXi/KVM/OpenStack), ASAv-U (ESXi/KVM/OpenStack), ASAv5 (GCP), ASAv10 (GCP), ASAv30 (GCP), ASAv50 (GCP), ASAv100 (GCP), ASAv5 (OCI), ASAv10 (OCI), ASAv30 (OCI), ASAv50 (OCI), ASAv100 (OCI)
+  Firepower 1000: Firepower 1010, Firepower 1010E, Firepower 1120, Firepower 1140, Firepower 1150
+  Firepower 9300: Firepower 9300 3x SM-56, Firepower 9300 SM-40, Firepower 9300 SM-48, Firepower 9300 SM-56
+  Secure Firewall ISA3000: Secure Firewall ISA3000-2C2F, Secure Firewall ISA3000-4C
+  Secure Firewall 1200: Secure Firewall 1210CE, Secure Firewall 1210CP, Secure Firewall 1220CX, Secure Firewall 1230, Secure Firewall 1240, Secure Firewall 1250
+  Secure Firewall 200: Secure Firewall 220, Secure Firewall 240P
+  Secure Firewall 3100: Secure Firewall 3105, Secure Firewall 3110, Secure Firewall 3120, Secure Firewall 3130, Secure Firewall 3140
+  Secure Firewall 4100: Secure Firewall 4112, Secure Firewall 4115, Secure Firewall 4125, Secure Firewall 4145
+  Secure Firewall 4200: Secure Firewall 4215, Secure Firewall 4225, Secure Firewall 4245
+  Secure Firewall 6100: Secure Firewall 6120, Secure Firewall 6130, Secure Firewall 6160, Secure Firewall 6170
+  Threat Defense Virtual: Threat Defense Virtual 4 vCPU (AWS), Threat Defense Virtual 8 vCPU (AWS), Threat Defense Virtual 16 vCPU (AWS), Threat Defense Virtual 4 vCPU (Alibaba), Threat Defense Virtual 8 vCPU (Alibaba), Threat Defense Virtual 16 vCPU (Alibaba), Threat Defense Virtual 4 vCPU (Azure), Threat Defense Virtual 8 vCPU (Azure), Threat Defense Virtual 16 vCPU (Azure), Threat Defense Virtual 4 vCPU (ESXi/KVM/OpenStack), Threat Defense Virtual 8 vCPU (ESXi/KVM/OpenStack), Threat Defense Virtual 12 vCPU (ESXi/KVM/OpenStack), Threat Defense Virtual 16 vCPU (ESXi/KVM/OpenStack), Threat Defense Virtual 32 vCPU (ESXi/KVM/OpenStack), Threat Defense Virtual 64 vCPU (ESXi/KVM/OpenStack), Threat Defense Virtual 4 vCPU (GCP), Threat Defense Virtual 8 vCPU (GCP), Threat Defense Virtual 16 vCPU (GCP), Threat Defense Virtual VM.Standard.A1 (OCI), Threat Defense Virtual VM.Standard3 (OCI)

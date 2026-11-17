@@ -1,0 +1,113 @@
+{
+  "vendor": "Cisco",
+  "model": "ASAv100 (Azure)",
+  "model_id": "asav100-azure",
+  "family": "Secure Firewall",
+  "series": "ASA Virtual",
+  "form_factor": "virtual",
+  "source": {
+    "title": "Cisco Secure Firewall ASA Virtual (ASAv) Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.pdf",
+    "file": "datasheets/asa-virtual.html",
+    "library_last_updated": "2024-10-25",
+    "sha256": "feb420be1224e9ad2289077efc598b6781907daab8439d18afd52f7a2b1ccdbf"
+  },
+  "default_image": "asa",
+  "images": [
+    "asa"
+  ],
+  "specs_by_image": {
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 11000,
+        "raw": "11 Gbps",
+        "label": "Stateful inspection throughput (maximum)",
+        "table": "Table 3",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+          "- Measured on instances with Accelerated Networking (AN) enable"
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 6000,
+        "raw": "6 Gbps",
+        "label": "Stateful inspection throughput (multiprotocol)",
+        "table": "Table 3",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS.",
+          "- Measured on instances with Accelerated Networking (AN) enable"
+        ],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 8000,
+        "raw": "8 Gbps",
+        "label": "IPsec VPN throughput (AES 450B UDP test)",
+        "table": "Table 3",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning.",
+          "- Measured on instances with Accelerated Networking (AN) enable"
+        ],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 14000,
+        "raw": "14,000",
+        "label": "Connections per second",
+        "table": "Table 3",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "- Measured on instances with Accelerated Networking (AN) enable"
+        ]
+      },
+      "concurrent_sessions": {
+        "value": 4000000,
+        "raw": "4,000,000",
+        "label": "Concurrent sessions",
+        "table": "Table 3",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "- Measured on instances with Accelerated Networking (AN) enable"
+        ]
+      },
+      "vpn_peers_max": {
+        "value": 20000,
+        "raw": "20,000",
+        "label": "IPsec VPN peers",
+        "table": "Table 3",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "- Measured on instances with Accelerated Networking (AN) enable"
+        ]
+      },
+      "ravpn_sessions_max": {
+        "value": 20000,
+        "raw": "20,000",
+        "label": "Cisco AnyConnect or clientless VPN user sessions",
+        "table": "Table 3",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "- Measured on instances with Accelerated Networking (AN) enable"
+        ]
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": null,
+  "vm": {
+    "platform": "Azure",
+    "vcpu": null,
+    "instance_type": "D5_v2",
+    "license_tier": "20G"
+  },
+  "footnotes": {
+    "Table 3 6": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 3 7": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS.",
+    "Table 3 8": "The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning."
+  }
+}

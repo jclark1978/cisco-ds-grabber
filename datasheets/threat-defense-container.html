@@ -1,0 +1,313 @@
+<!-- Cisco Secure Firewall Threat Defense Container Data Sheet | https://www.cisco.com/c/en/us/products/collateral/security/firewalls/threat-defense-container-ds.html | Updated 2026-04-20 -->
+<div id="eot-doc-wrapper">
+
+<code>
+<link href="wemdcmt.css"/>
+<link href="/etc/designs/cdc/transformation/wemdcmt.css"/></code>
+<div class="WordSection1">
+<p class="pBody"> </p>
+<p class="pToC_Subhead1"><a name="_Toc227379812"></a><a name="_Toc227379585">Introduction</a></p>
+<p class="pBody">In today's fast-paced digital landscape, organizations are rapidly embracing containerized applications to achieve unparalleled scalability, flexibility, and efficiency. However, as the adoption of containers grows, so does the complexity of securing them. Traditional security measures often fall short in providing the necessary protection for these dynamic environments. This is where the need for a specialized container firewall becomes essential.</p>
+<p class="pBody">Cisco<sup class="cSuperscript">®</sup> Secure Firewall Threat Defense Container (FTDc) extends Cisco Hybrid Mesh Firewall architecture to container networks by delivering next-generation firewall capabilities with AI-powered threat inspection and uniform security policy enforcement. It enables you to select the performance level that best suits your organization. With scalable VPN capabilities, it ensures secure access to your organization's resources while safeguarding workloads against evolving and complex threats.</p>
+<p class="pTableCaptionCMT"><b>Table 1.<span>        </span></b>    Key capabilities of Secure Firewall Threat Defense Container</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="2"> <p class="Cellhead1"><span>Secure Firewall Threat Defense Container</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Robust connectivity and portability</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Deploy appliances everywhere, from your data center to your branch office, with the portability of one license to support virtual and container deployments across public or private clouds. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Container lifecycle management via HELM charts. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Low-Touch Provisioning (LTP) via Sidecar. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Layer 3 through Layer 7 firewalling based on traditional network constructs and container-native attributes. 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Superior visibility</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Leverage the AI-powered Encrypted Visibility Engine (EVE) to gain insights into and control over encrypted traffic, including Transport Layer Security (TLS) 1.3, thereby eliminating the need to decrypt traffic. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Protect networks against zero-day vulnerabilities with SnortML, a machine learning-based exploit detection technology integrated into the industry-leading Snort 3 Intrusion Prevention System (IPS) and powered by the 
+         <a href="https://talosintelligence.com/">Cisco Talos Intelligence Group</a>. 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Simplified management</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Manage hundreds of physical, virtual, or container firewalls across various global branch locations using a single unified management console, available in both on-premises and cloud-delivered form factors. 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Seamless integration</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Achieve comprehensive, end-to-end protection through native integration with Cisco Umbrella 
+         <sup class="cSuperscript">®</sup>, Cisco Secure Access, and Cisco Endpoint Security. 
+        </div> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc227379813"></a><a name="_Toc227379586">Flexible performance-based licensing</a></p>
+<p class="pBody">Cisco's container firewall leverages the same performance-based licensing model as the virtual form factor, designed to deliver deployment flexibility across a wide range of infrastructure environments. This unified licensing approach allows a single set of PIDs to entitle both virtual and containerized deployments across public and private cloud environments. </p>
+<p class="pBody"><b>Each performance license tier enforces two key parameters:</b></p>
+<p class="pBulletCMT"><span>●<span>     </span></span><b>Throughput (Rate Limit)</b> — Controls the maximum firewall inspection throughput via an integrated rate limiter, ensuring predictable and consistent performance aligned to the selected tier.</p>
+<p class="pBulletCMT"><span>●<span>     </span></span><b>Remote Access (RA) VPN Session Limit</b> — Defines the maximum number of concurrent Remote Access VPN sessions supported under the license tier.</p>
+<p class="pTableCaptionCMT"><b>Table 2.<span>        </span></b>Performance license tiers</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Performance Tier</span></p> </td>
+<td> <p class="Cellhead1"><span>Throughput (Rate Limit)</span></p> </td>
+<td> <p class="Cellhead1"><span>RA VPN Session Limit</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDc5</b></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">50 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDc10</b></p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">250 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDc20</b></p> </td>
+<td> <p class="pChart_bodyCMT">3 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">250 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDc30</b></p> </td>
+<td> <p class="pChart_bodyCMT">5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">250 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDc50</b></p> </td>
+<td> <p class="pChart_bodyCMT">10 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">750 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDc100</b></p> </td>
+<td> <p class="pChart_bodyCMT">16 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10,000 Sessions</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDcU (Unlimited)</b></p> </td>
+<td> <p class="pChart_bodyCMT">No Rate Limiter</p> </td>
+<td> <p class="pChart_bodyCMT">32,000 Sessions</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody"><b>Important:</b> FTDc performance tiers have no impact on the underlying compute resources (vCPUs and memory) assigned to the container appliance or the compute instance / shape selected in public cloud environments. The allocated compute resources drive appliance scale for capabilities such as routing table size, access control rules, and more. This decoupled approach gives customers the flexibility to independently size their container firewall with the compute resources needed to meet their specific requirements, while selecting the performance license tier that aligns with their throughput and VPN session needs.</p>
+<p class="pToC_Subhead1"><a name="_Toc227379814"></a><a name="_Toc227379587">Deployment and system requirements</a></p>
+<p class="pTableCaptionCMT"><b>Table 3.<span>        </span></b>Deployment environment summary</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Category</span></p> </td>
+<td> <p class="Cellhead1"><span>Supported Environment</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2"> <p class="pChart_subheadCMT">Private Cloud / On-Premises</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Container runtime</b></p> </td>
+<td> <p class="pChart_bodyCMT">Docker: 26.1.3+</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Kubernetes version</b></p> </td>
+<td> <p class="pChart_bodyCMT">Kubernetes – Min: 1.29.15, Max: 1.31.14</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Operating System and Version</b></p> </td>
+<td> <p class="pChart_bodyCMT">Ubuntu - Min: 20.04 LTS, Max: 22.04 LTS</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CNI (Container Network Interface)</b></p> </td>
+<td> <p class="pChart_bodyCMT">Macvlan, SR-IOV</p> </td>
+</tr>
+<tr>
+<td colspan="2"> <p class="pChart_subheadCMT">Public Cloud</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AWS</b></p> </td>
+<td> <p class="pChart_bodyCMT">EKS (Elastic Kubernetes Service) - Min: 1.30, Max: 1.31</p> </td>
+</tr>
+<tr>
+<td colspan="2"> <p class="pChart_subheadCMT">System and Deployment Requirements</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Minimum System Requirements</b></p> </td>
+<td> <p class="pChart_bodyCMT">4 vCPUs | 8 GB RAM | 50 GB Disk</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum System Requirements</b></p> </td>
+<td> <p class="pChart_bodyCMT">32 vCPUs | 64 GB RAM | 500 GB Disk</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Deployment Mode</b></p> </td>
+<td> <p class="pChart_bodyCMT">Routed</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High Availability</b></p> </td>
+<td> <p class="pChart_bodyCMT">Planned for future release</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td> <p class="pChart_bodyCMT">Planned for future release</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody"><b>Note:</b> For more information on each of the supported deployment environments, please reference the corresponding <a href="https://www.cisco.com/c/en/us/support/security/firepower-ngfw-virtual/products-installation-guides-list.html">Getting Started Guide</a> and the <a href="https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/compatibility/threat-defense-compatibility.html">Secure Firewall Threat Defense Compatibility Guide</a>.</p>
+<p class="pToC_Subhead1"><a name="_Toc227379815"></a><a name="_Toc227379588">Performance and scale</a></p>
+<p class="pBody">Your performance may vary from the below. These should be considered general guidelines. Your actual performance will depend on the environment, including traffic type and profile, CPU type, CPU speed, cache, number of interfaces, etc. For a complete list of supported compute instances and shapes, please reference the corresponding <a href="https://www.cisco.com/c/en/us/support/security/firepower-ngfw-virtual/products-installation-guides-list.html">Getting Started Guide</a>.</p>
+<p class="pTableCaptionCMT"><b>Table 4.<span>        </span></b>Performance specifications for FTDc (Docker / Kubernetes) version 10.0+ running Snort3 and SR-IOV:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Metric</span></p> </td>
+<td> <p class="Cellhead1"><span>4 x vCPU</span></p> </td>
+<td> <p class="Cellhead1"><span>8 x vCPU</span></p> </td>
+<td> <p class="Cellhead1"><span>12 x vCPU</span></p> </td>
+<td> <p class="Cellhead1"><span>16 x vCPU</span></p> </td>
+<td> <p class="Cellhead1"><span>32 x vCPU</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7.2Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">19Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">26Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">59Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">4.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">18Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">25Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">55Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2.2Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">3.2Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10.5Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">35Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">100K</p> </td>
+<td> <p class="pChart_bodyCMT">250K</p> </td>
+<td> <p class="pChart_bodyCMT">500K</p> </td>
+<td> <p class="pChart_bodyCMT">2M</p> </td>
+<td> <p class="pChart_bodyCMT">4M</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">27K</p> </td>
+<td> <p class="pChart_bodyCMT">44K</p> </td>
+<td> <p class="pChart_bodyCMT">80K</p> </td>
+<td> <p class="pChart_bodyCMT">135K</p> </td>
+<td> <p class="pChart_bodyCMT">300K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+<td> <p class="pChart_bodyCMT">20K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum Virtual Router Instances (VRF)</b></p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High Availability – Active / Standby</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Planned for future release</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High Availability – Clustering</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Planned for future release</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc227379816"></a><a name="_Toc227379589">Ordering information</a></p>
+<p class="pBody">Performance tiered licensing is available starting from Firewall Threat Defense version 7.0. The new licensing model also includes Base License as a subscription. For information on licenses, subscriptions, and other options associated with the product, refer to the <a href="https://www.cisco.com/c/en/us/products/collateral/security/secure-firewall/guide-c07-737902.html">Network Security Ordering Guide</a>.</p>
+<p class="pTableCaptionCMT"><b>Table 5.<span>        </span></b>Ordering information for Secure Firewall Threat Defense Container</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Product ID</span></p> </td>
+<td> <p class="Cellhead1"><span>Description</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>FTDV-SEC-SUB</b></p> </td>
+<td> <p class="pChart_bodyCMT">Secure Firewall Threat Defense Virtual / Container Subscription</p> </td>
+</tr>
+<tr>
+<td colspan="2"> <p class="pChart_bodyCMT">Once the above PID is selected, you can choose the appropriate performance tier along with one or more of the available add-on subscription licenses (T-Threat, M-Malware Defense, and URL Filtering).</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc227379817"></a><a name="_Toc227379590">Cisco environmental sustainability</a></p>
+<p class="pBody">Information about Cisco’s environmental sustainability policies and initiatives for our products, solutions, operations, and extended operations or supply chain is provided in the “Environmental Sustainability” section of Cisco’s <a href="https://www.cisco.com/site/us/en/about/purpose/fy24-report/index.html">Corporate Social Responsibility</a> (CSR) report. </p>
+<p class="pBody">Reference links to information about key environmental sustainability topics (mentioned in the “Environment Sustainability” section of the CSR Report) are provided in the following table:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Sustainability topic</span></p> </td>
+<td> <p class="Cellhead1"><span>Reference</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Information on product material content laws and regulations</b></p> </td>
+<td> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html">Materials</a></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Information on electronic waste laws and regulations, including products, batteries, and packaging</b></p> </td>
+<td> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html">WEEE compliance</a></p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody">Cisco makes the packaging data available for informational purposes only. It may not reflect the most current legal developments, and Cisco does not represent, warrant, or guarantee that it is complete, accurate, or up to date. This information is subject to change without notice.</p>
+<p class="pBody"> </p>
+</div>
+<cdc:do></cdc:do>
+<div class="row full visitedlinks">
+<div class="col full">
+</div>
+</div>
+</div>

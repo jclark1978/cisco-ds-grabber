@@ -1,0 +1,843 @@
+{
+  "asav5-aws": {
+    "model": "ASAv5 (AWS)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav5-aws.json"
+  },
+  "asav10-aws": {
+    "model": "ASAv10 (AWS)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav10-aws.json"
+  },
+  "asav30-aws": {
+    "model": "ASAv30 (AWS)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav30-aws.json"
+  },
+  "asav50-aws": {
+    "model": "ASAv50 (AWS)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav50-aws.json"
+  },
+  "asav100-aws": {
+    "model": "ASAv100 (AWS)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav100-aws.json"
+  },
+  "asav5-azure": {
+    "model": "ASAv5 (Azure)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav5-azure.json"
+  },
+  "asav10-azure": {
+    "model": "ASAv10 (Azure)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav10-azure.json"
+  },
+  "asav30-azure": {
+    "model": "ASAv30 (Azure)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav30-azure.json"
+  },
+  "asav50-azure": {
+    "model": "ASAv50 (Azure)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav50-azure.json"
+  },
+  "asav100-azure": {
+    "model": "ASAv100 (Azure)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav100-azure.json"
+  },
+  "asav5-esxi-kvm-openstack": {
+    "model": "ASAv5 (ESXi/KVM/OpenStack)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav5-esxi-kvm-openstack.json"
+  },
+  "asav10-esxi-kvm-openstack": {
+    "model": "ASAv10 (ESXi/KVM/OpenStack)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav10-esxi-kvm-openstack.json"
+  },
+  "asav30-esxi-kvm-openstack": {
+    "model": "ASAv30 (ESXi/KVM/OpenStack)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav30-esxi-kvm-openstack.json"
+  },
+  "asav50-esxi-kvm-openstack": {
+    "model": "ASAv50 (ESXi/KVM/OpenStack)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav50-esxi-kvm-openstack.json"
+  },
+  "asav100-esxi-kvm-openstack": {
+    "model": "ASAv100 (ESXi/KVM/OpenStack)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav100-esxi-kvm-openstack.json"
+  },
+  "asav-u-esxi-kvm-openstack": {
+    "model": "ASAv-U (ESXi/KVM/OpenStack)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav-u-esxi-kvm-openstack.json"
+  },
+  "asav5-gcp": {
+    "model": "ASAv5 (GCP)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav5-gcp.json"
+  },
+  "asav10-gcp": {
+    "model": "ASAv10 (GCP)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav10-gcp.json"
+  },
+  "asav30-gcp": {
+    "model": "ASAv30 (GCP)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav30-gcp.json"
+  },
+  "asav50-gcp": {
+    "model": "ASAv50 (GCP)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav50-gcp.json"
+  },
+  "asav100-gcp": {
+    "model": "ASAv100 (GCP)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav100-gcp.json"
+  },
+  "asav5-oci": {
+    "model": "ASAv5 (OCI)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav5-oci.json"
+  },
+  "asav10-oci": {
+    "model": "ASAv10 (OCI)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav10-oci.json"
+  },
+  "asav30-oci": {
+    "model": "ASAv30 (OCI)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav30-oci.json"
+  },
+  "asav50-oci": {
+    "model": "ASAv50 (OCI)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav50-oci.json"
+  },
+  "asav100-oci": {
+    "model": "ASAv100 (OCI)",
+    "series": "ASA Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/asav100-oci.json"
+  },
+  "firepower-1010": {
+    "model": "Firepower 1010",
+    "series": "Firepower 1000",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-1010.json"
+  },
+  "firepower-1010e": {
+    "model": "Firepower 1010E",
+    "series": "Firepower 1000",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-1010e.json"
+  },
+  "firepower-1120": {
+    "model": "Firepower 1120",
+    "series": "Firepower 1000",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-1120.json"
+  },
+  "firepower-1140": {
+    "model": "Firepower 1140",
+    "series": "Firepower 1000",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-1140.json"
+  },
+  "firepower-1150": {
+    "model": "Firepower 1150",
+    "series": "Firepower 1000",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-1150.json"
+  },
+  "firepower-9300-3x-sm-56": {
+    "model": "Firepower 9300 3x SM-56",
+    "series": "Firepower 9300",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-9300-3x-sm-56.json"
+  },
+  "firepower-9300-sm-40": {
+    "model": "Firepower 9300 SM-40",
+    "series": "Firepower 9300",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-9300-sm-40.json"
+  },
+  "firepower-9300-sm-48": {
+    "model": "Firepower 9300 SM-48",
+    "series": "Firepower 9300",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-9300-sm-48.json"
+  },
+  "firepower-9300-sm-56": {
+    "model": "Firepower 9300 SM-56",
+    "series": "Firepower 9300",
+    "family": "Firepower",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/firepower-9300-sm-56.json"
+  },
+  "secure-firewall-isa3000-2c2f": {
+    "model": "Secure Firewall ISA3000-2C2F",
+    "series": "Secure Firewall ISA3000",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/secure-firewall-isa3000-2c2f.json"
+  },
+  "secure-firewall-isa3000-4c": {
+    "model": "Secure Firewall ISA3000-4C",
+    "series": "Secure Firewall ISA3000",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/secure-firewall-isa3000-4c.json"
+  },
+  "secure-firewall-1210ce": {
+    "model": "Secure Firewall 1210CE",
+    "series": "Secure Firewall 1200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-1210ce.json"
+  },
+  "secure-firewall-1210cp": {
+    "model": "Secure Firewall 1210CP",
+    "series": "Secure Firewall 1200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-1210cp.json"
+  },
+  "secure-firewall-1220cx": {
+    "model": "Secure Firewall 1220CX",
+    "series": "Secure Firewall 1200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-1220cx.json"
+  },
+  "secure-firewall-1230": {
+    "model": "Secure Firewall 1230",
+    "series": "Secure Firewall 1200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-1230.json"
+  },
+  "secure-firewall-1240": {
+    "model": "Secure Firewall 1240",
+    "series": "Secure Firewall 1200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-1240.json"
+  },
+  "secure-firewall-1250": {
+    "model": "Secure Firewall 1250",
+    "series": "Secure Firewall 1200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-1250.json"
+  },
+  "secure-firewall-220": {
+    "model": "Secure Firewall 220",
+    "series": "Secure Firewall 200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-220.json"
+  },
+  "secure-firewall-240p": {
+    "model": "Secure Firewall 240P",
+    "series": "Secure Firewall 200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-240p.json"
+  },
+  "secure-firewall-3105": {
+    "model": "Secure Firewall 3105",
+    "series": "Secure Firewall 3100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-3105.json"
+  },
+  "secure-firewall-3110": {
+    "model": "Secure Firewall 3110",
+    "series": "Secure Firewall 3100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-3110.json"
+  },
+  "secure-firewall-3120": {
+    "model": "Secure Firewall 3120",
+    "series": "Secure Firewall 3100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-3120.json"
+  },
+  "secure-firewall-3130": {
+    "model": "Secure Firewall 3130",
+    "series": "Secure Firewall 3100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-3130.json"
+  },
+  "secure-firewall-3140": {
+    "model": "Secure Firewall 3140",
+    "series": "Secure Firewall 3100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-3140.json"
+  },
+  "secure-firewall-4112": {
+    "model": "Secure Firewall 4112",
+    "series": "Secure Firewall 4100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-4112.json"
+  },
+  "secure-firewall-4115": {
+    "model": "Secure Firewall 4115",
+    "series": "Secure Firewall 4100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-4115.json"
+  },
+  "secure-firewall-4125": {
+    "model": "Secure Firewall 4125",
+    "series": "Secure Firewall 4100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-4125.json"
+  },
+  "secure-firewall-4145": {
+    "model": "Secure Firewall 4145",
+    "series": "Secure Firewall 4100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-4145.json"
+  },
+  "secure-firewall-4215": {
+    "model": "Secure Firewall 4215",
+    "series": "Secure Firewall 4200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-4215.json"
+  },
+  "secure-firewall-4225": {
+    "model": "Secure Firewall 4225",
+    "series": "Secure Firewall 4200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-4225.json"
+  },
+  "secure-firewall-4245": {
+    "model": "Secure Firewall 4245",
+    "series": "Secure Firewall 4200",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-4245.json"
+  },
+  "secure-firewall-6120": {
+    "model": "Secure Firewall 6120",
+    "series": "Secure Firewall 6100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-6120.json"
+  },
+  "secure-firewall-6130": {
+    "model": "Secure Firewall 6130",
+    "series": "Secure Firewall 6100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-6130.json"
+  },
+  "secure-firewall-6160": {
+    "model": "Secure Firewall 6160",
+    "series": "Secure Firewall 6100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-6160.json"
+  },
+  "secure-firewall-6170": {
+    "model": "Secure Firewall 6170",
+    "series": "Secure Firewall 6100",
+    "family": "Secure Firewall",
+    "form_factor": "appliance",
+    "images": [
+      "ftd",
+      "asa"
+    ],
+    "file": "data/models/secure-firewall-6170.json"
+  },
+  "threat-defense-virtual-4-vcpu-aws": {
+    "model": "Threat Defense Virtual 4 vCPU (AWS)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-4-vcpu-aws.json"
+  },
+  "threat-defense-virtual-8-vcpu-aws": {
+    "model": "Threat Defense Virtual 8 vCPU (AWS)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-8-vcpu-aws.json"
+  },
+  "threat-defense-virtual-16-vcpu-aws": {
+    "model": "Threat Defense Virtual 16 vCPU (AWS)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-16-vcpu-aws.json"
+  },
+  "threat-defense-virtual-4-vcpu-alibaba": {
+    "model": "Threat Defense Virtual 4 vCPU (Alibaba)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-4-vcpu-alibaba.json"
+  },
+  "threat-defense-virtual-8-vcpu-alibaba": {
+    "model": "Threat Defense Virtual 8 vCPU (Alibaba)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-8-vcpu-alibaba.json"
+  },
+  "threat-defense-virtual-16-vcpu-alibaba": {
+    "model": "Threat Defense Virtual 16 vCPU (Alibaba)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-16-vcpu-alibaba.json"
+  },
+  "threat-defense-virtual-4-vcpu-azure": {
+    "model": "Threat Defense Virtual 4 vCPU (Azure)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-4-vcpu-azure.json"
+  },
+  "threat-defense-virtual-8-vcpu-azure": {
+    "model": "Threat Defense Virtual 8 vCPU (Azure)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-8-vcpu-azure.json"
+  },
+  "threat-defense-virtual-16-vcpu-azure": {
+    "model": "Threat Defense Virtual 16 vCPU (Azure)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-16-vcpu-azure.json"
+  },
+  "threat-defense-virtual-4-vcpu-esxi-kvm-openstack": {
+    "model": "Threat Defense Virtual 4 vCPU (ESXi/KVM/OpenStack)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-4-vcpu-esxi-kvm-openstack.json"
+  },
+  "threat-defense-virtual-8-vcpu-esxi-kvm-openstack": {
+    "model": "Threat Defense Virtual 8 vCPU (ESXi/KVM/OpenStack)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-8-vcpu-esxi-kvm-openstack.json"
+  },
+  "threat-defense-virtual-12-vcpu-esxi-kvm-openstack": {
+    "model": "Threat Defense Virtual 12 vCPU (ESXi/KVM/OpenStack)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-12-vcpu-esxi-kvm-openstack.json"
+  },
+  "threat-defense-virtual-16-vcpu-esxi-kvm-openstack": {
+    "model": "Threat Defense Virtual 16 vCPU (ESXi/KVM/OpenStack)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-16-vcpu-esxi-kvm-openstack.json"
+  },
+  "threat-defense-virtual-32-vcpu-esxi-kvm-openstack": {
+    "model": "Threat Defense Virtual 32 vCPU (ESXi/KVM/OpenStack)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-32-vcpu-esxi-kvm-openstack.json"
+  },
+  "threat-defense-virtual-64-vcpu-esxi-kvm-openstack": {
+    "model": "Threat Defense Virtual 64 vCPU (ESXi/KVM/OpenStack)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-64-vcpu-esxi-kvm-openstack.json"
+  },
+  "threat-defense-virtual-4-vcpu-gcp": {
+    "model": "Threat Defense Virtual 4 vCPU (GCP)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-4-vcpu-gcp.json"
+  },
+  "threat-defense-virtual-8-vcpu-gcp": {
+    "model": "Threat Defense Virtual 8 vCPU (GCP)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-8-vcpu-gcp.json"
+  },
+  "threat-defense-virtual-16-vcpu-gcp": {
+    "model": "Threat Defense Virtual 16 vCPU (GCP)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-16-vcpu-gcp.json"
+  },
+  "threat-defense-virtual-vm-standard-a1-oci": {
+    "model": "Threat Defense Virtual VM.Standard.A1 (OCI)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-vm-standard-a1-oci.json"
+  },
+  "threat-defense-virtual-vm-standard3-oci": {
+    "model": "Threat Defense Virtual VM.Standard3 (OCI)",
+    "series": "Threat Defense Virtual",
+    "family": "Secure Firewall",
+    "form_factor": "virtual",
+    "images": [
+      "ftd"
+    ],
+    "file": "data/models/threat-defense-virtual-vm-standard3-oci.json"
+  }
+}

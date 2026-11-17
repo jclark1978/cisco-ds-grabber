@@ -1,0 +1,151 @@
+{
+  "vendor": "Cisco",
+  "model": "ASAv100 (ESXi/KVM/OpenStack)",
+  "model_id": "asav100-esxi-kvm-openstack",
+  "family": "Secure Firewall",
+  "series": "ASA Virtual",
+  "form_factor": "virtual",
+  "source": {
+    "title": "Cisco Secure Firewall ASA Virtual (ASAv) Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.pdf",
+    "file": "datasheets/asa-virtual.html",
+    "library_last_updated": "2024-10-25",
+    "sha256": "feb420be1224e9ad2289077efc598b6781907daab8439d18afd52f7a2b1ccdbf"
+  },
+  "default_image": "asa",
+  "images": [
+    "asa"
+  ],
+  "specs_by_image": {
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 20000,
+        "raw": "20 Gbps",
+        "label": "Stateful inspection throughput (maximum)",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 20000,
+        "raw": "20 Gbps",
+        "label": "Stateful inspection throughput (multiprotocol)",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+        ],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 12000,
+        "raw": "12 Gbps",
+        "label": "IPsec VPN throughput (AES 450B UDP test)",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning."
+        ],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 600000,
+        "raw": "600,000",
+        "label": "Connections per second",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "concurrent_sessions": {
+        "value": 4000000,
+        "raw": "4,000,000",
+        "label": "Concurrent sessions",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "vlans_max": {
+        "value": 1024,
+        "raw": "1024",
+        "label": "VLANs",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "bridge_groups_max": {
+        "value": 250,
+        "raw": "250",
+        "label": "Bridge groups",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 20000,
+        "raw": "20,000",
+        "label": "IPsec VPN peers",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "ravpn_sessions_max": {
+        "value": 20000,
+        "raw": "20,000",
+        "label": "Cisco AnyConnect or clientless VPN user sessions",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": []
+      },
+      "vcpu": {
+        "value": "16",
+        "raw": "16",
+        "label": "Virtual CPU core allocation",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Stated resource allocation is required to achieve the documented performance metrics for each tier. Decreased allocations are supported but will result in lower performance."
+        ]
+      },
+      "memory": {
+        "value": "32GB",
+        "raw": "32GB",
+        "label": "Memory allocation",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Stated resource allocation is required to achieve the documented performance metrics for each tier. Decreased allocations are supported but will result in lower performance."
+        ]
+      },
+      "disk": {
+        "value": "8GB",
+        "raw": "8GB",
+        "label": "Disk storage",
+        "table": "Table 1",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Thin provisioning is supported."
+        ]
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": null,
+  "vm": {
+    "platform": "ESXi/KVM/OpenStack",
+    "vcpu": null,
+    "instance_type": null,
+    "license_tier": "20G"
+  },
+  "footnotes": {
+    "Table 1 [1]": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 1 [2]": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS.",
+    "Table 1 [3]": "The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning.",
+    "Table 1 [4]": "Stated resource allocation is required to achieve the documented performance metrics for each tier. Decreased allocations are supported but will result in lower performance.",
+    "Table 1 4": "Stated resource allocation is required to achieve the documented performance metrics for each tier. Decreased allocations are supported but will result in lower performance.",
+    "Table 1 [5]": "Thin provisioning is supported."
+  }
+}

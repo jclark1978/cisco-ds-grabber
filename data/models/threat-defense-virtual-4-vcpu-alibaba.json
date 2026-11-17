@@ -1,0 +1,92 @@
+{
+  "vendor": "Cisco",
+  "model": "Threat Defense Virtual 4 vCPU (Alibaba)",
+  "model_id": "threat-defense-virtual-4-vcpu-alibaba",
+  "family": "Secure Firewall",
+  "series": "Threat Defense Virtual",
+  "form_factor": "virtual",
+  "source": {
+    "title": "Cisco Secure Firewall Threat Defense Virtual Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/threat-defense-virtual-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/threat-defense-virtual-ds.pdf",
+    "file": "datasheets/threat-defense-virtual.html",
+    "library_last_updated": "2026-04-20",
+    "sha256": "30380f75abd239517b56eeacc665e38be8c6f557c418e29a828f113202c1b111"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 3100,
+        "raw": "3.1Gbps",
+        "label": "Throughput: FW + AVC (1024B)",
+        "table": "Table 11",
+        "software": "Threat Defense (FTD), version 10.0+ running Snort3 and SR-IOV",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 2100,
+        "raw": "2.1Gbps",
+        "label": "Throughput: FW + AVC + IPS (1024B)",
+        "table": "Table 11",
+        "software": "Threat Defense (FTD), version 10.0+ running Snort3 and SR-IOV",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 2000,
+        "raw": "2Gbps",
+        "label": "IPSec VPN Throughput (1024B TCP w/Fastpath)",
+        "table": "Table 11",
+        "software": "Threat Defense (FTD), version 10.0+ running Snort3 and SR-IOV",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 250000,
+        "raw": "250K",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 11",
+        "software": "Threat Defense (FTD), version 10.0+ running Snort3 and SR-IOV",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 10000,
+        "raw": "10K",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 11",
+        "software": "Threat Defense (FTD), version 10.0+ running Snort3 and SR-IOV",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 250,
+        "raw": "250",
+        "label": "Maximum VPN peers",
+        "table": "Table 11",
+        "software": "Threat Defense (FTD), version 10.0+ running Snort3 and SR-IOV",
+        "notes": []
+      },
+      "clustering": {
+        "value": "No",
+        "raw": "No",
+        "label": "Clustering",
+        "table": "Table 11",
+        "software": "Threat Defense (FTD), version 10.0+ running Snort3 and SR-IOV",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": null,
+  "vm": {
+    "platform": "Alibaba",
+    "vcpu": 4,
+    "instance_type": "g5ne.xlarge",
+    "license_tier": null
+  },
+  "footnotes": {}
+}

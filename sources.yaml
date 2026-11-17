@@ -1,0 +1,52 @@
+# Where cisco_grabber.py looks for Cisco Secure Firewall datasheets.
+#
+# Cisco has no single datasheet library. Each firewall family has its own
+# datasheet page under /c/en/us/products/collateral/security/...
+#
+# hub_pages:   pages whose links to family pages (matching follow) are opened,
+#              and whose datasheet links are collected.
+# crawl_pages: pages whose datasheet links are collected (no following).
+#              Older lines are found through their datasheet-listing pages.
+# extra_pages: datasheet pages to always include (not linked from the above).
+# include / exclude: regex filters on the datasheet URL path (case-insensitive).
+#   A URL must match an include pattern and no exclude pattern.
+# names: optional URL-path-substring -> file name override, for stable names.
+
+hub_pages:
+  - https://www.cisco.com/site/us/en/products/security/firewalls/index.html
+
+follow:
+  - '/site/us/en/products/security/firewalls/[a-z0-9\-/]+/index\.html'
+
+crawl_pages:
+  - https://www.cisco.com/c/en/us/products/security/firepower-1000-series/datasheet-listing.html
+  - https://www.cisco.com/c/en/us/products/security/firepower-4100-series/datasheet-listing.html
+  - https://www.cisco.com/c/en/us/products/security/firepower-9000-series/datasheet-listing.html
+  - https://www.cisco.com/c/en/us/products/security/industrial-security-appliance-isa/index.html
+
+extra_pages:
+  - https://www.cisco.com/c/en/us/products/collateral/security/firewalls/threat-defense-virtual-ds.html
+  - https://www.cisco.com/c/en/us/products/collateral/security/industrial-security-appliance-3000/data-sheet-c78-735839.html
+  - https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.html
+
+include:
+  - '/c/en/us/products/collateral/security/.*(-ds|datasheet-c78-\d+|data-sheet-c78-\d+)\.html$'
+
+exclude:
+  - '/ngips/'
+  - '/switches/'
+  - 'eos-eol'
+
+names:
+  secure-firewall-200-ds: secure-firewall-200
+  secure-firewall-1200-series-ds: secure-firewall-1200
+  secure-firewall-3100-series-ds: secure-firewall-3100
+  secure-firewall-4200-ds: secure-firewall-4200
+  secure-firewall-6100-series-ds: secure-firewall-6100
+  firepower-1000-series/datasheet-c78-742469: firepower-1000
+  firepower-4100-series/datasheet-c78-742474: secure-firewall-4100
+  firepower-9000-series/datasheet-c78-742471: firepower-9300
+  data-sheet-c78-735839: isa3000
+  threat-defense-virtual-ds: threat-defense-virtual
+  threat-defense-container-ds: threat-defense-container
+  adapt-security-virtual-appliance-ds: asa-virtual

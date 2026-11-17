@@ -1,0 +1,382 @@
+{
+  "vendor": "Cisco",
+  "model": "Secure Firewall 4225",
+  "model_id": "secure-firewall-4225",
+  "family": "Secure Firewall",
+  "series": "Secure Firewall 4200",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Secure Firewall 4200 Datasheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-4200-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-4200-ds.pdf",
+    "file": "datasheets/secure-firewall-4200.html",
+    "library_last_updated": "2024-10-29",
+    "sha256": "770198150b504912a6b59b16049960926ab9304c34293a378cbba869050b1ea5"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd",
+    "asa"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 80000,
+        "raw": "80 Gbps",
+        "label": "Throughput: FW + AVC (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 80000,
+        "raw": "80 Gbps",
+        "label": "Throughput: FW + AVC + IPS (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 30000000,
+        "raw": "30 Million",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 600000,
+        "raw": "600 K",
+        "label": "New Connections Per Second with, AVC",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "tls_throughput_mbps": {
+        "value": 30000,
+        "raw": "30 Gbps",
+        "label": "TLS (Hardware Decryption)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [
+          "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys."
+        ],
+        "unit": "Mbps"
+      },
+      "ips_throughput_mbps": {
+        "value": 80000,
+        "raw": "80 Gbps",
+        "label": "Throughput: NGIPS (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 80000,
+        "raw": "80 Gbps",
+        "label": "IPSec VPN Throughput (1024B TCP w/Fastpath)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "instances_max": {
+        "value": 15,
+        "raw": "15",
+        "label": "Instances (Multi-Instance)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 25000,
+        "raw": "25,000",
+        "label": "Maximum VPN Peers",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "ha_clustering": {
+        "value": "Active/active (with clustering), Active/standby. Cisco Secure Firewall 4200 Series allows clustering of up to 16 chassis",
+        "raw": "Active/active (with clustering), Active/standby. Cisco Secure Firewall 4200 Series allows clustering of up to 16 chassis",
+        "label": "High Availability and Clustering",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    },
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 95000,
+        "raw": "95 Gbps",
+        "label": "Stateful inspection firewall throughput",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 85000,
+        "raw": "85 Gbps",
+        "label": "Stateful inspection firewall throughput (multiprotocol)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+        ],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 90000000,
+        "raw": "90 Million",
+        "label": "Concurrent firewall connections",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 1700000,
+        "raw": "1.7 Million",
+        "label": "New connections per second",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "ipsec_throughput_mbps": {
+        "value": 60000,
+        "raw": "60 Gbps",
+        "label": "Max. IPSec VPN throughput (450 Byte UDP L2L test, ASA)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_peers_max": {
+        "value": 25000,
+        "raw": "25,000",
+        "label": "Maximum VPN Peers",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "security_contexts": {
+        "value": {
+          "included": 2,
+          "max": 250
+        },
+        "raw": "2; 250",
+        "label": "Security contexts (included; maximum)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "high_availability": {
+        "value": "Active/active and active/ standby",
+        "raw": "Active/active and active/ standby",
+        "label": "High Availability",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "clustering": {
+        "value": "16",
+        "raw": "16",
+        "label": "Clustering",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {
+    "ftd": {
+      "Centralized Management": "Centralized configuration, logging, monitoring, and reporting are performed by the Firewall Management Center or alternatively in the cloud with Cisco Defense Orchestrator",
+      "Application Visibility and Control (AVC)": "Standard, Supporting more than 4000 applications, as well as geolocation, users, and websites",
+      "AVC: OpenAppID support for custom, open source, application detectors": "Standard",
+      "Cisco Security Intelligence": "Standard with IP, URL, and DNS Threat Intelligence",
+      "Cisco Secure IPS": "Available; can passively detect endpoints and infrastructure for threat correlation and Indicators of Compromise (IOC) intelligence",
+      "Cisco Malware Defense": "Available; enables detection, blocking, tracking, analysis, and containment of targeted and persistent malware, addressing the attack continuum both during and after attacks. Integrated threat correlation with CISCO Secure Endpoint is also optionally available",
+      "Cisco Secure Malware Analytics": "Available",
+      "URL Filtering: Number of Categories": "More than 120",
+      "URL Filtering: Number of URLs categorized": "More than 280 million",
+      "Automated Threat Feed and IPS signature updates": "Yes: class-leading Collective Security Intelligence (CSI) from the Cisco Talos Group (https://www.cisco.com/c/en/us/products/security/talos.html )",
+      "Third-party and open-source ecosystem": "Open API for integrations with third-party products; Snort® and OpenAppID community resources for new and specific threats",
+      "Cisco Trust Anchor Technologies": "Secure Firewall 4200 Series platforms include Trust Anchor Technologies for supply chain and software image assurance. Please see the section below for additional details"
+    },
+    "asa": {
+      "Scalability": "VPN Load Balancing",
+      "Centralized management": "Centralized configuration, logging, monitoring, and reporting are performed by Cisco Security Manager or alternatively in the cloud with Cisco Defense Orchestrator",
+      "Adaptive Security Device Manager": "Web-based, local management for small-scale deployments"
+    }
+  },
+  "hardware": {
+    "dimensions_mm": {
+      "h": 43.9,
+      "w": 429.0,
+      "d": 812.8
+    },
+    "rack_units": 1,
+    "desktop": false,
+    "weight_kg": 19.5,
+    "power_max_w": 870,
+    "operating_temp_c": [
+      0,
+      40
+    ],
+    "interfaces": "8x 1/10/25 Gigabit Ethernet ports (SFP28)",
+    "network_modules": "8-port 1Gbps copper, FTW (fail to wire) Network Module | Ports that are not configured as FTW can be used as regular 1 Gb copper ports | 8 x 1/10 Gigabit Ethernet Small Form-Factor Pluggable (SFP+) network modules | 8 x 1/10/25 Gigabit Ethernet Small Form-Factor Pluggable (SFP28) network modules | 4 x 40 Gigabit Ethernet Quad SFP+ network modules | 4 x 40/100/200 Gigabit Ethernet Quad SFP28 (QSFP28) network modules | 2 x 100G Gigabit Ethernet QSFP SFP28 network modules | 2 x 400G Gigabit Ethernet QSFP DD network modules | 6-port 10Gbps SR Fiber FTW (fail to wire) Network Module | 6-port 10Gbps LR Fiber FTW (fail to wire) Network Module | 6-port 25Gbps LR Fiber FTW (fail to wire) Network Module | 6-port 25Gbps SR Fiber FTW (fail to wire) Network Module",
+    "interfaces_max": "Up to 24 x 10 Gigabit Ethernet (SFP+) interfaces; up to 8 x 25 Gigabit Ethernet (SFP28) interfaces with 2 network modules; up to 8 x 40 Gigabit Ethernet (QSFP+) interfaces with 2 network modules; up to 24 x 1 Gigabit Ethernet ports (SFP) with 2 network modules and fixed ports; up to 8 x 100 Gigabit Ethernet (QSFP28) interfaces with 2 network modules; up to 4 x 400 Gigabit Ethernet (QSFPDD) interfaces with 2 network modules | Note: The above port counts do not factor in the breakout capability supported by different interfaces",
+    "management_ports": "2 x 1/10/25 Gigabit Ethernet ports (SFP28)",
+    "storage": "1.8 TB x 2",
+    "power_supply": "Dual: | 1900W for 220 AC, 1200W for 110 AC",
+    "power_redundancy": "1+1",
+    "cooling": "3 Dual fan modules (FRU). Each module has two fans",
+    "noise": "Sound Pressure: <=78 dBA (typical), <= 84 dBA (maximum) | Sound Power: <=87 dB (typical), <=92 dB (maximum)",
+    "fields": {
+      "dimensions": {
+        "raw": "1.73 x 16.89 x 32.0 inches (4.39 x 42.9 x 81.28 cm)",
+        "label": "Dimensions (H x W x D)",
+        "table": "Table 3",
+        "notes": []
+      },
+      "form_factor": {
+        "raw": "1RU",
+        "label": "Form factor (rack units)",
+        "table": "Table 3",
+        "notes": []
+      },
+      "interfaces": {
+        "raw": "8x 1/10/25 Gigabit Ethernet ports (SFP28)",
+        "label": "Fixed Ports",
+        "table": "Table 3",
+        "notes": []
+      },
+      "management_ports": {
+        "raw": "2 x 1/10/25 Gigabit Ethernet ports (SFP28)",
+        "label": "Integrated Network Management Ports",
+        "table": "Table 3",
+        "notes": []
+      },
+      "network_modules": {
+        "raw": "8-port 1Gbps copper, FTW (fail to wire) Network Module | Ports that are not configured as FTW can be used as regular 1 Gb copper ports | 8 x 1/10 Gigabit Ethernet Small Form-Factor Pluggable (SFP+) network modules | 8 x 1/10/25 Gigabit Ethernet Small Form-Factor Pluggable (SFP28) network modules | 4 x 40 Gigabit Ethernet Quad SFP+ network modules | 4 x 40/100/200 Gigabit Ethernet Quad SFP28 (QSFP28) network modules | 2 x 100G Gigabit Ethernet QSFP SFP28 network modules | 2 x 400G Gigabit Ethernet QSFP DD network modules | 6-port 10Gbps SR Fiber FTW (fail to wire) Network Module | 6-port 10Gbps LR Fiber FTW (fail to wire) Network Module | 6-port 25Gbps LR Fiber FTW (fail to wire) Network Module | 6-port 25Gbps SR Fiber FTW (fail to wire) Network Module",
+        "label": "Network modules",
+        "table": "Table 3",
+        "notes": []
+      },
+      "interfaces_max": {
+        "raw": "Up to 24 x 10 Gigabit Ethernet (SFP+) interfaces; up to 8 x 25 Gigabit Ethernet (SFP28) interfaces with 2 network modules; up to 8 x 40 Gigabit Ethernet (QSFP+) interfaces with 2 network modules; up to 24 x 1 Gigabit Ethernet ports (SFP) with 2 network modules and fixed ports; up to 8 x 100 Gigabit Ethernet (QSFP28) interfaces with 2 network modules; up to 4 x 400 Gigabit Ethernet (QSFPDD) interfaces with 2 network modules | Note: The above port counts do not factor in the breakout capability supported by different interfaces",
+        "label": "Maximum number of interfaces",
+        "table": "Table 3",
+        "notes": []
+      },
+      "console": {
+        "raw": "1 x RJ-45 console",
+        "label": "Serial port",
+        "table": "Table 3",
+        "notes": []
+      },
+      "usb": {
+        "raw": "1 x USB 2.0",
+        "label": "USB",
+        "table": "Table 3",
+        "notes": []
+      },
+      "storage": {
+        "raw": "1.8 TB x 2",
+        "label": "Storage",
+        "table": "Table 3",
+        "notes": []
+      },
+      "power_supply": {
+        "raw": "Dual: | 1900W for 220 AC, 1200W for 110 AC",
+        "label": "Power supplies / Configuration",
+        "table": "Table 3",
+        "notes": []
+      },
+      "power_max": {
+        "raw": "870W",
+        "label": "Power supplies / AC maximum Input power",
+        "table": "Table 3",
+        "notes": []
+      },
+      "power_redundancy": {
+        "raw": "1+1",
+        "label": "Power supplies / Redundancy",
+        "table": "Table 3",
+        "notes": []
+      },
+      "cooling": {
+        "raw": "3 Dual fan modules (FRU). Each module has two fans",
+        "label": "Fans",
+        "table": "Table 3",
+        "notes": []
+      },
+      "noise": {
+        "raw": "Sound Pressure: <=78 dBA (typical), <= 84 dBA (maximum) | Sound Power: <=87 dB (typical), <=92 dB (maximum)",
+        "label": "Noise",
+        "table": "Table 3",
+        "notes": []
+      },
+      "rack_mount": {
+        "raw": "Yes, mount rails included (4-post EIA-310-D rack)",
+        "label": "Rack mountable",
+        "table": "Table 3",
+        "notes": []
+      },
+      "weight": {
+        "raw": "4215: 43 lbs (19.5 kgs): 2 x power supplies, 2 x NMs, 3 x fan-modules; 33 lbs (15 kgs): no power supplies, no NMs, no fans | 4225: 43 lbs (19.5 kgs): 2 x power supplies, 2 x NMs, 3 x fan-modules; 33 lbs (15 kgs): no power supplies, no NMs, no fans | 4245: 46 lbs (20.8 kgs): 2 x power supplies, 2 x NMs, 3 x fan-modules; 36 lbs (16.3 kgs): no power supplies, no NMs, no fans",
+        "label": "Weight",
+        "table": "Table 3",
+        "notes": []
+      },
+      "operating_temp": {
+        "raw": "32 to 104°F | (0 to 40°C)",
+        "label": "Temperature: operating",
+        "table": "Table 3",
+        "notes": [
+          "Source table columns disagree for this model; majority value used."
+        ]
+      }
+    },
+    "raw": {
+      "Dimensions (H x W x D)": "1.73 x 16.89 x 32.0 inches (4.39 x 42.9 x 81.28 cm)",
+      "Form factor (rack units)": "1RU",
+      "Fixed Ports": "8x 1/10/25 Gigabit Ethernet ports (SFP28)",
+      "Integrated Network Management Ports": "2 x 1/10/25 Gigabit Ethernet ports (SFP28)",
+      "Network modules": "8-port 1Gbps copper, FTW (fail to wire) Network Module | Ports that are not configured as FTW can be used as regular 1 Gb copper ports | 8 x 1/10 Gigabit Ethernet Small Form-Factor Pluggable (SFP+) network modules | 8 x 1/10/25 Gigabit Ethernet Small Form-Factor Pluggable (SFP28) network modules | 4 x 40 Gigabit Ethernet Quad SFP+ network modules | 4 x 40/100/200 Gigabit Ethernet Quad SFP28 (QSFP28) network modules | 2 x 100G Gigabit Ethernet QSFP SFP28 network modules | 2 x 400G Gigabit Ethernet QSFP DD network modules | 6-port 10Gbps SR Fiber FTW (fail to wire) Network Module | 6-port 10Gbps LR Fiber FTW (fail to wire) Network Module | 6-port 25Gbps LR Fiber FTW (fail to wire) Network Module | 6-port 25Gbps SR Fiber FTW (fail to wire) Network Module",
+      "Maximum number of interfaces": "Up to 24 x 10 Gigabit Ethernet (SFP+) interfaces; up to 8 x 25 Gigabit Ethernet (SFP28) interfaces with 2 network modules; up to 8 x 40 Gigabit Ethernet (QSFP+) interfaces with 2 network modules; up to 24 x 1 Gigabit Ethernet ports (SFP) with 2 network modules and fixed ports; up to 8 x 100 Gigabit Ethernet (QSFP28) interfaces with 2 network modules; up to 4 x 400 Gigabit Ethernet (QSFPDD) interfaces with 2 network modules | Note: The above port counts do not factor in the breakout capability supported by different interfaces",
+      "Serial port": "1 x RJ-45 console",
+      "USB": "1 x USB 2.0",
+      "Storage": "1.8 TB x 2",
+      "Power supplies / Configuration": "Dual: | 1900W for 220 AC, 1200W for 110 AC",
+      "Power supplies / AC input voltage": "100 to 120 VAC (low line) or 200 to 240 VAC (high line)",
+      "Power supplies / AC maximum input current": "14A, @ 100VAC or @ 200VAC",
+      "Power supplies / AC maximum Input power": "870W",
+      "Power supplies / AC frequency": "50/60 Hz (nominal)",
+      "Power supplies / AC efficiency": ">90% (Platinum)",
+      "Power supplies / Redundancy": "1+1",
+      "Fans": "3 Dual fan modules (FRU). Each module has two fans",
+      "Noise": "Sound Pressure: <=78 dBA (typical), <= 84 dBA (maximum) | Sound Power: <=87 dB (typical), <=92 dB (maximum)",
+      "Rack mountable": "Yes, mount rails included (4-post EIA-310-D rack)",
+      "Weight": "4215: 43 lbs (19.5 kgs): 2 x power supplies, 2 x NMs, 3 x fan-modules; 33 lbs (15 kgs): no power supplies, no NMs, no fans | 4225: 43 lbs (19.5 kgs): 2 x power supplies, 2 x NMs, 3 x fan-modules; 33 lbs (15 kgs): no power supplies, no NMs, no fans | 4245: 46 lbs (20.8 kgs): 2 x power supplies, 2 x NMs, 3 x fan-modules; 36 lbs (16.3 kgs): no power supplies, no NMs, no fans",
+      "Temperature: operating": "32 to 104°F | (0 to 40°C)",
+      "Temperature: nonoperating": "-40 to 149°F (-40 to 65°C)",
+      "Humidity: operating": "5 to 95% noncondensing",
+      "Humidity: nonoperating": "5 to 95% noncondensing",
+      "Altitude: operating": "10,000 ft (max)",
+      "Altitude: nonoperating": "40,000 ft (max)",
+      "NEBS operation (FPR 4215 only)": "Operating altitude: 0 to 13,000 ft (3960 m) | Operating temperature: | Long term: 0 to 45°C, up to 6,000 ft (1829 m) | Long term: 0 to 35°C, 6,000 to 13,000 ft (1829 to 3964 m) | Short term: -5 to 50°C, up to 6,000 ft (1829 m)"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Table 1 1": "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys.",
+    "Table 2 1": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 2 2": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+  }
+}

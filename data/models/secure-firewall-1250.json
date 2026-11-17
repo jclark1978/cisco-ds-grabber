@@ -1,0 +1,316 @@
+{
+  "vendor": "Cisco",
+  "model": "Secure Firewall 1250",
+  "model_id": "secure-firewall-1250",
+  "family": "Secure Firewall",
+  "series": "Secure Firewall 1200",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Secure Firewall 1200 Series Data Sheet Enterprise Security Appliances",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-1200-series-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-1200-series-ds.pdf",
+    "file": "datasheets/secure-firewall-1200.html",
+    "library_last_updated": "2025-07-09",
+    "sha256": "f923a7c3f423185a335a6ea5eb1e68f41765f43ef5169994804ec5f26a404892"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd",
+    "asa"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 24000,
+        "raw": "24 Gbps",
+        "label": "Throughput: FW + AVC (1024B)",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ips_throughput_mbps": {
+        "value": 22000,
+        "raw": "22 Gbps",
+        "label": "Throughput: Next-Generation Intrusion Prevention System (NGIPS) (1024B)",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 18000,
+        "raw": "18 Gbps",
+        "label": "Throughput: FW + AVC + IPS (1024B)",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 22000,
+        "raw": "22 Gbps",
+        "label": "IPSec VPN Throughput (1024B TCP w/Fastpath)",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "tls_throughput_mbps": {
+        "value": 4100,
+        "raw": "4.1 Gbps",
+        "label": "TLS decryption",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [
+          "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys."
+        ],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 100000,
+        "raw": "100K",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "concurrent_sessions": {
+        "value": 1000000,
+        "raw": "1M",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 8",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 1500,
+        "raw": "1,500",
+        "label": "Maximum VPN Peers",
+        "table": "Table 8",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vrf_max": {
+        "value": 15,
+        "raw": "15",
+        "label": "Maximum virtual router instances (VRF)",
+        "table": "Table 8",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    },
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 20000,
+        "raw": "20 Gbps",
+        "label": "Stateful inspection firewall throughput",
+        "table": "Table 7",
+        "software": "ASA",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 20000,
+        "raw": "20 Gbps",
+        "label": "Stateful inspection firewall throughput (multiprotocol)",
+        "table": "Table 7",
+        "software": "ASA",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications such as HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+        ],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 24000,
+        "raw": "24 Gbps",
+        "label": "IPsec VPN throughput (450B UDP L2L test)",
+        "table": "Table 7",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 550000,
+        "raw": "550K",
+        "label": "New connections per second",
+        "table": "Table 7",
+        "software": "ASA",
+        "notes": []
+      },
+      "concurrent_sessions": {
+        "value": 1000000,
+        "raw": "1M",
+        "label": "Concurrent firewall connections",
+        "table": "Table 9",
+        "software": "ASA",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 1500,
+        "raw": "1,500",
+        "label": "Maximum VPN Peers",
+        "table": "Table 9",
+        "software": "ASA",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": {
+    "dimensions_mm": {
+      "h": 43.7,
+      "w": 284.9,
+      "d": 438.1
+    },
+    "rack_units": 1,
+    "desktop": false,
+    "weight_kg": 4.32,
+    "power_max_w": 88,
+    "operating_temp_c": [
+      0,
+      40
+    ],
+    "interfaces": "8x 2.5GBASE-T",
+    "transceiver_slots": "4x SFP+",
+    "management_ports": "1000BASE-T port",
+    "storage": "Field-replaceable SSD, 960GB",
+    "poe": "-",
+    "power_supply": "Single integrated power supply",
+    "cooling": "Integrated blower, front to back (port-side intake)",
+    "noise": "57.8 dBA",
+    "fields": {
+      "form_factor": {
+        "raw": "1U rack mount appliance",
+        "label": "Form factor",
+        "table": "Table 4",
+        "notes": [],
+        "shared": true
+      },
+      "console": {
+        "raw": "USB Type-C and RJ-45 (Cisco serial)",
+        "label": "Console port",
+        "table": "Table 4",
+        "notes": [],
+        "shared": true
+      },
+      "management_ports": {
+        "raw": "1000BASE-T port",
+        "label": "Management Ethernet",
+        "table": "Table 4",
+        "notes": [],
+        "shared": true
+      },
+      "usb": {
+        "raw": "USB 3 Type A port",
+        "label": "USB port",
+        "table": "Table 4",
+        "notes": [],
+        "shared": true
+      },
+      "storage": {
+        "raw": "Field-replaceable SSD, 960GB",
+        "label": "Storage",
+        "table": "Table 4",
+        "notes": [],
+        "shared": true
+      },
+      "power_supply": {
+        "raw": "Single integrated power supply",
+        "label": "Power supply",
+        "table": "Table 4",
+        "notes": [],
+        "shared": true
+      },
+      "cooling": {
+        "raw": "Integrated blower, front to back (port-side intake)",
+        "label": "Cooling",
+        "table": "Table 4",
+        "notes": [],
+        "shared": true
+      },
+      "transceiver_slots": {
+        "raw": "4x SFP+",
+        "label": "Transceiver slots",
+        "table": "Table 5",
+        "notes": []
+      },
+      "interfaces": {
+        "raw": "8x 2.5GBASE-T",
+        "label": "Integrated interfaces",
+        "table": "Table 5",
+        "notes": []
+      },
+      "poe": {
+        "raw": "-",
+        "label": "Power over Ethernet",
+        "table": "Table 5",
+        "notes": []
+      },
+      "dimensions": {
+        "raw": "1.72 x 11.22 x 17.25 inches | 4.37 x 28.49 x 43.81 cm",
+        "label": "Chassis Dimensions (HxWxD)",
+        "table": "Table 11",
+        "notes": []
+      },
+      "weight": {
+        "raw": "9.52 lb (4.32 kg)",
+        "label": "Weight",
+        "table": "Table 11",
+        "notes": []
+      },
+      "operating_temp": {
+        "raw": "32 to 104°F (0 to 40°C)",
+        "label": "Temperature: operating",
+        "table": "Table 11",
+        "notes": []
+      },
+      "noise": {
+        "raw": "57.8 dBA",
+        "label": "Acoustic noise (maximum)",
+        "table": "Table 11",
+        "notes": []
+      },
+      "power_max": {
+        "raw": "88W",
+        "label": "Power consumption, maximum",
+        "table": "Table 11",
+        "notes": []
+      }
+    },
+    "raw": {
+      "Form factor": "1U rack mount appliance",
+      "Console port": "USB Type-C and RJ-45 (Cisco serial)",
+      "Management Ethernet": "1000BASE-T port",
+      "USB port": "USB 3 Type A port",
+      "Storage": "Field-replaceable SSD, 960GB",
+      "Power supply": "Single integrated power supply",
+      "Cooling": "Integrated blower, front to back (port-side intake)",
+      "SFP+ transceiver slots": "Support for a wide range of 1Gbps and 10Gbps transceivers. For a full list, refer to the product hardware documentation and Cisco’s transceiver compatibility matrix tools.",
+      "Integrated interfaces": "8x 2.5GBASE-T",
+      "Transceiver slots": "4x SFP+",
+      "Power over Ethernet": "-",
+      "Chassis Dimensions (HxWxD)": "1.72 x 11.22 x 17.25 inches | 4.37 x 28.49 x 43.81 cm",
+      "Weight": "9.52 lb (4.32 kg)",
+      "Temperature: operating": "32 to 104°F (0 to 40°C)",
+      "Humidity: operating": "5 to 85% noncondensing",
+      "Altitude: operating": "0 to 10,000 ft (0 to 3048 m)",
+      "Acoustic noise (maximum)": "57.8 dBA",
+      "Temperature: nonoperating": "-13 to 158°F (-25 to 70°C)",
+      "Humidity: nonoperating": "5 to 95% noncondensing",
+      "Altitude: nonoperating": "0 to 15,000 ft (0 to 4572 m)",
+      "AC input voltage": "100 to 240V AC",
+      "AC input frequency": "50 to 60 Hz",
+      "AC current draw, maximum": "0.88A (100V) | 0.37A (240V)",
+      "Power consumption, maximum": "88W"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Table 6 [1]": "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys.",
+    "Table 7 [2]": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 7 [3]": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications such as HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+  }
+}

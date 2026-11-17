@@ -1,0 +1,396 @@
+{
+  "vendor": "Cisco",
+  "model": "Secure Firewall 6170",
+  "model_id": "secure-firewall-6170",
+  "family": "Secure Firewall",
+  "series": "Secure Firewall 6100",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Secure Firewall 6100 Series Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-6100-series/secure-firewall-6100-series-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-6100-series/secure-firewall-6100-series-ds.pdf",
+    "file": "datasheets/secure-firewall-6100.html",
+    "library_last_updated": "2026-10-15",
+    "sha256": "ddc50e037609810c5553bfdc1696577835465fbf881e2d1eb701a46dad2ebadd"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd",
+    "asa"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 700000,
+        "raw": "700 Gbps",
+        "label": "Throughput: Firewall + Application Visibility and Control (AVC) (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "avc_ips_throughput_mbps": {
+        "value": 600000,
+        "raw": "600 Gbps",
+        "label": "Throughput: AVC + Intrusion Prevention System (IPS) (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 600000,
+        "raw": "600 Gbps",
+        "label": "NGFW Throughput: FW + AVC + IPS (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 550000,
+        "raw": "550 Gbps",
+        "label": "IPSec VPN Throughput (1024B TCP w/Fastpath)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "tls_throughput_mbps": {
+        "value": 150000,
+        "raw": "150 Gbps",
+        "label": "TLS Decryption",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [
+          "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys."
+        ],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 120000000,
+        "raw": "120 Million",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 2700000,
+        "raw": "2.7 Million",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 60000,
+        "raw": "60 K",
+        "label": "Maximum VPN peers",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vrf_max": {
+        "value": 250,
+        "raw": "250",
+        "label": "Maximum virtual router instances (VRF)",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "high_availability": {
+        "value": "Active/Standby, Active/Active (with clustering)",
+        "raw": "Active/Standby, Active/Active (with clustering)",
+        "label": "High availability",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "instances_max": {
+        "value": null,
+        "raw": "Available in future release",
+        "label": "Instances (Multi-Instance)",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "clustering": {
+        "value": "Up to 16",
+        "raw": "Up to 16",
+        "label": "Clustering",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    },
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 750000,
+        "raw": "750 Gbps",
+        "label": "Stateful inspection firewall throughput (1500 B UDP)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 750000,
+        "raw": "750 Gbps",
+        "label": "Stateful inspection firewall throughput (HTTP 1024 Byte)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 370000,
+        "raw": "370 Gbps",
+        "label": "IPsec VPN throughput (450B UDP L2L test)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 5500000,
+        "raw": "5.5 Million",
+        "label": "New connections per second",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "concurrent_sessions": {
+        "value": 360000000,
+        "raw": "360 Million",
+        "label": "Concurrent firewall connections",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 60000,
+        "raw": "60 K",
+        "label": "Maximum VPN Peers",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "high_availability": {
+        "value": "Active/Active and Active/Standby",
+        "raw": "Active/Active and Active/Standby",
+        "label": "High availability",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "security_contexts": {
+        "value": {
+          "included": 10,
+          "max": 250
+        },
+        "raw": "Included 10, maximum 250",
+        "label": "Security contexts",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "clustering": {
+        "value": "Up to 16",
+        "raw": "Up to 16",
+        "label": "Clustering",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {
+    "ftd": {
+      "Application Visibility and Control (AVC)": "Standard, supporting more than 8100 applications, as well as geolocations, users, and websites"
+    }
+  },
+  "hardware": {
+    "dimensions_mm": {
+      "h": 88.9,
+      "w": 429.3,
+      "d": 825.5
+    },
+    "rack_units": 2,
+    "desktop": false,
+    "weight_kg": 29.94,
+    "power_max_w": 2760,
+    "power_typical_w": 2010,
+    "operating_temp_c": [
+      0,
+      40
+    ],
+    "interfaces": "12 x 1/10/25/50 Gigabit Ethernet SFP56 Ports | 4 x 40/100/200 Gigabit Ethernet QSFP56 Ports",
+    "network_modules": "Standard Ethernet Modules | 8 x 1/10 Gigabit Ethernet SFP+ Network Module | 8 x 1/10/25 Gigabit Ethernet SFP28 Network Module | 4 x 40 Gigabit Ethernet QSFP+ Network Module | 4 x 40/100/200 Gigabit Ethernet QSFP56 Network Module | 2 x 40/100 Gigabit Ethernet QSFP28 Network Module | 2 x 200/400 Gigabit Ethernet QSFP-DD Network Module | Fail-to-Wire (FTW) Modules | 8 x 1 Gigabit Ethernet RJ-45 Copper Fail-to-Wire (FTW) Network Module | 6 x 1 Gigabit Ethernet SFP SX Fail-to-Wire (FTW) Network Module | 6 x 10 Gigabit Ethernet SFP+ SR Fail-to-Wire (FTW) Network Module | 6 x 10 Gigabit Ethernet SFP+ LR Fail-to-Wire (FTW) Network Module | 6 x 25 Gigabit Ethernet SFP28 SR Fail-to-Wire (FTW) Network Module | 6 x 25 Gigabit Ethernet SFP28 LR Fail-to-Wire (FTW) Network Module | 2 x 100 Gigabit Ethernet QSFP28 SR4 Fail-to-Wire (FTW) Network Module",
+    "interfaces_max": "Interface Speed / Type | Fixed Ports | Expansion (2 Slots) | Total Maximum Ports; 1 / 10 / 25 / 50 | Gigabit (SFP56) | 12 Ports | + 16 (via 2x 8-port modules, SFP28) | 28 Ports | (50G: 12 Ports); 40 / 100 / 200 | Gigabit (QSFP56) | 4 Ports | + 8 (via 2x 4-port modules, QSFP56) | 12 Ports; 400 | Gigabit (QSFP-DD) | 0 Ports | + 4 (via 2x 2-port modules, QSFP-DD) | 4 Ports; Fail-to-Wire (FTW) | 0 Ports | + 4 to + 16 (module dependent) | 16 Ports; Management | (SFP28) | 2 Ports | N/A; Note: | 50G Support: Only the 12 Fixed SFP56 ports support native 50G speeds (Modules listed are SFP28 maxing at 25G). | FTW (Fail-to-Wire): If using Fail-to-Wire modules (6-ports each), the total 1/10/25G count would be 24 ports (12 Fixed + 12 Module). With 8-port copper FTW modules in both slots, the total 1G count is 28 ports (12 Fixed + 16 Module). | 100G FTW: With 2-port 100G QSFP28 SR4 FTW modules in both slots, the system provides 4 x 100G FTW ports, for a total 100G count of 8 ports (4 Fixed + 4 Module). The 12-port 100G maximum requires 4-port QSFP56 modules, which are not FTW.",
+    "management_ports": "2 x 1/10/25 Gigabit Ethernet SFP28 Ports",
+    "storage": "2 x 7.2 TB",
+    "poe": "N/A",
+    "power_supply": "Dual high-voltage AC/DC power supplies. | High Line AC: Up to 3000W per power supply, hot-swappable, load-sharing redundancy. | Low Line AC: Up to 1500W per power supply, load sharing with no redundancy. | Dual low-voltage DC power supplies offered. | Both Inputs Connected: Up to 3000W per power supply, hot-swappable, load-sharing redundancy. | One Input Connected: Up to 1500W per power supply, load sharing with no redundancy.",
+    "power_redundancy": "1+1 Redundancy | Redundant only with dual HVAC, HVDC, or dual-input LVDC. | LVAC and single-input DC do not support redundancy.",
+    "cooling": "4 Field Replaceable Fan module; every module has 2 fans",
+    "noise": "Sound Pressure: <=74 dBA (typical), <= 90 dBA (maximum) | Sound Power: <=81 dB (typical), <=98 dB (maximum)",
+    "fields": {
+      "form_factor": {
+        "raw": "2 RU for 19\" Rack",
+        "label": "Form factor",
+        "table": "Table 6",
+        "notes": []
+      },
+      "interfaces": {
+        "raw": "12 x 1/10/25/50 Gigabit Ethernet SFP56 Ports | 4 x 40/100/200 Gigabit Ethernet QSFP56 Ports",
+        "label": "Fixed ports",
+        "table": "Table 6",
+        "notes": []
+      },
+      "management_ports": {
+        "raw": "2 x 1/10/25 Gigabit Ethernet SFP28 Ports",
+        "label": "Management Ethernet",
+        "table": "Table 6",
+        "notes": []
+      },
+      "network_modules": {
+        "raw": "Standard Ethernet Modules | 8 x 1/10 Gigabit Ethernet SFP+ Network Module | 8 x 1/10/25 Gigabit Ethernet SFP28 Network Module | 4 x 40 Gigabit Ethernet QSFP+ Network Module | 4 x 40/100/200 Gigabit Ethernet QSFP56 Network Module | 2 x 40/100 Gigabit Ethernet QSFP28 Network Module | 2 x 200/400 Gigabit Ethernet QSFP-DD Network Module | Fail-to-Wire (FTW) Modules | 8 x 1 Gigabit Ethernet RJ-45 Copper Fail-to-Wire (FTW) Network Module | 6 x 1 Gigabit Ethernet SFP SX Fail-to-Wire (FTW) Network Module | 6 x 10 Gigabit Ethernet SFP+ SR Fail-to-Wire (FTW) Network Module | 6 x 10 Gigabit Ethernet SFP+ LR Fail-to-Wire (FTW) Network Module | 6 x 25 Gigabit Ethernet SFP28 SR Fail-to-Wire (FTW) Network Module | 6 x 25 Gigabit Ethernet SFP28 LR Fail-to-Wire (FTW) Network Module | 2 x 100 Gigabit Ethernet QSFP28 SR4 Fail-to-Wire (FTW) Network Module",
+        "label": "Network Modules",
+        "table": "Table 6",
+        "notes": []
+      },
+      "interfaces_max": {
+        "raw": "Interface Speed / Type | Fixed Ports | Expansion (2 Slots) | Total Maximum Ports; 1 / 10 / 25 / 50 | Gigabit (SFP56) | 12 Ports | + 16 (via 2x 8-port modules, SFP28) | 28 Ports | (50G: 12 Ports); 40 / 100 / 200 | Gigabit (QSFP56) | 4 Ports | + 8 (via 2x 4-port modules, QSFP56) | 12 Ports; 400 | Gigabit (QSFP-DD) | 0 Ports | + 4 (via 2x 2-port modules, QSFP-DD) | 4 Ports; Fail-to-Wire (FTW) | 0 Ports | + 4 to + 16 (module dependent) | 16 Ports; Management | (SFP28) | 2 Ports | N/A; Note: | 50G Support: Only the 12 Fixed SFP56 ports support native 50G speeds (Modules listed are SFP28 maxing at 25G). | FTW (Fail-to-Wire): If using Fail-to-Wire modules (6-ports each), the total 1/10/25G count would be 24 ports (12 Fixed + 12 Module). With 8-port copper FTW modules in both slots, the total 1G count is 28 ports (12 Fixed + 16 Module). | 100G FTW: With 2-port 100G QSFP28 SR4 FTW modules in both slots, the system provides 4 x 100G FTW ports, for a total 100G count of 8 ports (4 Fixed + 4 Module). The 12-port 100G maximum requires 4-port QSFP56 modules, which are not FTW.",
+        "label": "Maximum number of interfaces",
+        "table": "Table 6",
+        "notes": []
+      },
+      "console": {
+        "raw": "1 x RJ-45 console",
+        "label": "Console port",
+        "table": "Table 6",
+        "notes": []
+      },
+      "usb": {
+        "raw": "1 USB 3.0",
+        "label": "USB port",
+        "table": "Table 6",
+        "notes": []
+      },
+      "storage": {
+        "raw": "2 x 7.2 TB",
+        "label": "Storage",
+        "table": "Table 6",
+        "notes": []
+      },
+      "poe": {
+        "raw": "N/A",
+        "label": "Power over Ethernet",
+        "table": "Table 6",
+        "notes": []
+      },
+      "dimensions": {
+        "raw": "3.5” H x 16.9” W x 32.5” D | (8.89 cm x 42.93 cm x 82.55 cm)",
+        "label": "Chassis dimensions (HxWxD)",
+        "table": "Table 6",
+        "notes": []
+      },
+      "weight": {
+        "raw": "66lbs (29.94kg), fully loaded",
+        "label": "Weight",
+        "table": "Table 6",
+        "notes": []
+      },
+      "cooling": {
+        "raw": "4 Field Replaceable Fan module; every module has 2 fans",
+        "label": "Cooling",
+        "table": "Table 6",
+        "notes": []
+      },
+      "rack_mount": {
+        "raw": "Yes, mount rails included (4-post EIA-310-D rack)",
+        "label": "Rack mountable",
+        "table": "Table 6",
+        "notes": []
+      },
+      "power_supply": {
+        "raw": "Dual high-voltage AC/DC power supplies. | High Line AC: Up to 3000W per power supply, hot-swappable, load-sharing redundancy. | Low Line AC: Up to 1500W per power supply, load sharing with no redundancy. | Dual low-voltage DC power supplies offered. | Both Inputs Connected: Up to 3000W per power supply, hot-swappable, load-sharing redundancy. | One Input Connected: Up to 1500W per power supply, load sharing with no redundancy.",
+        "label": "Configuration",
+        "table": "Table 6",
+        "notes": []
+      },
+      "power_typical": {
+        "raw": "2010 Watts",
+        "label": "Power consumption, typical",
+        "table": "Table 6",
+        "notes": []
+      },
+      "power_max": {
+        "raw": "2760 Watts",
+        "label": "Power consumption, maximum",
+        "table": "Table 6",
+        "notes": []
+      },
+      "power_redundancy": {
+        "raw": "1+1 Redundancy | Redundant only with dual HVAC, HVDC, or dual-input LVDC. | LVAC and single-input DC do not support redundancy.",
+        "label": "Redundancy",
+        "table": "Table 6",
+        "notes": []
+      },
+      "operating_temp": {
+        "raw": "32°F to 104°F (0°C to 40°C)",
+        "label": "Temperature: operating",
+        "table": "Table 6",
+        "notes": []
+      },
+      "noise": {
+        "raw": "Sound Pressure: <=74 dBA (typical), <= 90 dBA (maximum) | Sound Power: <=81 dB (typical), <=98 dB (maximum)",
+        "label": "Acoustic noise",
+        "table": "Table 6",
+        "notes": []
+      }
+    },
+    "raw": {
+      "Form factor": "2 RU for 19\" Rack",
+      "Fixed ports": "12 x 1/10/25/50 Gigabit Ethernet SFP56 Ports | 4 x 40/100/200 Gigabit Ethernet QSFP56 Ports",
+      "Management Ethernet": "2 x 1/10/25 Gigabit Ethernet SFP28 Ports",
+      "Network Modules": "Standard Ethernet Modules | 8 x 1/10 Gigabit Ethernet SFP+ Network Module | 8 x 1/10/25 Gigabit Ethernet SFP28 Network Module | 4 x 40 Gigabit Ethernet QSFP+ Network Module | 4 x 40/100/200 Gigabit Ethernet QSFP56 Network Module | 2 x 40/100 Gigabit Ethernet QSFP28 Network Module | 2 x 200/400 Gigabit Ethernet QSFP-DD Network Module | Fail-to-Wire (FTW) Modules | 8 x 1 Gigabit Ethernet RJ-45 Copper Fail-to-Wire (FTW) Network Module | 6 x 1 Gigabit Ethernet SFP SX Fail-to-Wire (FTW) Network Module | 6 x 10 Gigabit Ethernet SFP+ SR Fail-to-Wire (FTW) Network Module | 6 x 10 Gigabit Ethernet SFP+ LR Fail-to-Wire (FTW) Network Module | 6 x 25 Gigabit Ethernet SFP28 SR Fail-to-Wire (FTW) Network Module | 6 x 25 Gigabit Ethernet SFP28 LR Fail-to-Wire (FTW) Network Module | 2 x 100 Gigabit Ethernet QSFP28 SR4 Fail-to-Wire (FTW) Network Module",
+      "Maximum number of interfaces": "Interface Speed / Type | Fixed Ports | Expansion (2 Slots) | Total Maximum Ports; 1 / 10 / 25 / 50 | Gigabit (SFP56) | 12 Ports | + 16 (via 2x 8-port modules, SFP28) | 28 Ports | (50G: 12 Ports); 40 / 100 / 200 | Gigabit (QSFP56) | 4 Ports | + 8 (via 2x 4-port modules, QSFP56) | 12 Ports; 400 | Gigabit (QSFP-DD) | 0 Ports | + 4 (via 2x 2-port modules, QSFP-DD) | 4 Ports; Fail-to-Wire (FTW) | 0 Ports | + 4 to + 16 (module dependent) | 16 Ports; Management | (SFP28) | 2 Ports | N/A; Note: | 50G Support: Only the 12 Fixed SFP56 ports support native 50G speeds (Modules listed are SFP28 maxing at 25G). | FTW (Fail-to-Wire): If using Fail-to-Wire modules (6-ports each), the total 1/10/25G count would be 24 ports (12 Fixed + 12 Module). With 8-port copper FTW modules in both slots, the total 1G count is 28 ports (12 Fixed + 16 Module). | 100G FTW: With 2-port 100G QSFP28 SR4 FTW modules in both slots, the system provides 4 x 100G FTW ports, for a total 100G count of 8 ports (4 Fixed + 4 Module). The 12-port 100G maximum requires 4-port QSFP56 modules, which are not FTW.",
+      "Console port": "1 x RJ-45 console",
+      "USB port": "1 USB 3.0",
+      "Storage": "2 x 7.2 TB",
+      "Power over Ethernet": "N/A",
+      "Transceiver support": "Refer to Cisco Secure Firewall (CSF) 6100 Hardware Installation Guide",
+      "Chassis dimensions (HxWxD)": "3.5” H x 16.9” W x 32.5” D | (8.89 cm x 42.93 cm x 82.55 cm)",
+      "Weight": "66lbs (29.94kg), fully loaded",
+      "Cooling": "4 Field Replaceable Fan module; every module has 2 fans",
+      "Rack mountable": "Yes, mount rails included (4-post EIA-310-D rack)",
+      "Configuration": "Dual high-voltage AC/DC power supplies. | High Line AC: Up to 3000W per power supply, hot-swappable, load-sharing redundancy. | Low Line AC: Up to 1500W per power supply, load sharing with no redundancy. | Dual low-voltage DC power supplies offered. | Both Inputs Connected: Up to 3000W per power supply, hot-swappable, load-sharing redundancy. | One Input Connected: Up to 1500W per power supply, load sharing with no redundancy.",
+      "AC input voltage": "100 to 120 VAC (HVAC low line) | 200 to 277 VAC (HVAC high line)",
+      "AC input frequency": "50—60 Hz",
+      "HVDC input voltage": "240 to 380 VDC",
+      "LVDC input voltage": "—48VDC to —60VDC",
+      "AC current draw, maximum": "14 Amperes | (high line AC)",
+      "System HVDC current draw, maximum": "12 Amperes",
+      "System LVDC current draw, maximum per feed": "33 Amperes",
+      "Power consumption, typical": "2010 Watts",
+      "Power consumption, maximum": "2760 Watts",
+      "Redundancy": "1+1 Redundancy | Redundant only with dual HVAC, HVDC, or dual-input LVDC. | LVAC and single-input DC do not support redundancy.",
+      "Temperature: operating": "32°F to 104°F (0°C to 40°C)",
+      "Humidity: operating": "5% to 90% (non-condensing)",
+      "Altitude: operating": "0 to 10,000 ft. | De-rate the maximum operating temperature 1°C/1K-ft. above 6000 ft.",
+      "Acoustic noise": "Sound Pressure: <=74 dBA (typical), <= 90 dBA (maximum) | Sound Power: <=81 dB (typical), <=98 dB (maximum)",
+      "Temperature: nonoperating": "–40°F to 158°F (–40°C to 70°C)",
+      "Humidity: nonoperating": "5% to 95% (non-condensing)",
+      "Altitude: nonoperating": "40,000 ft."
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Table 2 [1]": "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys.",
+    "Table 3 [2]": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+  }
+}

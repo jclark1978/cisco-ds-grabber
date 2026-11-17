@@ -1,0 +1,389 @@
+{
+  "vendor": "Cisco",
+  "model": "Firepower 9300 3x SM-56",
+  "model_id": "firepower-9300-3x-sm-56",
+  "family": "Firepower",
+  "series": "Firepower 9300",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Firepower 9300 Series Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firepower-9000-series/datasheet-c78-742471.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firepower-9000-series/datasheet-c78-742471.pdf",
+    "file": "datasheets/firepower-9300.html",
+    "library_last_updated": "2024-10-29",
+    "sha256": "765de0d06b40e28e2f9e8a364226e048bdc6ffad3630750b27facb055f48d87f"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd",
+    "asa"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 190000,
+        "raw": "190 Gbps",
+        "label": "Throughput: Firewall (FW) + Application Visibility and Control (AVC) (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 190000,
+        "raw": "190 Gbps",
+        "label": "Throughput: FW + AVC + Intrusion Prevention System (IPS (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 60000000,
+        "raw": "60 million",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 1100000,
+        "raw": "1.1M",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "tls_throughput_mbps": {
+        "value": 28000,
+        "raw": "28 Gbps",
+        "label": "TLS (Hardware Decryption)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [
+          "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys."
+        ],
+        "unit": "Mbps"
+      },
+      "ips_throughput_mbps": {
+        "value": 190000,
+        "raw": "190 Gbps",
+        "label": "Throughput: NGIPS (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 110000,
+        "raw": "110 Gbps",
+        "label": "IPSec VPN throughput (1024B TCP /Fastpath)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [
+          "In unclustered configuration."
+        ],
+        "unit": "Mbps"
+      },
+      "vpn_peers_max": {
+        "value": 60000,
+        "raw": "60,000",
+        "label": "Maximum VPN Peers",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "ha_clustering": {
+        "value": "Active/active (with clustering) and Active/standby; up to 6 modules across up to 6 different Firepower 9300 chassis.",
+        "raw": "Active/active (with clustering) and Active/standby; up to 6 modules across up to 6 different Firepower 9300 chassis.",
+        "label": "High availability and clustering",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    },
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 235000,
+        "raw": "235 Gbps",
+        "label": "Stateful inspection firewall throughput",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 172000,
+        "raw": "172 Gbps",
+        "label": "Stateful inspection firewall throughput (multiprotocol)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+        ],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 195000000,
+        "raw": "195 million",
+        "label": "Concurrent firewall connections",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "fw_latency_us": {
+        "value": 3.5,
+        "raw": "3.5",
+        "label": "Firewall latency (UDP 64B microseconds)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 4750000,
+        "raw": "4.75 million",
+        "label": "New connections per second",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "ipsec_throughput_mbps": {
+        "value": 74000,
+        "raw": "74 Gbps",
+        "label": "IPsec VPN throughput (450B UDP L2L test)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_peers_max": {
+        "value": 60000,
+        "raw": "60,000",
+        "label": "Maximum VPN Peers",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "security_contexts": {
+        "value": {
+          "included": 10,
+          "max": 250
+        },
+        "raw": "10; 250",
+        "label": "Security contexts (included; maximum)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "high_availability": {
+        "value": "Active/active and active/standby",
+        "raw": "Active/active and active/standby",
+        "label": "High availability",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "clustering": {
+        "value": "Up to 16 security modules across up to 16 different Firepower 9300 chassis",
+        "raw": "Up to 16 security modules across up to 16 different Firepower 9300 chassis",
+        "label": "Clustering",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {
+    "ftd": {
+      "Centralized management": "Centralized configuration, logging, monitoring, and reporting are performed by the Management Center or alternatively in the cloud with Cisco Defense Orchestrator",
+      "AVC": "Standard, supporting more than 4000 applications, as well as geolocations, users, and websites",
+      "AVC: OpenAppID support for custom, open-source application detectors": "Standard",
+      "Cisco Security Intelligence": "Standard, with IP, URL, and DNS threat intelligence",
+      "Cisco IPS License": "Available; can passively detect endpoints and infrastructure for threat correlation and Indicators of Compromise (IoC) intelligence",
+      "Cisco Malware Defense for Networks": "Available; enables detection, blocking, tracking, analysis, and containment of targeted and persistent malware, addressing the attack continuum both during and after attacks. Integrated threat correlation with Cisco Secure Endpoint is also optionally available",
+      "Cisco Malware Analytics (sandboxing)": "Available",
+      "URL filtering: number of categories": "More than 120",
+      "URL filtering: number of URLs categorized": "More than 280 million",
+      "Automated threat feed and IPS signature updates": "Yes: class-leading Collective Security Intelligence (CSI) from the Cisco Talos ® group ( https://www.cisco.com/c/en/us/products/security/talos.html )",
+      "Third-party and open- source ecosystem": "Open API for integrations with third-party products; Snort ® and OpenAppID community resources for new and specific threats",
+      "Cisco Trust Anchor Technologies": "Cisco Firepower 9300 Series platforms include Trust Anchor Technologies for supply chain and software image assurance."
+    },
+    "asa": {
+      "Scalability": "VPN load balancing, firewall clustering",
+      "Centralized management": "Centralized configuration, logging, monitoring, and reporting are performed by Cisco Security Manager or alternatively in the cloud with Cisco Defense Orchestrator",
+      "Adaptive Security Device Manager": "Web-based, local management for small-scale deployments"
+    }
+  },
+  "hardware": {
+    "dimensions_mm": {
+      "h": 133.0,
+      "w": 445.0,
+      "d": 813.0
+    },
+    "rack_units": 3,
+    "desktop": false,
+    "weight_kg": 47.7,
+    "operating_temp_c": [
+      0,
+      40
+    ],
+    "network_modules": "2 (within supervisor)",
+    "interfaces_max": "Up to 24 x 10 Gigabit Ethernet (SFP+) interfaces; up to 8 x 40 Gigabit Ethernet (QSFP+) interfaces with 2 network modules; up to 8 x 100 Gigabit Ethernet interfaces with two network modules; up to 24 x 1 Gigabit Ethernet ports(SFP) with network modules and fixed ports",
+    "management_ports": "1 x Gigabit Ethernet copper port (on supervisor)",
+    "storage": "Up to 4.8 TB per chassis (1.6 TB per security module in RAID-1 configuration)",
+    "power_supply": "AC power supply | -48V DC power supply | HVDC power supply; Input voltage | 200 to 240V AC | -40V to -60V DC | 240 to 380V DC; Maximum input current | 15.5A to 12.9A | 69A to 42A | <14A at 200V; Maximum output power | 2,500W; Frequency | 50 to 60 Hz | -; Efficiency (at 50% load) | 92% | 92% (at 50% load); Redundancy | 1+1",
+    "cooling": "4 hot-swappable fans",
+    "noise": "75.5 dBA at maximum fan speed",
+    "fields": {
+      "dimensions": {
+        "raw": "5.25 x 17.5 x 32 in. (13.3 x 44.5 x 81.3 cm)",
+        "label": "Dimensions (H x W x D)",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "form_factor": {
+        "raw": "3 Rack Units (3RU), fits standard 19-in. (48.3-cm) square-hole rack",
+        "label": "Form factor",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "security_modules": {
+        "raw": "3",
+        "label": "Security module slots",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "network_modules": {
+        "raw": "2 (within supervisor)",
+        "label": "Network module slots",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "supervisor": {
+        "raw": "Cisco Firepower 9000 Supervisor with 8 x 10 Gigabit Ethernet ports and 2 network module slots for I/O expansion",
+        "label": "Supervisor",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "interfaces_max": {
+        "raw": "Up to 24 x 10 Gigabit Ethernet (SFP+) interfaces; up to 8 x 40 Gigabit Ethernet (QSFP+) interfaces with 2 network modules; up to 8 x 100 Gigabit Ethernet interfaces with two network modules; up to 24 x 1 Gigabit Ethernet ports(SFP) with network modules and fixed ports",
+        "label": "Maximum number of interfaces",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "management_ports": {
+        "raw": "1 x Gigabit Ethernet copper port (on supervisor)",
+        "label": "Integrated network management ports",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "console": {
+        "raw": "1 x RJ-45 console",
+        "label": "Serial port",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "usb": {
+        "raw": "1 x USB 2.0",
+        "label": "USB",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "storage": {
+        "raw": "Up to 4.8 TB per chassis (1.6 TB per security module in RAID-1 configuration)",
+        "label": "Storage",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "power_supply": {
+        "raw": "AC power supply | -48V DC power supply | HVDC power supply; Input voltage | 200 to 240V AC | -40V to -60V DC | 240 to 380V DC; Maximum input current | 15.5A to 12.9A | 69A to 42A | <14A at 200V; Maximum output power | 2,500W; Frequency | 50 to 60 Hz | -; Efficiency (at 50% load) | 92% | 92% (at 50% load); Redundancy | 1+1",
+        "label": "Power supplies",
+        "table": "Table 3",
+        "notes": [
+          "Minimum turn-on voltage is -44V DC."
+        ],
+        "shared": true
+      },
+      "cooling": {
+        "raw": "4 hot-swappable fans",
+        "label": "Fans",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "noise": {
+        "raw": "75.5 dBA at maximum fan speed",
+        "label": "Noise",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "rack_mount": {
+        "raw": "Yes, mount rails included (4-post EIA-310-D rack)",
+        "label": "Rack mountable",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "weight": {
+        "raw": "105 lb (47.7 kg) with one security module; 135 lb (61.2 kg) fully configured",
+        "label": "Weight",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "operating_temp": {
+        "raw": "Up to 10,000 ft (3000 M): 32 to 104°F (0 to 40°C) for SM-40 module 32 to 104°F (0 to 40°C) for SM-48 module at sea level | Altitude adjustment notes: | For SM-56, maximum temp is 35°C, for every 1000 feet above sea level subtract 1°C",
+        "label": "Temperature: standard operating",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      }
+    },
+    "raw": {
+      "Dimensions (H x W x D)": "5.25 x 17.5 x 32 in. (13.3 x 44.5 x 81.3 cm)",
+      "Form factor": "3 Rack Units (3RU), fits standard 19-in. (48.3-cm) square-hole rack",
+      "Security module slots": "3",
+      "Network module slots": "2 (within supervisor)",
+      "Supervisor": "Cisco Firepower 9000 Supervisor with 8 x 10 Gigabit Ethernet ports and 2 network module slots for I/O expansion",
+      "Security modules": "Cisco Firepower 9000 Security Module 40 with 2 x SSDs in RAID-1 configuration | Cisco Firepower 9000 Security Module 48 with 2 x SSDs in RAID-1 configuration | Cisco Firepower 9000 Security Module 56 with 2 x SSDs in RAID-1 configuration",
+      "Network modules (2 module slots per chassis)": "8 x 10 Gigabit Ethernet Enhanced Small Form-Factor Pluggable (SFP+) network modules | 4 x 40 Gigabit Ethernet Quad SFP+ network modules | 2 x 100 Gigabit Ethernet Quad SFP28 network modules | 4 x 100 Gigabit Ethernet Quad SFP28 network modules | 6-port 10Gbps SR Fiber FTW (fail to wire) Network Module | 6-port 10Gbps LR Fiber FTW (fail to wire) Network Module | 2-port 40Gbps SR FTW (fail to wire) Network Module | Note: Cisco Firepower 9300 may also be deployed as a dedicated threat sensor, with fail-to-wire network modules. Please contact your Cisco representative for details.",
+      "Maximum number of interfaces": "Up to 24 x 10 Gigabit Ethernet (SFP+) interfaces; up to 8 x 40 Gigabit Ethernet (QSFP+) interfaces with 2 network modules; up to 8 x 100 Gigabit Ethernet interfaces with two network modules; up to 24 x 1 Gigabit Ethernet ports(SFP) with network modules and fixed ports",
+      "Integrated network management ports": "1 x Gigabit Ethernet copper port (on supervisor)",
+      "Serial port": "1 x RJ-45 console",
+      "USB": "1 x USB 2.0",
+      "Storage": "Up to 4.8 TB per chassis (1.6 TB per security module in RAID-1 configuration)",
+      "Power supplies": "AC power supply | -48V DC power supply | HVDC power supply; Input voltage | 200 to 240V AC | -40V to -60V DC | 240 to 380V DC; Maximum input current | 15.5A to 12.9A | 69A to 42A | <14A at 200V; Maximum output power | 2,500W; Frequency | 50 to 60 Hz | -; Efficiency (at 50% load) | 92% | 92% (at 50% load); Redundancy | 1+1",
+      "Fans": "4 hot-swappable fans",
+      "Noise": "75.5 dBA at maximum fan speed",
+      "Rack mountable": "Yes, mount rails included (4-post EIA-310-D rack)",
+      "Weight": "105 lb (47.7 kg) with one security module; 135 lb (61.2 kg) fully configured",
+      "Temperature: standard operating": "Up to 10,000 ft (3000 M): 32 to 104°F (0 to 40°C) for SM-40 module 32 to 104°F (0 to 40°C) for SM-48 module at sea level | Altitude adjustment notes: | For SM-56, maximum temp is 35°C, for every 1000 feet above sea level subtract 1°C",
+      "Temperature: NEBS operating": "Long term: 0 to 45°C, up to 6,000 ft (1829 m) Long term: 0 to 35°C, 6,000 to 13,000 ft (1829-3964 m) Short term: -5 to 55°C, up to 6,000 ft (1829 m) | Note: Firepower 9300 NEBS compliance applies only to SM-40 and SM-48 configurations.",
+      "Temperature: nonoperating": "-40 to 149°F (-40 to 65°C); maximum altitude is 40,000 ft",
+      "Humidity: operating": "5 to 95% noncondensing",
+      "Humidity: nonoperating": "5 to 95% noncondensing",
+      "Altitude: operating": "SM-40, SM-48: 0 to 13,000 ft (3962 m) | SM-56: 0 to 10,000 ft (3048 m); please see above Operating Temperature section for temperature adjustment notes",
+      "Altitude: nonoperating": "40,000 ft (12,192 m)"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Table 1 2": "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys.",
+    "Table 2 1": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 2 2": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+  },
+  "note": "Chassis with three SM-56 security modules"
+}

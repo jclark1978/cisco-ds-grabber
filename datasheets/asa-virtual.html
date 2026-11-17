@@ -1,0 +1,1217 @@
+<!-- Cisco Secure Firewall ASA Virtual (ASAv) Data Sheet | https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.html | Updated 2024-10-25 -->
+<div id="eot-doc-wrapper">
+
+<code>
+<link href="wemdcmt.css"/>
+<link href="/etc/designs/cdc/transformation/wemdcmt.css"/></code>
+<div class="WordSection1">
+<p class="pBody"> </p>
+<p class="pIntroCMT">Today, organizations rely on a mixture of physical and virtual control points to meet their network security needs. They need the flexibility to deploy different physical and virtual firewalls across a wide range of environments while still maintaining consistent policy across branch offices, corporate data centers, and all points between. From data center consolidation to office relocations, mergers and acquisitions, as well as seasonal peaks in demand on your applications, Cisco’s virtual firewall portfolio helps businesses simplify security management with the convenience of unified policy and the flexibility to deploy everywhere.</p>
+<p class="pBody">Cisco<span class="Superscript"><sup class="cSuperscript">®</sup></span> Secure Firewall ASA Virtual (formerly ASAv) gives you the flexibility to choose the performance you need for your organization. Secure Firewall ASA Virtual is the virtualized option of our popular Secure Firewall ASA solution and offers security in traditional physical data centers and private and public clouds. Its scalable VPN capability provides secure access to your organization’s resources—and protects workloads against increasingly complex threats with world-class security controls.</p>
+<p class="pToC_Subhead1"><a name="_Toc180429660">Product overview</a></p>
+<p class="pBody">Secure Firewall ASA Virtual is a firewall with powerful VPN capabilities. It supports site-to-site VPN, remote- access VPN, and clientless VPN functionalities. Consistent policy simplifies management across your virtual and physical Secure Firewall ASA solutions. Cisco Smart Software Licensing makes it easy to deploy, manage, and track virtual instances of the appliance running in your private cloud or in a public cloud.</p>
+<p class="pBody"></p>
+<div class="pDefault">
+     Figure 1. 
+    <span>          </span>  
+   </div>
+<p class="FigureCaptionText">Cisco Secure Firewall ASA Virtual deployed into the public or private cloud</p>
+<p class="pToC_Subhead1"><a name="_Toc180429661">Benefits</a></p>
+<p class="pSubhead2CMT">VPN head-end</p>
+<p class="pBody">Cisco AnyConnect<span class="Superscript"><sup class="cSuperscript">®</sup></span> client empowers employees to work from home (or anywhere) on any device at any time, securely. Give any user highly secure access to your enterprise network and provide visibility and control to your IT and security teams to identify who and which devices are accessing the infrastructure. Alleviate strain on your IT and security teams as they support offsite workers and personal devices. Secure Firewall ASA Virtual supports site-to-site VPN for connecting your data centers.</p>
+<p class="pSubhead2CMT">License portability across clouds</p>
+<p class="pBody">Deploy Secure Firewall ASA Virtual everywhere—from your data center to your branch office, to a public cloud— with the portability of one license across public or private clouds (VMware, KVM and Hyper-V, OpenStack, Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), Oracle Cloud Infrastructure (OCI) and government clouds). Expand, contract, and relocate workloads over time spanning private and public cloud infrastructures with one license.</p>
+<p class="pSubhead2CMT">Low-touch deployment</p>
+<p class="pBody">Rapidly deploy additional Secure Firewall ASA Virtual appliances to support unplanned or seasonal surges on your applications or VPN. Add more bandwidth or protection for remote offices by spinning up a new virtual machine. Choose from higher-performance model options if you need more protection.</p>
+<p class="pToC_Subhead1"><a name="_Toc180429662">Smart Software Licensing</a></p>
+<p class="pBody">Cisco Smart Software Licensing makes it easier to buy, deploy, track, and renew Cisco licenses. You will enjoy:</p>
+<p class="pBulletCMT"><span>●<span>      </span></span>Simpler purchase and activation of the virtual appliance</p>
+<p class="pBulletCMT"><span>●<span>      </span></span>Easier license management and reporting of virtual appliances due to license pooling</p>
+<p class="pBulletCMT"><span>●<span>      </span></span>Automatic license activation when the virtual appliance is provisioned</p>
+<p class="pBody">Customers, select partners, and Cisco can view product entitlements and services in the Cisco Smart Software Manager. Configuration and activation are done with a single token. Secure Firewall ASA Virtual will self- register with a Cisco server in the cloud, eliminating the need to register products with Product Activation Keys (PAKs). Instead of using PAKs or license files, Smart Software Licensing establishes a pool of software licenses or entitlements that can be used across your organization. When a virtual appliance is instantiated on a customer’s premises, an entitlement is subtracted from the pool. When a virtual appliance is decommissioned, or when it is deinstantiated within the Smart Software Manager, an entitlement is added to the pool.</p>
+<p class="pBody">With the Smart Software Manager, you can manage license deployments throughout your organization easily and quickly. You can also manage multiple products from Cisco that support Smart Software Licensing.</p>
+<p class="pBody">Secure Firewall ASA Virtual uses Smart Software Licensing exclusively. Older forms of licensing are not supported.</p>
+<p class="pBody">Any Secure Firewall ASA Virtual license can be used on any supported ASAv vCPU/memory configuration. This allows customers to run on a wide variety of VM resource footprints. This also increases the number of supported AWS, Azure, GCP and OCI instance types. When configuring the Secure Firewall ASA Virtual VM, the maximum supported number of vCPUs is 16 and the maximum supported memory is 128GB RAM.</p>
+<p class="pTableCaptionCMT"><b>Table 1.<span>        </span></b>Specifications for 9.20 and later- ESXi/KVM/OpenStack</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Feature</span></p> </td>
+<td colspan="6"> <p class="Cellhead1"><span> </span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>License Type</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAv5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAv10)</span></p> </td>
+<td> <p class="Cellhead1"><span>2G (ASAv30)</span></p> </td>
+<td> <p class="Cellhead1"><span>10G (ASAv50)</span></p> </td>
+<td> <p class="Cellhead1"><span>20G (ASAv100)</span></p> </td>
+<td> <p class="Cellhead1"><span>ASAv-U 9.22+ KVM and ESXi</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection throughput (maximum)</b><a href="#_ftn1" name="_ftnref1"><span class="Superscript"><sup class="cSuperscript">[1]</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100<span> </span><span>Mbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">1<span> </span><span>Gbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">2<span> </span><span>Gbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">10<span> </span><span>Gbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">20 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">90<span> </span><span>Gbps</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection throughput (multiprotocol)</b><a href="#_ftn2" name="_ftnref2"><span class="Superscript"><sup class="cSuperscript">[2]</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100<span> </span><span>Mbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">1<span> </span><span>Gbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">2<span> </span><span>Gbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">10<span> </span><span>Gbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">20 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">60<span> </span><span>Gbps</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN throughput (AES 450B UDP test)</b><a href="#_ftn3" name="_ftnref3"><span class="Superscript"><sup class="cSuperscript">[3]</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100<span> </span><span>Mbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2<span> </span><span>Gbps</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>6 </span><span>Gbps</span></p> </td>
+<td> <p class="pChart_bodyCMT">12 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">30<span> </span><span>Gbps</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Connections per second</b></p> </td>
+<td> <p class="pChart_bodyCMT"><span>12,500</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>40,000</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>160,000</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>270,000</span></p> </td>
+<td> <p class="pChart_bodyCMT">600,000</p> </td>
+<td> <p class="pChart_bodyCMT"><span>1,000,000</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Concurrent sessions</b></p> </td>
+<td> <p class="pChart_bodyCMT"><span>50,000</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>100,000</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>500,000</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>2,000,000</span></p> </td>
+<td> <p class="pChart_bodyCMT">4,000,000</p> </td>
+<td> <p class="pChart_bodyCMT"><span>8,000,000</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>VLANs</b></p> </td>
+<td> <p class="pChart_bodyCMT"><span>25</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>50</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>200</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>1024</span></p> </td>
+<td> <p class="pChart_bodyCMT">1024</p> </td>
+<td> <p class="pChart_bodyCMT"><span>1024</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Bridge groups</b></p> </td>
+<td> <p class="pChart_bodyCMT"><span>12</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>25</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>100</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>250</span></p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT"><span>250</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT"><span>50</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>250</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>750</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>10,000</span></p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+<td> <p class="pChart_bodyCMT"><span>30,000</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco AnyConnect or clientless VPN user sessions</b></p> </td>
+<td> <p class="pChart_bodyCMT"><span>50</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>250</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>750</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>10,000</span></p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+<td> <p class="pChart_bodyCMT"><span>30,000</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Virtual CPU core allocation</b><a href="#_ftn4" name="_ftnref4"><span class="Superscript"><sup class="cSuperscript">[4]</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">1</p> </td>
+<td> <p class="pChart_bodyCMT">1</p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT"><span>16+</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Memory allocation</b><a href="#F"><b><sup><span>4</span></sup></b></a></p> </td>
+<td> <p class="pChart_bodyCMT"><span>2GB</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>2GB</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>8GB</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>16GB</span></p> </td>
+<td> <p class="pChart_bodyCMT">32GB</p> </td>
+<td> <p class="pChart_bodyCMT"><span>32+GB</span></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Disk storage</b><a href="#_ftn5" name="_ftnref5"><span class="Superscript"><sup class="cSuperscript">[5]</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT"><span>8GB</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>8GB</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>8GB</span></p> </td>
+<td> <p class="pChart_bodyCMT"><span>8GB</span></p> </td>
+<td> <p class="pChart_bodyCMT">8GB</p> </td>
+<td> <p class="pChart_bodyCMT"><span>8GB</span></p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pNoteCMT"><b><span>Note:  <span>    </span></span></b>This data is from testing on the Cisco Unified Computing System<span class="Superscript"><sup class="cSuperscript">s</sup></span> (Cisco UCS<span class="Superscript"><sup class="cSuperscript">®</sup></span>) C series M5 server with the Intel<span class="Superscript"><sup class="cSuperscript">®</sup></span> Xeon<span class="Superscript"><sup class="cSuperscript">®</sup></span> Gold 6254 processors running SR-IOV on Intel X520/X710. Stated virtual CPU core allocation assumes dedicated physical cores with Hyper Threading disabled. Each performance number above was obtained while running only the associated test. For ASAv Unlimited – data is from testing on Cisco UCS M7 with Intel<span class="Superscript"><sup class="cSuperscript">®</sup></span> Xeon<span class="Superscript"><sup class="cSuperscript">®</sup></span> Platinum 8558P processors and SR-IOV on Intel E810.</p>
+<p class="pTableCaptionCMT"><b>Table 2.<span>        </span></b>Specifications for 9.20 and later- AWS</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="6"> <p class="Cellhead1"><span>AWS Performance</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>License Type</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAv5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAv10)</span></p> </td>
+<td> <p class="Cellhead1"><span>2G (ASAv30)</span></p> </td>
+<td> <p class="Cellhead1"><span>10G (ASAv50)</span></p> </td>
+<td> <p class="Cellhead1"><span>20G (ASAv100)</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>AWS Instance Type</span></p> </td>
+<td> <p class="Cellhead1"><span>c5n.large</span></p> </td>
+<td> <p class="Cellhead1"><span>c5n.large</span></p> </td>
+<td> <p class="Cellhead1"><span>c5n.xlarge</span></p> </td>
+<td> <p class="Cellhead1"><span>c5n.2xlarge</span></p> </td>
+<td> <p class="Cellhead1"><span>c5n.4xlarge</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Stateful inspection throughput (maximum)</span></b><a href="#S"><sup><span>6</span></sup></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">20 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Stateful inspection throughput (multiprotocol)</span></b><a href="#Se"><sup><span>7</span></sup></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>IPsec VPN throughput (AES 450B UDP test)</span></b><a href="#Ei"><span class="Superscript"><sup class="cSuperscript">8</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Connections per second</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">12,500</p> </td>
+<td> <p class="pChart_bodyCMT">60,000</p> </td>
+<td> <p class="pChart_bodyCMT">80,000</p> </td>
+<td> <p class="pChart_bodyCMT">120,000</p> </td>
+<td> <p class="pChart_bodyCMT">200,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Concurrent sessions</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">50,000</p> </td>
+<td> <p class="pChart_bodyCMT">100,000</p> </td>
+<td> <p class="pChart_bodyCMT">500,000</p> </td>
+<td> <p class="pChart_bodyCMT">2,000,000</p> </td>
+<td> <p class="pChart_bodyCMT">4,000,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>IPsec VPN peers</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Cisco AnyConnect or clientless VPN user sessions</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 3.<span>        </span></b>Specifications for 9.20 and later- Azure</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="6"> <p class="Cellhead1"><span>Azure Performance<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>License Type</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAv5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAv10)</span></p> </td>
+<td> <p class="Cellhead1"><span>2G (ASAv30)</span></p> </td>
+<td> <p class="Cellhead1"><span>10G (ASAv50)</span></p> </td>
+<td> <p class="Cellhead1"><span>20G (ASAv100)</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>Azure VM Type</span></p> </td>
+<td> <p class="Cellhead1"><span>D3_v2</span></p> </td>
+<td> <p class="Cellhead1"><span>D3_v2</span></p> </td>
+<td> <p class="Cellhead1"><span>D3_v2</span></p> </td>
+<td> <p class="Cellhead1"><span>D4_v2</span></p> </td>
+<td> <p class="Cellhead1"><span>D5_v2</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection throughput (maximum)</b><a href="#S"><sup><span>6</span></sup></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">5.5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">11 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection throughput (multiprotocol)</b><a href="#Se"><sup><span>7</span></sup></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.6 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">6 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN throughput (AES 450B UDP test)</b><a href="#_bookmark5"><span class="Superscript"><sup class="cSuperscript">8</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Connections per second</b></p> </td>
+<td> <p class="pChart_bodyCMT">4,000</p> </td>
+<td> <p class="pChart_bodyCMT">4,000</p> </td>
+<td> <p class="pChart_bodyCMT">4,000</p> </td>
+<td> <p class="pChart_bodyCMT">8,000</p> </td>
+<td> <p class="pChart_bodyCMT">14,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Concurrent sessions</b></p> </td>
+<td> <p class="pChart_bodyCMT">50,000</p> </td>
+<td> <p class="pChart_bodyCMT">100,000</p> </td>
+<td> <p class="pChart_bodyCMT">500,000</p> </td>
+<td> <p class="pChart_bodyCMT">2,000,000</p> </td>
+<td> <p class="pChart_bodyCMT">4,000,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco AnyConnect or clientless VPN user sessions</b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> - Measured on instances with Accelerated Networking (AN) enable 
+   </div>
+<p class="pTableCaptionCMT"><b>Table 4.<span>        </span></b>Specifications for 9.20 and later- GCP</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="6"> <p class="Cellhead1"><span>GCP Performance</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>License Type</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAv5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAv10)</span></p> </td>
+<td> <p class="Cellhead1"><span>2G (ASAv30)</span></p> </td>
+<td> <p class="Cellhead1"><span>10G (ASAv50)</span></p> </td>
+<td> <p class="Cellhead1"><span>20G (ASAv100)</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>GCP Machine Type</span></p> </td>
+<td> <p class="Cellhead1"><span>c2-standard-4</span></p> </td>
+<td> <p class="Cellhead1"><span>c2-standard-4</span></p> </td>
+<td> <p class="Cellhead1"><span>c2-standard-4</span></p> </td>
+<td> <p class="Cellhead1"><span>c2-standard-8</span></p> </td>
+<td> <p class="Cellhead1"><span>c2-standard-16</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection throughput (maximum)</b><a href="#S"><b><sup>6</sup></b></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7.6 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">16 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection throughput (multiprotocol)</b><a href="#Se"><span class="Superscript"><sup class="cSuperscript">7</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">6 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN throughput (AES 450B UDP test)</b><a href="#Ei"><span class="Superscript"><sup class="cSuperscript">8</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">9.5 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Connections per second</b></p> </td>
+<td> <p class="pChart_bodyCMT">12,500</p> </td>
+<td> <p class="pChart_bodyCMT">48,000</p> </td>
+<td> <p class="pChart_bodyCMT">48,000</p> </td>
+<td> <p class="pChart_bodyCMT">82,000</p> </td>
+<td> <p class="pChart_bodyCMT">160,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Concurrent sessions</b></p> </td>
+<td> <p class="pChart_bodyCMT">50,000</p> </td>
+<td> <p class="pChart_bodyCMT">100,000</p> </td>
+<td> <p class="pChart_bodyCMT">500,000</p> </td>
+<td> <p class="pChart_bodyCMT">2,000,000</p> </td>
+<td> <p class="pChart_bodyCMT">4,000,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco AnyConnect or clientless VPN user sessions</b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 5.<span>        </span></b>Specifications for 9.20 and later- OCI</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="6"> <p class="Cellhead1"><span>OCI Performance<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>License Type</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAv5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAv10)</span></p> </td>
+<td> <p class="Cellhead1"><span>2G (ASAv30)</span></p> </td>
+<td> <p class="Cellhead1"><span>10G (ASAv50)</span></p> </td>
+<td> <p class="Cellhead1"><span>20G (ASAv100)</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>OCI Shape Type</span></p> </td>
+<td> <p class="Cellhead1"><span>VM.Standard3.4</span></p> </td>
+<td> <p class="Cellhead1"><span>VM.Standard3.4</span></p> </td>
+<td> <p class="Cellhead1"><span>VM.Standard3.4</span></p> </td>
+<td> <p class="Cellhead1"><span>VM.Standard3.8</span></p> </td>
+<td> <p class="Cellhead1"><span>VM.Standard3.8</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection throughput (maximum)</b><a href="#_ftn6" name="_ftnref6"><span class="Superscript"><sup class="cSuperscript">[6]</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection throughput (multiprotocol)</b><a href="#_ftn7" name="_ftnref7"><span class="Superscript"><sup class="cSuperscript">[7]</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN throughput (AES 450B UDP test)</b><a href="#_ftn8" name="_ftnref8"><span class="Superscript"><sup class="cSuperscript">[8]</sup></span></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7.5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">7.5 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Connections per second</b></p> </td>
+<td> <p class="pChart_bodyCMT">12,500</p> </td>
+<td> <p class="pChart_bodyCMT">120,000</p> </td>
+<td> <p class="pChart_bodyCMT">250,000</p> </td>
+<td> <p class="pChart_bodyCMT">450,000</p> </td>
+<td> <p class="pChart_bodyCMT">450,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Concurrent sessions</b></p> </td>
+<td> <p class="pChart_bodyCMT">50,000</p> </td>
+<td> <p class="pChart_bodyCMT">100,000</p> </td>
+<td> <p class="pChart_bodyCMT">500,000</p> </td>
+<td> <p class="pChart_bodyCMT">2,000,000</p> </td>
+<td> <p class="pChart_bodyCMT">4,000,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco AnyConnect or clientless VPN user sessions</b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> Measured with SR-IOV interfaces. 
+   </div>
+<p class="pTableCaptionCMT"><b>Table 6.<span>        </span></b>ASAc on Catalyst 9300 App Hosting performance numbers</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="5"> <p class="Cellhead1"><span>ASAc on Catalyst 9K Performance<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>License Type</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAc5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAc10)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAc10)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAc10)</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>Catalyst Switch Model and ASAc vCPU/Mem</span></p> </td>
+<td> <p class="Cellhead1"><span>9300 1vCPU/2GB</span></p> </td>
+<td> <p class="Cellhead1"><span>9300 2vCPU/2GB</span></p> </td>
+<td> <p class="Cellhead1"><span>9300X 2vCPU/4GB</span></p> </td>
+<td> <p class="Cellhead1"><span>9300X 4vCPU/8GB</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Stateful inspection throughput (maximum)</span></b><a href="#S"><b><sup><span>6</span></sup></b></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Throughput: FW (450B)</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">500 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT"> 700 Mbps</p> <p class="pChart_bodyCMT"> </p> </td>
+<td> <p class="pChart_bodyCMT"> 900 Mbps</p> <p class="pChart_bodyCMT"> </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>IPsec VPN throughput (AES 450B UDP test)</span></b><a href="#Ei"><sup><span>8</span></sup></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">250 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">450 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">600 Mbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Connections per second</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">1400</p> </td>
+<td> <p class="pChart_bodyCMT">6000</p> </td>
+<td> <p class="pChart_bodyCMT">8000</p> </td>
+<td> <p class="pChart_bodyCMT">8000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Concurrent sessions</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">50,000</p> </td>
+<td> <p class="pChart_bodyCMT">100,000</p> </td>
+<td> <p class="pChart_bodyCMT">100,000</p> </td>
+<td> <p class="pChart_bodyCMT">100,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>IPsec VPN peers</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> Perf numbers may be impacted when multiple applications (eg: Thousand Eyes and others) are running on the Catalyst 9300 series switches App Hosting at the same time depending on available compute resources. 
+   </div>
+<p class="pTableCaptionCMT"><b>Table 7.<span>        </span></b>Standalone ASAc on K8s and Docker</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="3"> <p class="Cellhead1"><span>Standalone ASAc</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>License Type</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAc5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAc10)</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>ASAc vCPU/Mem</span></p> </td>
+<td> <p class="Cellhead1"><span>1vCPU/2GB</span></p> </td>
+<td> <p class="Cellhead1"><span>1vCPU/2B</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Stateful inspection throughput (maximum)</span></b><a href="#S"><b><sup><span>6</span></sup></b></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">1 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Throughput: FW (450B)</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">500 Mbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>IPsec VPN throughput (AES 450B UDP test)</span></b><a href="#Ei"><b><sup><span>8</span></sup></b></a></p> </td>
+<td> <p class="pChart_bodyCMT">100 Mbps</p> </td>
+<td> <p class="pChart_bodyCMT">250 Mbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Connections per second</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">1400</p> </td>
+<td> <p class="pChart_bodyCMT">6000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Concurrent sessions</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">50,000</p> </td>
+<td> <p class="pChart_bodyCMT">100,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>VLANs</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">25</p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Bridge groups</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">12</p> </td>
+<td> <p class="pChart_bodyCMT">25</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>IPsec VPN peers</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Cisco AnyConnect or clientless VPN user sessions</span></b></p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Virtual CPU core allocation</span></b><a href="#F"><b><sup><span>4</span></sup></b></a></p> </td>
+<td> <p class="pChart_bodyCMT">1</p> </td>
+<td> <p class="pChart_bodyCMT">1</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b><span>Memory allocation</span></b><a href="#F"><b><sup><span>4</span></sup></b></a></p> </td>
+<td> <p class="pChart_bodyCMT">2GB</p> </td>
+<td> <p class="pChart_bodyCMT">2GB</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 8.<span>        </span></b>Secure Firewall ASA Virtual models and appropriate public cloud instance types</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Standard tier</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAv5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAv10)<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+<td> <p class="Cellhead1"><span>2G (ASAv30)<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+<td> <p class="Cellhead1"><span>10G (ASAv50)<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+<td> <p class="Cellhead1"><span>20G (ASAv100)<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+<td> <p class="Cellhead1"><span>Comments</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Appropriate AWS instance types</b></p> </td>
+<td> <p class="pChart_bodyCMT">c5.large</p> <p class="pChart_bodyCMT">c4.large</p> <p class="pChart_bodyCMT">c3.large</p> <p class="pChart_bodyCMT">m4.large </p> </td>
+<td> <p class="pChart_bodyCMT">c5.large</p> <p class="pChart_bodyCMT">c4.large</p> <p class="pChart_bodyCMT">c3.large</p> <p class="pChart_bodyCMT">m4.large </p> </td>
+<td> <p class="pChart_bodyCMT"><span>c5.xlarge </span></p> <p class="pChart_bodyCMT"><span>c3.xlarge</span></p> <p class="pChart_bodyCMT"><span>m4.xlarge </span></p> <p class="pChart_bodyCMT">c4.xlarge</p> </td>
+<td> <p class="pChart_bodyCMT"><span>c5.2xlarge</span></p> <p class="pChart_bodyCMT"><span>c4.2xlarge</span></p> <p class="pChart_bodyCMT"><span>c3.2xlarge</span></p> <p class="pChart_bodyCMT">m4.2xlarge </p> </td>
+<td> <p class="pChart_bodyCMT">c5.4xlarge</p> <p class="pChart_bodyCMT">c5n.4xlarge</p> </td>
+<td> <p class="pChart_bodyCMT">Smallest supported instance type is <b>large</b>, which supports maximum throughput/limits of 1G entitlement. Auto Scale is supported</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Recommended Azure VM types</b></p> </td>
+<td> <p class="pChart_bodyCMT">F4, F4s </p> <p class="pChart_bodyCMT">D3, D3_v2,</p> <p class="pChart_bodyCMT">DS3, DS3_v2</p> </td>
+<td> <p class="pChart_bodyCMT">F4, F4s </p> <p class="pChart_bodyCMT">D3, D3_v2,</p> <p class="pChart_bodyCMT">DS3, DS3_v2</p> </td>
+<td> <p class="pChart_bodyCMT">F4, F4s </p> <p class="pChart_bodyCMT">D3, D3_v2,</p> <p class="pChart_bodyCMT">DS3, DS3_v2</p> </td>
+<td> <p class="pChart_bodyCMT">F8, F8s</p> <p class="pChart_bodyCMT">D8_v3</p> <p class="pChart_bodyCMT">D4, D4_v2, DS4,</p> <p class="pChart_bodyCMT">DS4_v2</p> </td>
+<td> <p class="pChart_bodyCMT">F16, F16s</p> <p class="pChart_bodyCMT"> </p> <p class="pChart_bodyCMT">D5, D5_v2, D16_v3, DS5,</p> <p class="pChart_bodyCMT">DS5_v2</p> <p class="pChart_bodyCMT">(Version 9.15 and above only)</p> </td>
+<td> <p class="pChart_bodyCMT">Smallest supported instance size is <b>F4/F4s</b>, and supports max throughput/limits of 2G entitlement. Auto Scale is supported.</p> <p class="pChart_bodyCMT">Accelerated Networking is supported.</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Recommended GCP machine types (Version 9.15 and above only)</b></p> </td>
+<td> <p class="pChart_bodyCMT">c2-standard-4</p> </td>
+<td> <p class="pChart_bodyCMT">c2-standard-4</p> </td>
+<td> <p class="pChart_bodyCMT">c2-standard-4</p> </td>
+<td> <p class="pChart_bodyCMT">c2-standard-8</p> </td>
+<td> <p class="pChart_bodyCMT">c2-standard-16</p> </td>
+<td> <p class="pChart_bodyCMT">Smallest supported instance size is <b>c2-standard-4</b>, and supports max throughput/limits of 2G entitlement</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Recommended OCI shape types</b></p> <p class="pChart_bodyCMT"><b>(Version 9.15 and above only)</b></p> </td>
+<td> <p class="pChart_bodyCMT">VM.Standard2.4</p> </td>
+<td> <p class="pChart_bodyCMT">VM.Standard2.4</p> </td>
+<td> <p class="pChart_bodyCMT">VM.Standard2.4</p> </td>
+<td> <p class="pChart_bodyCMT">VM.Standard2.8</p> </td>
+<td> <p class="pChart_bodyCMT">VM.Standard2.8</p> </td>
+<td> <p class="pChart_bodyCMT">Smallest supported instance size is <b>VM.standard2.4</b>, and supports max throughput/limits of 2G entitlement</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> The recommended instances for higher entitlement can be used for lower entitlement as well. 
+   </div>
+<p class="pTableCaptionCMT"><b>Table 9.<span>        </span></b>Hypervisor and public cloud constraints</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Feature</span></p> </td>
+<td> <p class="Cellhead1"><span>Vmware</span></p> </td>
+<td> <p class="Cellhead1"><span>KVM</span></p> </td>
+<td> <p class="Cellhead1"><span>Hyper-V</span></p> </td>
+<td> <p class="Cellhead1"><span>AWS</span></p> </td>
+<td> <p class="Cellhead1"><span>Azure</span></p> </td>
+<td> <p class="Cellhead1"><span>GCP</span></p> </td>
+<td> <p class="Cellhead1"><span>OCI</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Hypervisor support</b></p> </td>
+<td> <p class="pChart_bodyCMT">ESXi 6.0, 6.5, 6.7, 7.0</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes <br/> (Windows Server 2012-R2)</p> </td>
+<td> <p class="pChart_bodyCMT">AWS, AWS Gov</p> <p class="pChart_bodyCMT">Marketplace, AWS China (see VM instances supported in Table 9)</p> </td>
+<td> <p class="pChart_bodyCMT">Azure, Azure Gov</p> <p class="pChart_bodyCMT">Marketplace, Azure China (see VM instances supported in Table 10)</p> </td>
+<td> <p class="pChart_bodyCMT">GCP</p> <p class="pChart_bodyCMT">(see VM instances supported in Table 11)</p> </td>
+<td> <p class="pChart_bodyCMT">OCI</p> <p class="pChart_bodyCMT">(see VM instances supported in Table 12)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High availability</b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">Stateful active/standby</p> </td>
+<td> <p class="pChart_bodyCMT"> </p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">Stateless active/standby</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+<td> <p class="pChart_bodyCMT">No</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Modes</b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">Routed and transparent</p> </td>
+<td> <p class="pChart_bodyCMT"> </p> </td>
+<td> <p class="pChart_bodyCMT">Routed only</p> </td>
+<td> <p class="pChart_bodyCMT">Routed only</p> </td>
+<td> <p class="pChart_bodyCMT">Routed only</p> </td>
+<td> <p class="pChart_bodyCMT">Routed only</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 10.<span>     </span></b>Maximum Cisco AnyConnect user sessions</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="2"> <p class="Cellhead1"><span>RAM (GB)</span></p> </td>
+<td colspan="5"> <p class="Cellhead1"><span>Entitlement support</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>MIN</span></p> </td>
+<td> <p class="Cellhead1"><span>MAX</span></p> </td>
+<td> <p class="Cellhead1"><span>100M (ASAv5)</span></p> </td>
+<td> <p class="Cellhead1"><span>1G (ASAv10)<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+<td> <p class="Cellhead1"><span>2G (ASAv30)<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+<td> <p class="Cellhead1"><span>10G (ASAv50)<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+<td> <p class="Cellhead1"><span>20G (ASAv100)<span class="Superscript"><sup class="cSuperscript">*</sup></span></span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT">2</p> </td>
+<td> <p class="pChart_bodyCMT">&lt;8</p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">&lt;16</p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">&lt;32</p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT">32</p> </td>
+<td> <p class="pChart_bodyCMT">No max</p> </td>
+<td> <p class="pChart_bodyCMT">50</p> </td>
+<td> <p class="pChart_bodyCMT">250</p> </td>
+<td> <p class="pChart_bodyCMT">750</p> </td>
+<td> <p class="pChart_bodyCMT">10K</p> </td>
+<td> <p class="pChart_bodyCMT">20K</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 11.<span>     </span></b>AWS instance support</p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1"><span>Instance</span></p> </td>
+<td colspan="2"> <p class="Cellhead1"><span>Attributes</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>vCPUs</span></p> </td>
+<td> <p class="Cellhead1"><span>Memory (GB)</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C5.large<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">2</p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C5.xlarge<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C5.2xlarge<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C5.4xlarge<span class="Superscript"><sup class="cSuperscript">**</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">32</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C5n.large<span class="Superscript"><sup class="cSuperscript">**</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">2</p> </td>
+<td> <p class="pChart_bodyCMT">5.25</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C5n.xlarge<span class="Superscript"><sup class="cSuperscript">**</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">10.5</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C5n.2xlarge<span class="Superscript"><sup class="cSuperscript">**</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">21</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C5n.4xlarge<span class="Superscript"><sup class="cSuperscript">**</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">42</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C4.large</b></p> </td>
+<td> <p class="pChart_bodyCMT">2</p> </td>
+<td> <p class="pChart_bodyCMT">3.75</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C4.xlarge</b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">7.5</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C4.2xlarge<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">15</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C3.large</b></p> </td>
+<td> <p class="pChart_bodyCMT">2</p> </td>
+<td> <p class="pChart_bodyCMT">3.75</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C3.xlarge</b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">7.5</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>C3.2xlarge<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">15</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>m4.large</b></p> </td>
+<td> <p class="pChart_bodyCMT">2</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>m4.xlarge</b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>m4.2xlarge<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">32</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> Requires 9.13 and later. 
+   </div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">**</sup></span> Requires 9.14.1.10 and later 
+   </div>
+<p class="pTableCaptionCMT"><b>Table 12.<span>     </span></b>Azure instance support</p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1"><span>Instance</span></p> </td>
+<td colspan="2"> <p class="Cellhead1"><span>Attributes</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>vCPUs</span></p> </td>
+<td> <p class="Cellhead1"><span>Memory (GB)</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>D3, D3_v2, DS3<span class="Superscript"><sup class="cSuperscript">*</sup></span>, DS3_v2<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">14</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>D4<span class="Superscript"><sup class="cSuperscript">*</sup></span>, D4_v2<span class="Superscript"><sup class="cSuperscript">*</sup></span>, DS4<span class="Superscript"><sup class="cSuperscript">*</sup></span>, DS4_v2<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">28</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>D5, DS5, D5_v2, DS5_v2<span class="Superscript"><sup class="cSuperscript">**</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">56</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>D8_v3<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">32</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>D16_v3<span class="Superscript"><sup class="cSuperscript">**</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">64</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>F4<span class="Superscript"><sup class="cSuperscript">*</sup></span>, F4s<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>F8<span class="Superscript"><sup class="cSuperscript">*</sup></span>, F8s<span class="Superscript"><sup class="cSuperscript">*</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>F16, F16s<span class="Superscript"><sup class="cSuperscript">**</sup></span></b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">32</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> Requires 9.13 and later. 
+   </div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">**</sup></span> Requires 9.15 and later 
+   </div>
+<p class="pTableCaptionCMT"><b>Table 13.<span>     </span></b>GCP instance support<span class="Superscript"><sup class="cSuperscript">*</sup></span></p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1"><span>Instance</span></p> </td>
+<td colspan="2"> <p class="Cellhead1"><span>Attributes</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>OCPU’s</span></p> </td>
+<td> <p class="Cellhead1"><span>Memory (GB)</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n1-standard-4</b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">15</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>c2-standard-4 </b></p> <p class="pChart_bodyCMT"><b>n2-standard-4</b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n2-highmem-4</b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">32</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>c2-standard-8 </b></p> <p class="pChart_bodyCMT"><b>n2-standard-8</b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">32</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n1-standard-8</b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">30</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n1-highcpu-8</b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">7.2</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n2-highcpu-8</b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n2-highmem-8</b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">64</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>c2-standard-16 </b></p> <p class="pChart_bodyCMT"><b>n2-standard-16</b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">64</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n1-standard-16</b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">60</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n1-highcpu-16</b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">14.4</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n2-highcpu-16</b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>n2-highmem-16</b></p> </td>
+<td> <p class="pChart_bodyCMT">16</p> </td>
+<td> <p class="pChart_bodyCMT">128</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> Requires 9.15 and later 
+   </div>
+<p class="pTableCaptionCMT"><b>Table 14.<span>     </span></b>OCI instance support<span class="Superscript"><sup class="cSuperscript">*</sup></span></p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1"><span>Instance</span></p> </td>
+<td colspan="2"> <p class="Cellhead1"><span>Attributes</span></p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1"><span>vCPUs</span></p> </td>
+<td> <p class="Cellhead1"><span>Memory (GB)</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>VM.Standard2.4</b></p> </td>
+<td> <p class="pChart_bodyCMT">4</p> </td>
+<td> <p class="pChart_bodyCMT">60</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>VM.Standard2.8</b></p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">120</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> Requires 9.15 and later 
+   </div>
+<p class="pTableCaptionCMT"><b>Table 15.<span>     </span></b>Ordering information: In Cisco Commerce Workspace (CCW) order the base selection (denoted by “K9” in the part number), followed by the desired license type</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Part number</span></p> </td>
+<td> <p class="Cellhead1">Description</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASAV5S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 100 Mbps entitlement (ASAv5) selection(Perpetual License)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASA-V-5S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 100 Mbps entitlement (ASAv5) subscription</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASAV10S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 1 Gbps entitlement (ASAv10) selection(Perpetual License)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASA-V-10S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 1 Gbps entitlement (ASAv10) subscription</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASAV30S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 2 Gbps entitlement (ASAv30) selection(Perpetual License)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASA-V-30S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 2 Gbps entitlement (ASAv30) subscription</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASAV50S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 10 Gbps entitlement (ASAv50) selection(Perpetual License)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASA-V-50S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 10 Gbps entitlement (ASAv50) subscription</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>L-ASA-V-100S-K9=</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco 20 Gbps entitlement (ASAv100) subscription<span class="Superscript"><sup class="cSuperscript">*</sup></span></p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<span class="Superscript"><sup class="cSuperscript">*</sup></span> No Perpetual license option for ASAv100 
+   </div>
+<p class="pToC_Subhead1"><a name="_Toc180429663"></a><a name="_Toc125658709"></a><a name="_Toc20865476"></a><a name="_Toc535294674">Cisco Capital</a></p>
+<p class="pSubhead2CMT">Flexible payment solutions to help you achieve your objectives</p>
+<p class="pBody">Cisco Capital makes it easier to get the right technology to achieve your objectives, enable business transformation and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. <a href="https://www.cisco.com/go/financing">Learn more</a>.</p>
+<p class="pBody"> </p>
+<p class="pBody"> </p>
+<p class="pBody"> </p>
+</div>
+<div>
+<br/>
+<hr/>
+<div>
+<div class="pDefault">
+<a href="#_ftnref1" name="_ftn1"><span class="Superscript"><sup class="cSuperscript">[1]</sup></span></a>
+<span class="Superscript"><sup class="cSuperscript"></sup></span>Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions. 
+    </div>
+</div>
+<div>
+<div class="pDefault">
+<a href="#_ftnref2" name="_ftn2"><span class="Superscript"><sup class="cSuperscript">[2]</sup></span></a> “Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS. 
+    </div>
+</div>
+<div>
+<div class="pDefault">
+<a href="#_ftnref3" name="_ftn3"><span class="Superscript"><sup class="cSuperscript">[3]</sup></span></a> The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning. 
+    </div>
+</div>
+<div>
+<div class="pDefault">
+<a name="F"></a>
+<a href="#_ftnref4" name="_ftn4"><span class="Superscript"><sup class="cSuperscript">[4]</sup></span></a> Stated resource allocation is required to achieve the documented performance metrics for each tier. Decreased allocations are supported but will result in lower performance. 
+    </div>
+</div>
+<div>
+<div class="pDefault">
+<a href="#_ftnref5" name="_ftn5"><span class="Superscript"><sup class="cSuperscript">[5]</sup></span></a> Thin provisioning is supported. 
+    </div>
+</div>
+<div>
+<div class="pDefault">
+<a href="#_ftnref6" name="_ftn6"><span class="Superscript"><sup class="cSuperscript">[6]</sup></span></a>
+<a name="S"></a>Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions. 
+    </div>
+</div>
+<div>
+<div class="pDefault">
+<a href="#_ftnref7" name="_ftn7"><span class="Superscript"><sup class="cSuperscript">[7]</sup></span></a>
+<a name="Se"></a>“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS. 
+    </div>
+</div>
+<div>
+<div class="pDefault">
+<a href="#_ftnref8" name="_ftn8"><span class="Superscript"><sup class="cSuperscript">[8]</sup></span></a>
+<a name="Ei"></a>The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning. 
+    </div>
+</div>
+</div>
+<cdc:do></cdc:do>
+<div class="row full visitedlinks">
+<div class="col full">
+</div>
+</div>
+</div>

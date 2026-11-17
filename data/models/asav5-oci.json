@@ -1,0 +1,113 @@
+{
+  "vendor": "Cisco",
+  "model": "ASAv5 (OCI)",
+  "model_id": "asav5-oci",
+  "family": "Secure Firewall",
+  "series": "ASA Virtual",
+  "form_factor": "virtual",
+  "source": {
+    "title": "Cisco Secure Firewall ASA Virtual (ASAv) Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.pdf",
+    "file": "datasheets/asa-virtual.html",
+    "library_last_updated": "2024-10-25",
+    "sha256": "feb420be1224e9ad2289077efc598b6781907daab8439d18afd52f7a2b1ccdbf"
+  },
+  "default_image": "asa",
+  "images": [
+    "asa"
+  ],
+  "specs_by_image": {
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 100,
+        "raw": "100 Mbps",
+        "label": "Stateful inspection throughput (maximum)",
+        "table": "Table 5",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+          "Measured with SR-IOV interfaces."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 100,
+        "raw": "100 Mbps",
+        "label": "Stateful inspection throughput (multiprotocol)",
+        "table": "Table 5",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS.",
+          "Measured with SR-IOV interfaces."
+        ],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 100,
+        "raw": "100 Mbps",
+        "label": "IPsec VPN throughput (AES 450B UDP test)",
+        "table": "Table 5",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning.",
+          "Measured with SR-IOV interfaces."
+        ],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 12500,
+        "raw": "12,500",
+        "label": "Connections per second",
+        "table": "Table 5",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Measured with SR-IOV interfaces."
+        ]
+      },
+      "concurrent_sessions": {
+        "value": 50000,
+        "raw": "50,000",
+        "label": "Concurrent sessions",
+        "table": "Table 5",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Measured with SR-IOV interfaces."
+        ]
+      },
+      "vpn_peers_max": {
+        "value": 50,
+        "raw": "50",
+        "label": "IPsec VPN peers",
+        "table": "Table 5",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Measured with SR-IOV interfaces."
+        ]
+      },
+      "ravpn_sessions_max": {
+        "value": 50,
+        "raw": "50",
+        "label": "Cisco AnyConnect or clientless VPN user sessions",
+        "table": "Table 5",
+        "software": "ASA, 9.20 and later",
+        "notes": [
+          "Measured with SR-IOV interfaces."
+        ]
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": null,
+  "vm": {
+    "platform": "OCI",
+    "vcpu": null,
+    "instance_type": "VM.Standard3.4",
+    "license_tier": "100M"
+  },
+  "footnotes": {
+    "Table 5 [6]": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 5 [7]": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols or applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS.",
+    "Table 5 [8]": "The VPN throughput and the number of sessions depend on the ASA device configuration and VPN traffic patterns. These elements should be taken into consideration as part of your capacity planning."
+  }
+}

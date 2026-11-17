@@ -1,0 +1,748 @@
+<!-- Cisco Secure Firewall 6100 Series Data Sheet | https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-6100-series/secure-firewall-6100-series-ds.html | Updated 2026-10-15 -->
+<div id="eot-doc-wrapper">
+
+<code>
+<link href="wemdcmt.css"/>
+<link href="/etc/designs/cdc/transformation/wemdcmt.css"/></code>
+<div class="WordSection1">
+<p class="pBody"> </p>
+<p class="pToC_Subhead1"><a name="_Toc222431159"></a><a name="_Toc226997354"></a><a name="_Toc241091281">Introduction</a></p>
+<p class="pBody">The Cisco Secure Firewall 6100 Series is an AI-ready, ultra-high-performance firewall engineered to deliver exceptional throughput per rack unit. Optimized for high-demand data center and service provider environments, the 6100 Series features a multi-socket, multi-core architecture that accelerates threat inspection. Its dedicated cryptographic modules drive high-throughput IPsec and TLS connection termination at scale, providing industry-leading performance in a compact 2-Rack-Unit (2RU) form factor.</p>
+<p class="pTableCaptionCMT"><b>Table 1.<span>        </span></b>Key capabilities of the Cisco Secure Firewall 6100 Series</p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="2"> <p class="Cellhead1">Secure Firewall 6100 Series with Firewall Threat Defense Software</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Unmatched performance:</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Achieve up to 700 Gbps of throughput in a single 2RU form factor with Next-Generation Firewall (NGFW) capabilities enabled, and up to 615 Gbps with Intrusion Prevention System (IPS) active. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Supports a comprehensive range of network modules, scaling from 1G up to high-performance 400G QSFP-DD interfaces. 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Superior visibility: </b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Gain insight into encrypted traffic at line rate with the Encrypted Visibility Engine (EVE). Selectively decrypt TLS 1.3 and Quick UDP Internet Connections (QUIC) traffic as necessary. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Accurately identify and control more than 8200 applications, enabling precise policy enforcement across cloud, SaaS, and custom workloads. 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Carrier-grade firewalling: </b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Delivers carrier-class performance with clustering support, Carrier-Grade Network Address Translation (CGNAT), and specialized carrier license packages tailored for Service Providers. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Enables scalable Security Gateway (SEG) deployments for 3G, 4G, and 5G mobile networks, delivering up to 550 Gbps of IPsec tunnel termination performance. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Inspect GPRS Tunneling Protocol (GTP), Session Initiation Protocol (SIP), Diameter, and other telecom protocols at scale. 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Advanced threat defense: </b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Defend against zero-day vulnerabilities using SnortML, an on-box machine learning engine that detects threats in real-time without requiring immediate signature updates. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Perform on-premises dynamic analysis with Spero, ClamAV and cloud-based sandboxing to detect and stop evasive malware. 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Robust high availability:</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Ensures maximum uptime with N+1 clustering scalability, N+1 fan redundancy, and 1+1 power supply redundancy. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>With its fail-to-wire network modules, 6100 Series firewall enables continuous connectivity even in case of any data plane failure. 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Simplified management:</b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Scale effortlessly: Manage up to 1,500 firewalls now, scaling to 2,000, via Security Cloud Control Firewall, manager optimized for Hybrid Mesh Firewall and MSSP environments. Use prebuilt templates and streamlined migration tools for fast, consistent global deployment without extra overhead. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Unified management, smarter security: A single intuitive console unifies logging and event viewing. Integrated AIOps converts telemetry into actionable insights and automated policy recommendations, enabling faster resolution, less alert fatigue, and proactive threat response. 
+        </div> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc222431160"></a><a name="_Toc226997355"></a><a name="_Toc241091282">Hardware overview</a></p>
+<p class="pBody"></p>
+<div class="pDefault">
+     Figure 1. 
+    <span>          </span>  
+   </div>
+<p class="FigureCaptionText">3D view of 6100 Series firewall</p>
+<p class="pBody"></p>
+<div class="pDefault">
+     Figure 2. 
+    <span>          </span>
+<span> </span>
+</div>
+<p class="FigureCaptionText">Front panel of 6100 Series firewall</p>
+<p class="pBody"></p>
+<div class="pDefault">
+     Figure 3. 
+    <span>          </span>  
+   </div>
+<p class="FigureCaptionText">Front panel of 6100 Series firewall (with two network modules)</p>
+<p class="pBody"></p>
+<div class="pDefault">
+     Figure 4. 
+    <span>          </span>  
+   </div>
+<p class="FigureCaptionText">Back panel of 6100 Series firewall</p>
+<p class="pToC_Subhead1"><a name="_Toc222431161"></a><a name="_Toc226997356"></a><a name="_Toc241091283">Performance</a></p>
+<p class="pBody">Cisco Secure Firewall 6100 Series supports both Firewall Threat Defense (FTD) and Adaptive Security Appliance (ASA) software. The FTD software offers all the advanced next-generation security capabilities, whereas ASA software can deliver higher throughput for stateful inspection.</p>
+<p class="pTableCaptionCMT"><b>Table 2.<span>        </span></b>Cisco Secure Firewall 6100 Series performance with the Cisco Secure Firewall Threat Defense (FTD) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">6160</p> </td>
+<td> <p class="Cellhead1">6170</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: Firewall + Application Visibility and Control (AVC) (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">600 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">700 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: AVC + Intrusion Prevention System (IPS) (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">550 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">600 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>NGFW Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">550 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">600 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">450 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">550 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>TLS Decryption<a href="#_ftn1" name="_ftnref1"><sup class="cSuperscript">[1]</sup></a></b></p> </td>
+<td> <p class="pChart_bodyCMT">100 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">150 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Application Visibility and Control (AVC)</b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">Standard, supporting more than 8100 applications, as well as geolocations, users, and websites </p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 3.<span>        </span></b>Cisco Secure Firewall 6100 Series performance with the Cisco Adaptive Security Appliance (ASA) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">6120</p> </td>
+<td> <p class="Cellhead1">6130</p> </td>
+<td> <p class="Cellhead1">6160</p> </td>
+<td> <p class="Cellhead1">6170</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection firewall throughput (1500 B UDP)<a href="#_ftn2" name="_ftnref2"><sup class="cSuperscript">[2]</sup></a></b></p> </td>
+<td> <p class="pChart_bodyCMT">350 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">550 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">650 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">750 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection firewall throughput (HTTP 1024 Byte)</b></p> </td>
+<td> <p class="pChart_bodyCMT">350 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">550 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">650 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">750 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN throughput (450B UDP L2L test)</b></p> </td>
+<td> <p class="pChart_bodyCMT">175 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">225 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">300 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">370 Gbps</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody"><b>Note:</b> Performance will vary depending on features activated, network traffic protocol mix, and packet size characteristics. Performance is subject to change with new software releases. Consult your Cisco representative for detailed sizing guidance.</p>
+<p class="pToC_Subhead1"><a name="_Toc222431162"></a><a name="_Toc226997357"></a><a name="_Toc241091284">Scalability</a></p>
+<p class="pTableCaptionCMT"><b>Table 4.<span>        </span></b>Cisco Secure Firewall 6100 Series scalability with the Cisco Secure Firewall Threat Defense (FTD) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">6160</p> </td>
+<td> <p class="Cellhead1">6170</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">75 Million</p> </td>
+<td> <p class="pChart_bodyCMT">120 Million</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">1.5 Million</p> </td>
+<td> <p class="pChart_bodyCMT">2.7 Million</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">60 K</p> </td>
+<td> <p class="pChart_bodyCMT">60 K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum virtual router instances (VRF)</b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">250</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High availability</b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">Active/Standby, Active/Active (with clustering)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Instances (Multi-Instance)</b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">Available in future release</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">Up to 16</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 5.<span>        </span></b>Cisco Secure Firewall 6100 Series scalability with the Cisco Adaptive Security Appliance (ASA) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Metric</p> </td>
+<td> <p class="Cellhead1">6120</p> </td>
+<td> <p class="Cellhead1">6130</p> </td>
+<td> <p class="Cellhead1">6160</p> </td>
+<td> <p class="Cellhead1">6170</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>New connections per second</b></p> </td>
+<td> <p class="pChart_bodyCMT">2.5 Million</p> </td>
+<td> <p class="pChart_bodyCMT">3.5 Million</p> </td>
+<td> <p class="pChart_bodyCMT">4.5 Million</p> </td>
+<td> <p class="pChart_bodyCMT">5.5 Million</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Concurrent firewall connections</b></p> </td>
+<td> <p class="pChart_bodyCMT">60 Million</p> </td>
+<td> <p class="pChart_bodyCMT">90 Million</p> </td>
+<td> <p class="pChart_bodyCMT">240 Million</p> </td>
+<td> <p class="pChart_bodyCMT">360 Million</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN Peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">45 K</p> </td>
+<td> <p class="pChart_bodyCMT">60 K</p> </td>
+<td> <p class="pChart_bodyCMT">60 K</p> </td>
+<td> <p class="pChart_bodyCMT">60 K</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High availability</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">Active/Active and Active/Standby </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Security contexts</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">Included 10, maximum 250</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">Up to 16</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc222431163"></a><a name="_Toc226997358"></a><a name="_Toc241091285">Hardware specifications</a></p>
+<p class="pTableCaptionCMT"><b>Table 6.<span>        </span></b>Cisco Secure Firewall 6100 Series hardware specifications</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Specification</p> </td>
+<td> <p class="Cellhead1">6120</p> </td>
+<td> <p class="Cellhead1">6130</p> </td>
+<td> <p class="Cellhead1">6160</p> </td>
+<td> <p class="Cellhead1">6170</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Form factor</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">2 RU for 19" Rack</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Fixed ports</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">12 x 1/10/25/50 Gigabit Ethernet SFP56 Ports</p> <p class="pChart_bodyCMT">4 x 40/100/200 Gigabit Ethernet QSFP56 Ports</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Management Ethernet</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">2 x 1/10/25 Gigabit Ethernet SFP28 Ports</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Network Modules</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">Standard Ethernet Modules </p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>8 x 1/10 Gigabit Ethernet SFP+ Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>8 x 1/10/25 Gigabit Ethernet SFP28 Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>4 x 40 Gigabit Ethernet QSFP+ Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>4 x 40/100/200 Gigabit Ethernet QSFP56 Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>2 x 40/100 Gigabit Ethernet QSFP28 Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>2 x 200/400 Gigabit Ethernet QSFP-DD Network Module 
+        </div> <p class="pChart_bodyCMT">Fail-to-Wire (FTW) Modules</p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>8 x 1 Gigabit Ethernet RJ-45 Copper Fail-to-Wire (FTW) Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>6 x 1 Gigabit Ethernet SFP SX Fail-to-Wire (FTW) Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>6 x 10 Gigabit Ethernet SFP+ SR Fail-to-Wire (FTW) Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>6 x 10 Gigabit Ethernet SFP+ LR Fail-to-Wire (FTW) Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>6 x 25 Gigabit Ethernet SFP28 SR Fail-to-Wire (FTW) Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>6 x 25 Gigabit Ethernet SFP28 LR Fail-to-Wire (FTW) Network Module 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>2 x 100 Gigabit Ethernet QSFP28 SR4 Fail-to-Wire (FTW) Network Module 
+        </div> </td>
+</tr>
+<tr>
+<td rowspan="7"> <p class="pChart_bodyCMT"><b>Maximum number of interfaces</b></p> </td>
+<td> <p class="pChart_bodyCMT"><b>Interface Speed / Type</b></p> </td>
+<td> <p class="pChart_bodyCMT"><b>Fixed Ports</b></p> </td>
+<td> <p class="pChart_bodyCMT"><b>Expansion (2 Slots)</b></p> </td>
+<td> <p class="pChart_bodyCMT"><b>Total Maximum Ports</b></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>1 / 10 / 25 / 50 <br/> Gigabit (SFP56)</b></p> </td>
+<td> <p class="pChart_bodyCMT">12 Ports</p> </td>
+<td> <p class="pChart_bodyCMT">+ 16 (via 2x 8-port modules, SFP28)</p> </td>
+<td> <p class="pChart_bodyCMT">28 Ports</p> <p class="pChart_bodyCMT">(50G: 12 Ports)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>40 / 100 / 200<br/> Gigabit (QSFP56)</b></p> </td>
+<td> <p class="pChart_bodyCMT">4 Ports</p> </td>
+<td> <p class="pChart_bodyCMT">+ 8 (via 2x 4-port modules, QSFP56)</p> </td>
+<td> <p class="pChart_bodyCMT">12 Ports</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>400<br/> Gigabit (QSFP-DD)</b></p> </td>
+<td> <p class="pChart_bodyCMT">0 Ports</p> </td>
+<td> <p class="pChart_bodyCMT">+ 4 (via 2x 2-port modules, QSFP-DD)</p> </td>
+<td> <p class="pChart_bodyCMT">4 Ports</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Fail-to-Wire (FTW)</b></p> </td>
+<td> <p class="pChart_bodyCMT">0 Ports</p> </td>
+<td> <p class="pChart_bodyCMT">+ 4 to + 16 (module dependent)</p> </td>
+<td> <p class="pChart_bodyCMT">16 Ports</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Management <br/> (SFP28)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2 Ports</p> </td>
+<td> <p class="pChart_bodyCMT">N/A</p> </td>
+<td> <p class="pChart_bodyCMT">2 Ports</p> </td>
+</tr>
+<tr>
+<td colspan="4"> <p class="pChart_bodyCMT"><b>Note:</b></p> <p class="pChart_bodyCMT"><b>50G Support:</b> Only the 12 Fixed SFP56 ports support native 50G speeds (Modules listed are SFP28 maxing at 25G).</p> <p class="pChart_bodyCMT"><b>FTW (Fail-to-Wire):</b> If using Fail-to-Wire modules (6-ports each), the total 1/10/25G count would be 24 ports (12 Fixed + 12 Module). With 8-port copper FTW modules in both slots, the total 1G count is 28 ports (12 Fixed + 16 Module).</p> <p class="pChart_bodyCMT"><b>100G FTW:</b> With 2-port 100G QSFP28 SR4 FTW modules in both slots, the system provides 4 x 100G FTW ports, for a total 100G count of 8 ports (4 Fixed + 4 Module). The 12-port 100G maximum requires 4-port QSFP56 modules, which are not FTW.</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Console port</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">1 x RJ-45 console</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>USB port</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">1 USB 3.0</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Storage</b></p> </td>
+<td> <p class="pChart_bodyCMT">2 x 1.8 TB</p> </td>
+<td> <p class="pChart_bodyCMT">2 x 1.8 TB</p> </td>
+<td> <p class="pChart_bodyCMT">2 x 3.6 TB</p> </td>
+<td> <p class="pChart_bodyCMT">2 x 7.2 TB</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Power over Ethernet</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">N/A</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Transceiver support</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">Refer to <a href="https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/hardware/6100/fw-6100-install/m-overview.html">Cisco Secure Firewall (CSF) 6100 Hardware Installation Guide</a></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Chassis dimensions (HxWxD)</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">3.5” H x 16.9” W x 32.5” D</p> <p class="pChart_bodyCMT">(8.89 cm x 42.93 cm x 82.55 cm)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Weight</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">66lbs (29.94kg), fully loaded</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cooling</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">4 Field Replaceable Fan module; every module has 2 fans</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Rack mountable</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">Yes, mount rails included (4-post EIA-310-D rack)</p> </td>
+</tr>
+<tr>
+<td colspan="5"> <p class="pChart_bodyCMT"><b>Power Supply Details</b></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Configuration</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">Dual high-voltage AC/DC power supplies.</p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>High Line AC: Up to 3000W per power supply, hot-swappable, load-sharing redundancy. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Low Line AC: Up to 1500W per power supply, load sharing with no redundancy. 
+        </div> <p class="pChart_bodyCMT">Dual low-voltage DC power supplies offered.</p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Both Inputs Connected: Up to 3000W per power supply, hot-swappable, load-sharing redundancy. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>One Input Connected: Up to 1500W per power supply, load sharing with no redundancy. 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC input voltage</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">100 to 120 VAC (HVAC low line)</p> <p class="pChart_bodyCMT">200 to 277 VAC (HVAC high line)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC input frequency</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">50—60 Hz</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>HVDC input voltage</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">240 to 380 VDC</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>LVDC input voltage</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">—48VDC to —60VDC</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC current draw, maximum</b></p> </td>
+<td> <p class="pChart_bodyCMT">7 Amperes</p> <p class="pChart_bodyCMT">(high line AC)</p> </td>
+<td> <p class="pChart_bodyCMT">10 Amperes</p> <p class="pChart_bodyCMT">(high line AC)</p> </td>
+<td> <p class="pChart_bodyCMT">13 Amperes</p> <p class="pChart_bodyCMT">(high line AC)</p> </td>
+<td> <p class="pChart_bodyCMT">14 Amperes</p> <p class="pChart_bodyCMT">(high line AC)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>System HVDC current draw, maximum</b></p> </td>
+<td> <p class="pChart_bodyCMT">6 Amperes</p> </td>
+<td> <p class="pChart_bodyCMT">9 Amperes</p> </td>
+<td> <p class="pChart_bodyCMT">11 Amperes</p> </td>
+<td> <p class="pChart_bodyCMT">12 Amperes</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>System LVDC current draw, maximum per feed</b></p> </td>
+<td> <p class="pChart_bodyCMT">17 Amperes</p> </td>
+<td> <p class="pChart_bodyCMT">24 Amperes</p> </td>
+<td> <p class="pChart_bodyCMT">29 Amperes</p> </td>
+<td> <p class="pChart_bodyCMT">33 Amperes</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Power consumption, typical</b></p> </td>
+<td> <p class="pChart_bodyCMT">780 Watts</p> </td>
+<td> <p class="pChart_bodyCMT">1200 Watts</p> </td>
+<td> <p class="pChart_bodyCMT">1740 Watts</p> </td>
+<td> <p class="pChart_bodyCMT">2010 Watts</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Power consumption, maximum</b></p> </td>
+<td> <p class="pChart_bodyCMT">1400 Watts</p> </td>
+<td> <p class="pChart_bodyCMT">1940 Watts</p> </td>
+<td> <p class="pChart_bodyCMT">2440 Watts</p> </td>
+<td> <p class="pChart_bodyCMT">2760 Watts</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Redundancy</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">1+1 Redundancy</p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Redundant only with dual HVAC, HVDC, or dual-input LVDC. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>LVAC and single-input DC do not support redundancy. 
+        </div> </td>
+</tr>
+<tr>
+<td colspan="5"> <p class="pChart_bodyCMT"><b>Operating Range</b></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Temperature: operating</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">32°F to 104°F (0°C to 40°C)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Humidity: operating</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">5% to 90% (non-condensing)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Altitude: operating</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">0 to 10,000 ft.</p> <p class="pChart_bodyCMT">De-rate the maximum operating temperature 1°C/1K-ft. above 6000 ft.</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Acoustic noise</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">Sound Pressure: &lt;=74 dBA (typical), &lt;= 90 dBA (maximum)</p> <p class="pChart_bodyCMT">Sound Power: &lt;=81 dB (typical), &lt;=98 dB (maximum)</p> </td>
+</tr>
+<tr>
+<td colspan="5"> <p class="pChart_bodyCMT"><b>Non-operating/storage environment</b></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Temperature: nonoperating</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">–40°F to 158°F (–40°C to 70°C)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Humidity: nonoperating</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">5% to 95% (non-condensing)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Altitude: nonoperating</b></p> </td>
+<td colspan="4"> <p class="pChart_bodyCMT">40,000 ft.</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc222431164"></a><a name="_Toc226997359"></a><a name="_Toc241091286">Compliance</a></p>
+<p class="pBody">For details on product regulatory compliance in a specific market, consult the Cisco <a href="https://www.cisco.com/site/us/en/products/product-approvals/index.html">Product Approvals</a> tool.</p>
+<p class="pTableCaptionCMT"><b>Table 7.<span>        </span></b>Cisco Secure Firewall 6100 Series regulatory, safety, and Electromagnetic Compatibility (EMC) compliance</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Specification</p> </td>
+<td> <p class="Cellhead1">Description</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_subheadCMT">Regulatory compliance</p> </td>
+<td> <p class="pChart_bodyCMT">Products comply with CE markings per directives 2014/30/EU and 2006/108/EC</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_subheadCMT">Safety</p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>UL 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>UL 60950-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CAN/CSA-C22.2 No. 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CAN CSA C22.2 60950-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>AS/NZS 62368.1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>GB4943.1 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_subheadCMT">EMC: Emissions</p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>FCC 47CFR15 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>AS/NZS CISPR 32 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55032/CISPR 32 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>ICES-003 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>VCCI Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>KS C 9832 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CNS-15936 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-3-2 Power Line Harmonics 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-3-3 Voltage Changes, Fluctuations, and Flicker 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_subheadCMT">EMC: Immunity</p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-2 Electrostatic Discharge Immunity 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-3 Radiated Immunity 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-4 EFT-B Immunity 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-5 Surge 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-6 Immunity to Conducted Disturbances 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-11 Voltage Dips, Short Interruptions, and Voltage Variations 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>KS C 9835 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_subheadCMT">EMC: ETSI/EN</p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN 300 386 Telecommunications Network Equipment (EMC) 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55032/CISPR32 Multimedia Equipment (Emissions) 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55035/CISPR 35 Multimedia Equipment (Immunity) 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-6-1, EN61000-6-2 Generic Immunity Standards 
+        </div> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc222431165"></a><a name="_Toc226997360"></a><a name="_Toc241091287">Ordering information</a></p>
+<p class="pBody">The product IDs of the Cisco Secure Firewall 6100 Series hardware appliances are listed below. For information on licenses, subscriptions, and other options associated with the product, refer to the <a href="https://www.cisco.com/c/en/us/products/collateral/security/secure-firewall/guide-c07-737902.html">Cisco Network Security Ordering Guide</a>.</p>
+<p class="pTableCaptionCMT"><b>Table 8.<span>        </span></b>Cisco Secure Firewall 6100 Series Product IDs</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Product ID</p> </td>
+<td> <p class="Cellhead1">Description</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF6120-A-ASA-K9</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 6120 Appliance, ASA</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF6130-A-ASA-K9</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 6130 Appliance, ASA</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF6160-A-TD-K9</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 6160 Appliance, Threat Defense</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF6160-A-ASA-K9</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 6160 Appliance, ASA</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF6170-A-TD-K9</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 6170 Appliance, Threat Defense</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF6170-A-ASA-K9</b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 6170 Appliance, ASA</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc222431166"></a><a name="_Toc226997361"></a><a name="_Toc241091288">Environmental sustainability</a></p>
+<p class="pBody">Information about Cisco’s environmental sustainability policies and initiatives for our products, solutions, operations, and extended operations or supply chain is provided in the “Environment Sustainability” section of Cisco’s <a href="https://www.cisco.com/site/us/en/about/purpose/fy24-report/index.html">Corporate Social Responsibility</a> (CSR) Report.</p>
+<p class="pTableCaptionCMT"><b>Table 9.<span>        </span></b>Reference links to information about key environmental sustainability topics (mentioned in the “Environment Sustainability” section of the CSR Report)</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Sustainability topic</p> </td>
+<td> <p class="Cellhead1">Reference</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_subheadCMT">Information on product material content laws and regulations</p> </td>
+<td> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html">Materials</a></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_subheadCMT">Information on electronic waste laws and regulations, including products, batteries, and packaging</p> </td>
+<td> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html">WEEE compliance</a></p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody">Cisco makes the packaging data available for informational purposes only. It may not reflect the most current legal developments, and Cisco does not represent, warrant, or guarantee that it is complete, accurate, or up to date. This information is subject to change without notice.</p>
+<p class="pBody"> </p>
+<p class="pBody"> </p>
+<p class="pBody"> </p>
+</div>
+<div>
+<br/>
+<hr/>
+<div>
+<div class="pDefault">
+<a href="#_ftnref1" name="_ftn1"><sup class="cSuperscript">[1]</sup></a> Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys. 
+    </div>
+</div>
+<div>
+<div class="pDefault">
+<a href="#_ftnref2" name="_ftn2"><sup class="cSuperscript">[2]</sup></a> Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions. 
+    </div>
+</div>
+</div>
+<cdc:do></cdc:do>
+<div class="row full visitedlinks">
+<div class="col full">
+</div>
+</div>
+</div>

@@ -1,0 +1,615 @@
+<!-- Cisco Secure Firewall 200 Series Data Sheet | https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-200-series/secure-firewall-200-ds.html | Updated 2026-10-06 -->
+<div id="eot-doc-wrapper">
+
+<code>
+<link href="wemdcmt.css"/>
+<link href="/etc/designs/cdc/transformation/wemdcmt.css"/></code>
+<div class="WordSection1">
+<p class="pBody"> </p>
+<p class="pToC_Subhead1">Introduction</p>
+<p class="pBody">The Cisco<sup class="cSuperscript">®</sup> Secure Firewall 200 Series offers next-generation firewall capabilities specifically designed for distributed enterprises and small branch locations. It provides robust, cost-effective security and simplified management within a compact form factor, ensuring secure and optimized connectivity at the network edge. The 200 Series extends Cisco’s Hybrid Mesh Firewall architecture to branch edges, providing AI-powered inspection and consistent security policies. It integrates SD-WAN capabilities for enhanced application performance and reliable user access. Additionally, the 200 Series delivers application and user control, efficient segmentation, and advanced security features tailored for cost-sensitive environments.</p>
+<p class="pBody"></p>
+<p class="pTableCaptionCMT"><b>Table 1.<span>        </span></b>Key capabilities of the Cisco Secure Firewall 200 </p>
+<div>
+<table>
+<thead>
+<tr>
+<td colspan="2"> <p class="Cellhead1"><span>Cisco Secure Firewall 200 with Cisco Firewall Threat Defense Software </span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Robust connectivity </b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Achieve up to 3Gbps throughput from a fanless desktop firewall when next-generation firewall capabilities are enabled. Enable the high-availability feature for continuous uptime. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Connect branch offices to the hybrid mesh firewall architecture using the 1G Small Form-factor Pluggable (SFP) port. Network and cryptographic operations are accelerated inline by leveraging the System on a Chip (SoC). 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Superior visibility </b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Leverage the AI-powered Encrypted Visibility Engine to gain visibility and control for encrypted and unencrypted traffic, including TLS 1.3, QUIC, and HTTP. EVE provides enhanced application visibility and intelligent threat detection in modern networks. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Protect networks against zero-day vulnerabilities with SnortML—a machine learning-based exploit detection technology integrated into the industry-leading Snort 3 Intrusion Prevention System (IPS). 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Simplified management </b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Scale effortlessly: Manage up to 1,500 firewalls now, scaling to 2,000, via Security in Cloud Control Firewall, Manager optimized for Hybrid Mesh Firewall and MSSP environments. Use prebuilt templates and streamlined migration tools for fast, consistent global deployment without extra overhead. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Unified management, smarter security: A single intuitive console unifies logging and event viewing. Integrated AIOps converts telemetry into actionable insights and automated policy recommendations, enabling faster resolution, less alert fatigue, and proactive threat response. 
+        </div> </td>
+<td> <p class="pChart_bodyCMT"><b>Seamless integration </b></p>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Achieve comprehensive end-to-end protection through native integration with Cisco Umbrella 
+         <sup class="cSuperscript">®</sup>, Cisco Secure Access, and Cisco Secure Endpoint. 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Optimize application performance and user experience through seamlessly integrated SD-WAN capabilities, accelerated by Zero-Touch Provisioning (ZTP). 
+        </div> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc217082226"></a><a name="_Toc227064503"></a><a name="_Toc241495683">Hardware overview</a></p>
+<p class="pBody"></p>
+<div class="pDefault">
+     Figure 1. 
+    <span>       </span>
+</div>
+<p class="FigureCaptionText">3D view of the Cisco Secure Firewall 220 model</p>
+<p class="pBody"></p>
+<div class="pDefault">
+     Figure 2. 
+    <span>       </span>  
+   </div>
+<p class="FigureCaptionText">Front panel of the Cisco Secure Firewall 220 model</p>
+<p class="pBody"></p>
+<div class="pDefault">
+     Figure 3.
+    <span>       </span>  
+   </div>
+<p class="FigureCaptionText">3D view of the Cisco Secure Firewall 240P model</p>
+<p class="FigureCaptionText"></p>
+<div class="pDefault">
+     Figure 4. 
+    <span>       </span>  
+   </div>
+<p class="FigureCaptionText">Front panel of the Cisco Secure Firewall 240P model </p>
+<p class="pToC_Subhead1"><a name="_Toc217082227"></a><a name="_Toc227064504"></a><a name="_Toc241495684">Performance</a></p>
+<p class="pBody">The Cisco Secure Firewall 200 series support both Cisco Firewall Threat Defense (FTD) and Cisco Adaptive Security Appliance (ASA) software. While the FTD software offers all the advanced next-generation security capabilities, ASA software delivers higher throughput for stateful inspection.</p>
+<p class="pTableCaptionCMT"><b>Table 2.<span>        </span></b>Cisco Secure Firewall 200 performance with Cisco Secure Firepower Threat Defense (FTD) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Metric </span></p> </td>
+<td> <p class="Cellhead1"><span>220 </span></p> </td>
+<td> <p class="Cellhead1"><span>240P </span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: Firewall + Application Visibility and Control (AVC) (1024B) </b></p> </td>
+<td> <p class="pChart_bodyCMT">1.5 Gbps </p> </td>
+<td> <p class="pChart_bodyCMT">3.2 Gbps </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: AVC + Intrusion Prevention System (IPS) (1024B) </b></p> </td>
+<td> <p class="pChart_bodyCMT">1.5 Gbps </p> </td>
+<td> <p class="pChart_bodyCMT">3 Gbps </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>NGFW Throughput: FW + AVC + IPS (1024B) </b></p> </td>
+<td> <p class="pChart_bodyCMT">1.5 Gbps </p> </td>
+<td> <p class="pChart_bodyCMT">3 Gbps </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput (1024B TCP w/Fastpath) </b></p> </td>
+<td> <p class="pChart_bodyCMT">1.2 Gbps </p> </td>
+<td> <p class="pChart_bodyCMT">3 Gbps </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>TLS Decryption<a href="#_ftn1" name="_ftnref1"><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><b><span>[1]</span></b></span></span></a></b></p> </td>
+<td> <p class="pChart_bodyCMT">0.7 Gbps </p> </td>
+<td> <p class="pChart_bodyCMT">0.9 Gbps </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Application Visibility and Control (AVC) </b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">Standard, supporting more than 8100 applications, as well as geolocations, users, and websites </p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 3.<span>        </span></b>Cisco Secure Firewall 200 performance with the Cisco Adaptive Security Appliance (ASA) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Metric </span></p> </td>
+<td> <p class="Cellhead1"><span>220 </span></p> </td>
+<td> <p class="Cellhead1"><span>240P </span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection firewall throughput (150B UDP)<a href="#_ftn2" name="_ftnref2"><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><b><span>[2]</span></b></span></span></a></b></p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps </p> </td>
+<td> <p class="pChart_bodyCMT">4.5 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection firewall throughput (HTTP 1024 Byte) </b></p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps </p> </td>
+<td> <p class="pChart_bodyCMT">3.5 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN throughput (450B UDP L2L test) </b></p> </td>
+<td> <p class="pChart_bodyCMT">1.5 Gbps </p> </td>
+<td> <p class="pChart_bodyCMT">2 Gbps</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody"><b>Note:</b> Performance will vary depending on features activated, network traffic protocol mix, and packet size characteristics. Performance is subject to change with new software releases. Consult your Cisco representative for detailed sizing guidance.</p>
+<p class="pToC_Subhead1"><a name="_Toc217082228"></a><a name="_Toc227064505"></a><a name="_Toc241495685">Scalability</a></p>
+<p class="pTableCaptionCMT"><b>Table 4.<span>        </span></b>Cisco Secure Firewall 200 scalability with the Cisco Secure Firewall Threat Defense (FTD) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Metric </span></p> </td>
+<td> <p class="Cellhead1"><span>220 </span></p> </td>
+<td> <p class="Cellhead1"><span>240P </span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC </b></p> </td>
+<td> <p class="pChart_bodyCMT">30K </p> </td>
+<td> <p class="pChart_bodyCMT">50K </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC </b></p> </td>
+<td> <p class="pChart_bodyCMT">6K </p> </td>
+<td> <p class="pChart_bodyCMT">15K </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN peers </b></p> </td>
+<td> <p class="pChart_bodyCMT">50 </p> </td>
+<td> <p class="pChart_bodyCMT">75 </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum Virtual Router Instances (VRF) </b></p> </td>
+<td> <p class="pChart_bodyCMT">5 </p> </td>
+<td> <p class="pChart_bodyCMT">5 </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High availability </b></p> </td>
+<td> <p class="pChart_bodyCMT">Active/Standby </p> </td>
+<td> <p class="pChart_bodyCMT">Active/Standby </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Instances (multi-instance) </b></p> </td>
+<td> <p class="pChart_bodyCMT">Not supported </p> </td>
+<td> <p class="pChart_bodyCMT">Not supported </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering </b></p> </td>
+<td> <p class="pChart_bodyCMT">Not supported </p> </td>
+<td> <p class="pChart_bodyCMT">Not supported </p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pTableCaptionCMT"><b>Table 5.<span>        </span></b>Cisco Secure Firewall 200 scalability with the Cisco Adaptive Security Appliance (ASA) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Metric </span></p> </td>
+<td> <p class="Cellhead1"><span>220 </span></p> </td>
+<td> <p class="Cellhead1"><span>240P </span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>New connections per second </b></p> </td>
+<td> <p class="pChart_bodyCMT">80K </p> </td>
+<td> <p class="pChart_bodyCMT">95K </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Concurrent firewall connections </b></p> </td>
+<td> <p class="pChart_bodyCMT">100K </p> </td>
+<td> <p class="pChart_bodyCMT">200K </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN Peers </b></p> </td>
+<td> <p class="pChart_bodyCMT">50 </p> </td>
+<td> <p class="pChart_bodyCMT">75</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High availability </b></p> </td>
+<td> <p class="pChart_bodyCMT">Active/Standby </p> </td>
+<td> <p class="pChart_bodyCMT">Active/Standby </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Security contexts </b></p> </td>
+<td> <p class="pChart_bodyCMT">Not supported </p> </td>
+<td> <p class="pChart_bodyCMT">Not supported </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering </b></p> </td>
+<td> <p class="pChart_bodyCMT">Not supported </p> </td>
+<td> <p class="pChart_bodyCMT">Not supported</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc217082229"></a><a name="_Toc227064506"></a><a name="_Toc241495686">Hardware specifications</a></p>
+<p class="pTableCaptionCMT"><b>Table 6.<span>        </span></b>Cisco Secure Firewall 200 hardware specifications</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Specification </span></p> </td>
+<td> <p class="Cellhead1"><span>220</span></p> </td>
+<td> <p class="Cellhead1"><span>240P </span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Form factor </b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT">Compact (Can be placed on desktop. Rackmount and wall mount accessories are also available)</p> </td>
+</tr>
+<tr>
+<td rowspan="2"> <p class="pChart_bodyCMT"><b>Fixed ports </b></p> </td>
+<td> <p class="pChart_bodyCMT">4x 1000BASE-T</p> </td>
+<td> <p class="pChart_bodyCMT">8x 1000BASE-T</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT">1x1G SFP</p> </td>
+<td> <p class="pChart_bodyCMT">2x1G SFP</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Management Ethernet </b></p> </td>
+<td> <p class="pChart_bodyCMT">1000BASE-T port</p> </td>
+<td> <p class="pChart_bodyCMT">1000BASE-T port</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Network modules </b></p> </td>
+<td> <p class="pChart_bodyCMT">N/A</p> </td>
+<td> <p class="pChart_bodyCMT">N/A</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum number of interfaces </b></p> </td>
+<td> <p class="pChart_bodyCMT">Up to 5 total Ethernet ports <br/> (4 x 1000Base-T, 1x 1 Gigabit SFP)</p> </td>
+<td> <p class="pChart_bodyCMT">Up to 10 total Ethernet ports <br/> (8 x 1000Base-T, 2x 1 Gigabit SFP)</p> </td>
+</tr>
+<tr>
+<td rowspan="2"> <p class="pChart_bodyCMT"><b>Console port </b></p> </td>
+<td> <p class="pChart_bodyCMT">USB Type-C and RJ-45</p> </td>
+<td> <p class="pChart_bodyCMT">USB Type-C and RJ-45</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT">(Cisco serial)</p> </td>
+<td> <p class="pChart_bodyCMT">(Cisco serial)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>USB port </b></p> </td>
+<td> <p class="pChart_bodyCMT">USB 3 Type A port</p> </td>
+<td> <p class="pChart_bodyCMT">USB 3 Type A port</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Storage </b></p> </td>
+<td> <p class="pChart_bodyCMT">64GB</p> </td>
+<td> <p class="pChart_bodyCMT">64GB</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Power over Ethernet </b></p> </td>
+<td> <p class="pChart_bodyCMT">N/A</p> </td>
+<td> <p class="pChart_bodyCMT">4 of the Ethernet ports support IEEE 802.3at PoE+ <br/> for delivery of up to 25.5W per port (120W total) <br/> to compatible PD endpoints.</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Transceiver support </b></p> </td>
+<td colspan="2"> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/hardware/200/hw-install-200/m_overview.html">Refer to Cisco Secure Firewall (CSF) 200 Hardware Installation Guide </a></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Mean Time Between Failures (MTBF) </b></p> </td>
+<td> <p class="pChart_bodyCMT">700,000 Hours</p> </td>
+<td> <p class="pChart_bodyCMT">600,000 Hours</p> </td>
+</tr>
+<tr>
+<td rowspan="2"> <p class="pChart_bodyCMT"><b>Chassis dimensions (HxWxD) </b></p> </td>
+<td> <p class="pChart_bodyCMT">1.15” x 9.2” x 7.8”</p> </td>
+<td> <p class="pChart_bodyCMT">1.65” x 9.2” x 8.5”</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT">(2.9 x 23.4 x 19.8 cm)</p> </td>
+<td> <p class="pChart_bodyCMT">(4.1 x 23.3 x 21.5 cm)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Weight </b></p> </td>
+<td> <p class="pChart_bodyCMT">2.6lb (1.17kg)</p> </td>
+<td> <p class="pChart_bodyCMT">3.3lb (1.49kg)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cooling </b></p> </td>
+<td> <p class="pChart_bodyCMT">Passive (fanless) </p> </td>
+<td> <p class="pChart_bodyCMT">Passive (fanless) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Rack mountable </b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes </p> </td>
+<td> <p class="pChart_bodyCMT">Yes </p> </td>
+</tr>
+<tr>
+<td colspan="3"> <p class="pChart_bodyCMT"><b>Power supply </b></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Configuration </b></p> </td>
+<td> <p class="pChart_bodyCMT">Single AC External 30W power supply </p> </td>
+<td> <p class="pChart_bodyCMT">Single AC External 190W power supply, input (POE) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC input voltage </b></p> </td>
+<td> <p class="pChart_bodyCMT">100–240V AC </p> </td>
+<td> <p class="pChart_bodyCMT">100–240V AC </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC input frequency </b></p> </td>
+<td> <p class="pChart_bodyCMT">50-60Hz </p> </td>
+<td> <p class="pChart_bodyCMT">50-60Hz </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC current draw, maximum </b></p> </td>
+<td> <p class="pChart_bodyCMT">1A </p> </td>
+<td> <p class="pChart_bodyCMT">4A </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Power consumption, typical </b></p> </td>
+<td> <p class="pChart_bodyCMT">12.7 Watts </p> </td>
+<td> <p class="pChart_bodyCMT">19 Watts (excluding POE)</p> </td>
+</tr>
+<tr>
+<td rowspan="2"> <p class="pChart_bodyCMT"><b>Power consumption, maximum </b></p> </td>
+<td rowspan="2"> <p class="pChart_bodyCMT">19 Watts </p> </td>
+<td> <p class="pChart_bodyCMT">35.6 Watts (excluding POE) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT">160.6 Watts (including POE) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Redundancy </b></p> </td>
+<td> <p class="pChart_bodyCMT">N/A </p> </td>
+<td> <p class="pChart_bodyCMT">N/A </p> </td>
+</tr>
+<tr>
+<td colspan="3"> <p class="pChart_bodyCMT"><b>Operating Range </b></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Temperature: operating </b></p> </td>
+<td> <p class="pChart_bodyCMT">32° to 104°F (0° to 40°C) </p> </td>
+<td> <p class="pChart_bodyCMT">32 to 104F (0 to 40C) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Humidity: operating </b></p> </td>
+<td> <p class="pChart_bodyCMT">5% to 85% (non-condensing) </p> </td>
+<td> <p class="pChart_bodyCMT">5 to 85% (non-condensing) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Altitude: operating </b></p> </td>
+<td> <p class="pChart_bodyCMT">up to 10,000 feet (3048 m) </p> </td>
+<td> <p class="pChart_bodyCMT">up to 10,000 feet (3048m) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Acoustic noise </b></p> </td>
+<td> <p class="pChart_bodyCMT">0 dBA </p> </td>
+<td> <p class="pChart_bodyCMT">0 dBA </p> </td>
+</tr>
+<tr>
+<td colspan="3"> <p class="pChart_bodyCMT"><b>Non-operating/storage environment </b></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Temperature: nonoperating </b></p> </td>
+<td> <p class="pChart_bodyCMT">-13° to 158°F (-25° to 70°C) </p> </td>
+<td> <p class="pChart_bodyCMT">-13° to 158°F (-25° to 70°C) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Humidity: nonoperating </b></p> </td>
+<td> <p class="pChart_bodyCMT">5% to 95% (non-condensing) </p> </td>
+<td> <p class="pChart_bodyCMT">5% to 95% (non-condensing) </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Altitude: nonoperating </b></p> </td>
+<td> <p class="pChart_bodyCMT">0 to 15,000 ft (4570 m) </p> </td>
+<td> <p class="pChart_bodyCMT">up to 15,000 feet (4570m)</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc217082230"></a><a name="_Toc227064507"></a><a name="_Toc241495687">Compliance</a></p>
+<p class="pBody">For details on product regulatory compliance in a specific market, consult the Cisco Product Approvals tool.</p>
+<p class="pTableCaptionCMT"><b>Table 7.<span>        </span></b>Cisco Secure Firewall 200 Network Equipment-Building System (NEBS), Regulatory, Safety, Environmental and EMC Compliance</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Specification </span></p> </td>
+<td> <p class="Cellhead1"><span>Description </span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Regulatory compliance </b></p> </td>
+<td> <p class="pChart_bodyCMT">Products comply with CE markings per directives 2004/108/EC and 2006/108/EC </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Safety </b></p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>UL 60950-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>UL 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CAN/CSA-C22.2 No. 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>AS/NZS 62368-1 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>EMC: Emissions </b></p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>47CFR Part 15 (CFR 47) Class A (FCC Class A) 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>AS/NZS CISPR 32 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CISPR 32 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55032 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>ICES003 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>VCCI Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-3-2 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-3-3 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>KS C 9832 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CNS15936 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN300386 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>QCVN 118:2018 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>EMC: Immunity </b></p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55035 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CISPR 35 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN300386 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>KS C 9835 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>QCVN 18:2022 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-3-2/-3 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-4-2/-3/-4/-5/-6/-8/-11 
+        </div> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc217082231"></a><a name="_Toc227064508"></a><a name="_Toc241495688">Ordering information</a></p>
+<p class="pBody">Cisco Secure Firewall 200 Series hardware appliances are listed below. For information on licenses, subscriptions, and other options associated with the product, refer to the Network Security Ordering Guide.</p>
+<p class="pTableCaptionCMT"><b>Table 8.<span>        </span></b>Cisco Secure Firewall 200 Series Product IDs</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Product ID</span></p> </td>
+<td> <p class="Cellhead1"><span>Description</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF220-ASA-K9 <br/> CSF220-ASA-K9++ </b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 220 Appliance, ASA </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF220-TD-K9 <br/> CSF220-TD-K9++ </b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 220 Appliance, Threat Defense </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF240P-ASA-K9 </b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 240P Appliance, ASA </p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>CSF240P-TD-K9 </b></p> </td>
+<td> <p class="pChart_bodyCMT">Cisco Secure Firewall 240P Appliance, Threat Defense </p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<a name="_Toc217082232"></a>
+<a name="_Toc227064509"> ‘<sup class="cSuperscript">++</sup>’ suffix denotes TAA (Trade Agreement Act) compliant models.</a>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc241495689">Cisco environmental sustainability</a></p>
+<p class="pBody">Information about Cisco’s environmental sustainability policies and initiatives for our products, solutions, operations, and extended operations or supply chain is provided in the “Environmental Sustainability” section of Cisco’s <a href="https://www.cisco.com/site/us/en/about/purpose/fy24-report/index.html">Corporate Social Responsibility</a> (CSR) report. </p>
+<p class="pBody">Reference links to information about key environmental sustainability topics (mentioned in the “Environment Sustainability” section of the CSR Report) are provided in the following table:</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1"><span>Sustainability topic</span></p> </td>
+<td> <p class="Cellhead1"><span>Reference</span></p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_subheadCMT">Information on product material content laws and regulations</p> </td>
+<td> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html">Materials</a></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_subheadCMT">Information on electronic waste laws and regulations, including products, batteries, and packaging</p> </td>
+<td> <p class="pChart_bodyCMT"><a href="https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html">WEEE compliance</a></p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody">Cisco makes the packaging data available for informational purposes only. It may not reflect the most current legal developments, and Cisco does not represent, warrant, or guarantee that it is complete, accurate, or up to date. This information is subject to change without notice.</p>
+<p class="pBody"><span> </span></p>
+</div>
+<div>
+<br/>
+<hr/>
+<div>
+<p class="MsoFootnoteText"><a href="#_ftnref1" name="_ftn1"><sup class="cSuperscript">[1]</sup></a> <span class="FootnoteChar"><span>Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys.</span></span></p>
+</div>
+<div>
+<p class="MsoFootnoteText"><a href="#_ftnref2" name="_ftn2"><sup class="cSuperscript">[2]</sup></a><span class="FootnoteChar"><span> Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.</span></span></p>
+</div>
+</div>
+<cdc:do></cdc:do>
+<div class="row full visitedlinks">
+<div class="col full">
+</div>
+</div>
+</div>

@@ -1,0 +1,169 @@
+# Label -> standard field mapping for Cisco datasheet tables.
+#
+# Patterns are case-insensitive regexes matched against the row label
+# (first match wins, so order matters). Labels that match nothing are kept
+# under other_by_image / hardware.raw and listed in reports/unmapped_labels.txt.
+#
+# Parse types:
+#   throughput  "10 Gbps", "890 Mbps", "5Gbps", "10G"  -> Mbps
+#   count       "1.5 million", "100K", "350 K", "1,000", "1M"
+#   contexts    "2; 100", "Included 10, maximum 250"   -> {included, max}
+#   number      first number in the text
+#   text        kept as printed
+#
+# Cisco's numbers depend on the software image, so fields are stored per image
+# (specs_by_image.ftd / .asa). The same field name in two images is NOT the
+# same test: FTD IPsec is 1024B TCP with Fastpath, ASA IPsec is 450B UDP L2L.
+# The printed label is kept with every value.
+
+perf:
+  ftd:
+    - {re: '^projected ipsec',                                  field: ipsec_throughput_projected_mbps, type: throughput}
+    - {re: 'ngfw throughput|fw \+ avc \+ (ips|intrusion)|firewall.*\+ avc \+ ips', field: ngfw_throughput_mbps, type: throughput}
+    - {re: '^throughput: (fw|firewall).*application visibility|^throughput: fw \+ avc', field: fw_avc_throughput_mbps, type: throughput}
+    - {re: 'avc \+ (ips|intrusion)',                            field: avc_ips_throughput_mbps, type: throughput}
+    - {re: 'ngips|next-generation intrusion prevention|^throughput: ngips', field: ips_throughput_mbps, type: throughput}
+    - {re: '^tls|transport layer security',                     field: tls_throughput_mbps, type: throughput}
+    - {re: 'ipsec vpn throughput',                              field: ipsec_throughput_mbps, type: throughput}
+    - {re: 'concurrent sessions',                               field: concurrent_sessions, type: count}
+    - {re: 'new connections per second',                        field: new_sessions_per_sec, type: count}
+    - {re: 'vpn peers',                                         field: vpn_peers_max, type: count}
+    - {re: 'virtual router instances|vrf',                      field: vrf_max, type: count}
+    - {re: 'instances \(multi-instance\)|multi-instance',       field: instances_max, type: count}
+    - {re: '^high availability.*clustering$',                   field: ha_clustering, type: text}
+    - {re: '^high availability',                                field: high_availability, type: text}
+    - {re: '^clustering',                                       field: clustering, type: text}
+  asa:
+    - {re: '^projected ipsec',                                  field: ipsec_throughput_projected_mbps, type: throughput}
+    - {re: 'stateful inspection.*(multiprotocol|http 1024)',    field: fw_throughput_multiprotocol_mbps, type: throughput}
+    - {re: 'stateful inspection',                               field: fw_throughput_mbps, type: throughput}
+    - {re: '^throughput: fw \(450b\)',                          field: fw_throughput_450b_mbps, type: throughput}
+    - {re: 'ipsec vpn throughput',                              field: ipsec_throughput_mbps, type: throughput}
+    - {re: 'firewall latency',                                  field: fw_latency_us, type: number}
+    - {re: 'concurrent (firewall connections|sessions)',        field: concurrent_sessions, type: count}
+    - {re: 'connections per second',                            field: new_sessions_per_sec, type: count}
+    - {re: 'vpn peers',                                         field: vpn_peers_max, type: count}
+    - {re: 'anyconnect|vpn user sessions',                      field: ravpn_sessions_max, type: count}
+    - {re: 'security contexts',                                 field: security_contexts, type: contexts}
+    - {re: '^vlans$',                                           field: vlans_max, type: count}
+    - {re: '^bridge groups',                                    field: bridge_groups_max, type: count}
+    - {re: 'virtual cpu core',                                  field: vcpu, type: text}
+    - {re: '^memory allocation',                                field: memory, type: text}
+    - {re: '^disk storage',                                     field: disk, type: text}
+    - {re: '^high availability',                                field: high_availability, type: text}
+    - {re: '^clustering',                                       field: clustering, type: text}
+
+# Feature rows that are the same marketing text on every model. Kept in
+# other_by_image, not reported as unmapped.
+feature_rows: 'centralized management|device manager|on-device management|^avc|application visibility and control|openappid|security intelligence|^cisco .*(ips|malware|trust anchor)|url filtering|threat feed|ecosystem|^scalability$|multi-instance capable|defined interfaces|vlan counts|macsec|^nat$'
+
+hardware:
+  - {re: 'dimensions',                         field: dimensions}
+  - {re: 'form factor',                        field: form_factor}
+  - {re: 'rack mount',                         field: rack_mount}
+  - {re: 'integrated (i/o|interfaces)|fixed ports|^network interfaces', field: interfaces}
+  - {re: 'transceiver slots|sfp\+ transceiver', field: transceiver_slots}
+  - {re: 'network modules?',                   field: network_modules}
+  - {re: 'maximum number of interfaces',       field: interfaces_max}
+  - {re: 'management (interfaces|ethernet|ports)|network management ports', field: management_ports}
+  - {re: 'power over ethernet',                field: poe}
+  - {re: '^storage',                           field: storage}
+  - {re: 'mtbf|mean time between',             field: mtbf}
+  - {re: 'weight',                             field: weight}
+  - {re: 'power consumption, typical',         field: power_typical}
+  - {re: 'power consumption, maximum|ac maximum power draw|ac maximum input power', field: power_max}
+  - {re: 'ac maximum output power',            field: psu_output_power}
+  - {re: 'power supply configuration|power supplies / configuration|^configuration$|^power supply$', field: power_supply}
+  - {re: 'redundancy',                         field: power_redundancy}
+  - {re: 'temperature: (standard )?operating', field: operating_temp}
+  - {re: 'noise|acoustic',                     field: noise}
+  - {re: '^fans|cooling',                      field: cooling}
+  - {re: 'console port|serial port',           field: console}
+  - {re: '^usb',                               field: usb}
+  - {re: '^supervisor',                        field: supervisor}
+  - {re: 'security module',                    field: security_modules}
+  - {re: '^power supplies$|power supply and ranges', field: power_supply}
+  - {re: '^hardware$',                         field: platform}
+
+# Hardware rows kept in hardware.raw only (electrical detail, environment,
+# NEBS). Not reported as unmapped.
+hardware_raw_only: '(ac|dc|hvdc|lvdc).*(voltage|current|frequency|efficiency|output power)|current draw|altitude|humidity|nonoperating|nebs|transceiver support|alarm i/o'
+
+# Per-datasheet settings. Keys are the file names in datasheets/.
+#   family / series / model_prefix: naming. Model = model_prefix + column header.
+#   columns: header text -> list of models (default: the header text itself).
+#   column_re: which header cells are models (to find the header row).
+#   single_column_models: models a 2-column (label | value) table applies to.
+#   table_scope: caption regex -> models, for tables that cover a subset.
+#   nested_rows: row labels whose cells are a sub-table (kept whole for every model).
+#   virtual: build vm records (one per platform x column).
+#   exclude: true -> downloaded but not converted.
+datasheets:
+  secure-firewall-200:
+    family: Secure Firewall
+    series: Secure Firewall 200
+    model_prefix: 'Secure Firewall '
+  secure-firewall-1200:
+    family: Secure Firewall
+    series: Secure Firewall 1200
+    model_prefix: 'Secure Firewall '
+    columns: {'1210': ['1210CE', '1210CP'], '1220': ['1220CX']}
+    table_scope:
+      - {caption: 'compact', models: ['1210CE', '1210CP', '1220CX']}
+      - {caption: '1U', models: ['1230', '1240', '1250']}
+  secure-firewall-3100:
+    family: Secure Firewall
+    series: Secure Firewall 3100
+    model_prefix: 'Secure Firewall '
+  secure-firewall-4100:
+    family: Secure Firewall
+    series: Secure Firewall 4100
+    model_prefix: 'Secure Firewall '
+  secure-firewall-4200:
+    family: Secure Firewall
+    series: Secure Firewall 4200
+    model_prefix: 'Secure Firewall '
+  secure-firewall-6100:
+    family: Secure Firewall
+    series: Secure Firewall 6100
+    model_prefix: 'Secure Firewall '
+    nested_rows: ['maximum number of interfaces']   # a small table inside the row, same for all models
+  firepower-1000:
+    family: Firepower
+    series: Firepower 1000
+    model_prefix: 'Firepower '
+    columns: {'1010 / 1010E': ['1010', '1010E']}
+  firepower-9300:
+    family: Firepower
+    series: Firepower 9300
+    model_prefix: 'Firepower 9300 '
+    column_re: 'SM-\d+'
+    columns: {'3 x SM-56': ['3x SM-56']}
+    single_column_models: ['SM-40', 'SM-48', 'SM-56', '3x SM-56']
+    model_notes:
+      'SM-40': 'One security module in the 9300 chassis'
+      'SM-48': 'One security module in the 9300 chassis'
+      'SM-56': 'One security module in the 9300 chassis'
+      '3x SM-56': 'Chassis with three SM-56 security modules'
+  isa3000:
+    family: Secure Firewall
+    series: Secure Firewall ISA3000
+    model_prefix: 'Secure Firewall '
+    column_re: '^ISA-?3000'
+    single_column_models: ['ISA3000-2C2F', 'ISA3000-4C']
+  threat-defense-virtual:
+    family: Secure Firewall
+    series: Threat Defense Virtual
+    model_prefix: 'Threat Defense Virtual '
+    virtual: true
+    column_re: 'vCPU|VM\.Standard'
+    aux_header_re: '^Metric$'
+  asa-virtual:
+    family: Secure Firewall
+    series: ASA Virtual
+    model_prefix: ''
+    virtual: true
+    column_re: 'ASAv'
+    aux_header_re: 'instance type|vm type|machine type|shape'
+  threat-defense-container:
+    exclude: true

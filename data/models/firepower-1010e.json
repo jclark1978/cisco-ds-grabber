@@ -1,0 +1,350 @@
+{
+  "vendor": "Cisco",
+  "model": "Firepower 1010E",
+  "model_id": "firepower-1010e",
+  "family": "Firepower",
+  "series": "Firepower 1000",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Firepower 1000 Series Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firepower-1000-series/datasheet-c78-742469.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firepower-1000-series/datasheet-c78-742469.pdf",
+    "file": "datasheets/firepower-1000.html",
+    "library_last_updated": "2023-10-23",
+    "sha256": "f3f18580d04003bc35bea19889cb45fc391a1722c44b73807cf2b01ecd868776"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd",
+    "asa"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 890,
+        "raw": "890 Mbps",
+        "label": "Throughput: Firewall (FW) + Application Visibility and Control (AVC) (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 880,
+        "raw": "880 Mbps",
+        "label": "Throughput: FW + AVC + Intrusion Prevention System (IPS) (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 100000,
+        "raw": "100K",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 6000,
+        "raw": "6K",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "tls_throughput_mbps": {
+        "value": 195,
+        "raw": "195 Mbps",
+        "label": "Transport Layer Security (TLS)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ips_throughput_mbps": {
+        "value": 900,
+        "raw": "900 Mbps",
+        "label": "Throughput: NGIPS (1024B)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 400,
+        "raw": "400 Mbps",
+        "label": "IPSec VPN throughput (1024B TCP w/Fastpath)",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_peers_max": {
+        "value": 75,
+        "raw": "75",
+        "label": "Maximum VPN Peers",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "ha_clustering": {
+        "value": "Active/standby",
+        "raw": "Active/standby",
+        "label": "High availability and clustering",
+        "table": "Table 1",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    },
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 2000,
+        "raw": "2 Gbps",
+        "label": "Stateful inspection firewall throughput",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 1400,
+        "raw": "1.4 Gbps",
+        "label": "Stateful inspection firewall throughput (multiprotocol)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+        ],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 100000,
+        "raw": "100,000",
+        "label": "Concurrent firewall connections",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "fw_latency_us": {
+        "value": null,
+        "raw": "-",
+        "label": "Firewall latency (UDP 64B microseconds)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 25000,
+        "raw": "25,000",
+        "label": "New connections per second",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "ipsec_throughput_mbps": {
+        "value": 500,
+        "raw": "500 Mbps",
+        "label": "IPsec VPN throughput (450B UDP L2L test)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_peers_max": {
+        "value": 75,
+        "raw": "75",
+        "label": "Maximum VPN Peers",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "security_contexts": {
+        "value": null,
+        "raw": "NA",
+        "label": "Security contexts (included; maximum)",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "high_availability": {
+        "value": "Active/standby",
+        "raw": "Active/standby",
+        "label": "High availability",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      },
+      "clustering": {
+        "value": null,
+        "raw": "-",
+        "label": "Clustering",
+        "table": "Table 2",
+        "software": "ASA",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {
+    "ftd": {
+      "Cisco Device Manager (local management)": "Yes",
+      "Centralized management": "Centralized configuration, logging, monitoring, and reporting are performed by the Threat Defense Manager (FMC) or, alternatively, from the cloud with Cisco Defense Orchestrator",
+      "AVC": "Standard, supporting more than 4000 applications, as well as geolocations, users, and websites",
+      "AVC: OpenAppID support for custom, open-source application detectors": "Standard",
+      "Cisco Security Intelligence": "Standard, with IP, URL, and DNS threat intelligence",
+      "Cisco IPS": "Available; can passively detect endpoints and infrastructure for threat correlation and Indicators of Compromise (IoC) intelligence",
+      "Cisco Malware Defense for Networks": "Available; enables detection, blocking, tracking, analysis, and containment of targeted and persistent malware, addressing the attack continuum both during and after attacks. | Integrated threat correlation with Cisco AMP for Endpoints is also optionally available",
+      "Cisco Malware Analytics sandboxing": "Available",
+      "URL filtering: number of categories": "More than 80",
+      "URL filtering: number of URLs categorized": "More than 280 million",
+      "Automated threat feed and IPS signature updates": "Yes: class-leading Collective Security Intelligence (CSI) from the Cisco Talos ® group (https://www.cisco.com/c/en/us/products/security/talos.html)",
+      "Third-party and open- source ecosystem": "Open API for integrations with third-party products; Snort ® and OpenAppID community resources for new and specific threats",
+      "Cisco Trust Anchor Technologies": "Cisco Firepower 1000 Series platforms include Trust Anchor Technologies for supply chain and software image assurance. Please see the section below for additional details"
+    },
+    "asa": {
+      "Scalability": "VPN Load Balancing",
+      "Centralized management": "Centralized configuration, logging, monitoring, and reporting are performed by Cisco Security Manager or alternatively in the cloud with Cisco Defense Orchestrator",
+      "Adaptive Security Device Manager": "Web-based, local management for small-scale deployments"
+    }
+  },
+  "hardware": {
+    "dimensions_mm": {
+      "h": 46.2,
+      "w": 199.4,
+      "d": 205.0
+    },
+    "desktop": true,
+    "weight_kg": 1.4,
+    "power_max_w": 55,
+    "operating_temp_c": [
+      0,
+      40
+    ],
+    "interfaces": "8 x 1000BASE-T",
+    "management_ports": "1x 1000BASE-T | 1x Serial console (RJ-45)",
+    "storage": "1 x 200 GB",
+    "poe": "N/A",
+    "power_supply": "External power supply, AC input",
+    "cooling": "None",
+    "noise": "0 dBA",
+    "fields": {
+      "dimensions": {
+        "raw": "1.82 x 7.85 x 8.07 in.",
+        "label": "Dimensions (H x W x D)",
+        "table": "Table 3",
+        "notes": []
+      },
+      "form_factor": {
+        "raw": "Compact (Desktop, wall-mount)",
+        "label": "Form factor",
+        "table": "Table 3",
+        "notes": []
+      },
+      "interfaces": {
+        "raw": "8 x 1000BASE-T",
+        "label": "Network interfaces",
+        "table": "Table 3",
+        "notes": []
+      },
+      "poe": {
+        "raw": "N/A",
+        "label": "Power over Ethernet",
+        "table": "Table 3",
+        "notes": []
+      },
+      "management_ports": {
+        "raw": "1x 1000BASE-T | 1x Serial console (RJ-45)",
+        "label": "Management interfaces",
+        "table": "Table 3",
+        "notes": []
+      },
+      "usb": {
+        "raw": "1 x USB 3.0 Type-A (500mA)",
+        "label": "USB",
+        "table": "Table 3",
+        "notes": []
+      },
+      "storage": {
+        "raw": "1 x 200 GB",
+        "label": "Storage",
+        "table": "Table 3",
+        "notes": []
+      },
+      "power_supply": {
+        "raw": "External power supply, AC input",
+        "label": "Power supply configuration",
+        "table": "Table 3",
+        "notes": []
+      },
+      "power_max": {
+        "raw": "55W",
+        "label": "AC maximum power draw",
+        "table": "Table 3",
+        "notes": []
+      },
+      "cooling": {
+        "raw": "None",
+        "label": "Fans",
+        "table": "Table 3",
+        "notes": []
+      },
+      "noise": {
+        "raw": "0 dBA",
+        "label": "Noise",
+        "table": "Table 3",
+        "notes": []
+      },
+      "rack_mount": {
+        "raw": "Via optional rack mount kit",
+        "label": "Rack mounting",
+        "table": "Table 3",
+        "notes": []
+      },
+      "weight": {
+        "raw": "3 lb (1.4 kg)",
+        "label": "Weight",
+        "table": "Table 3",
+        "notes": []
+      },
+      "operating_temp": {
+        "raw": "32 to 104°F | (0 to 40°C)",
+        "label": "Temperature: operating",
+        "table": "Table 3",
+        "notes": []
+      }
+    },
+    "raw": {
+      "Dimensions (H x W x D)": "1.82 x 7.85 x 8.07 in.",
+      "Form factor": "Compact (Desktop, wall-mount)",
+      "Network interfaces": "8 x 1000BASE-T",
+      "Power over Ethernet": "N/A",
+      "Management interfaces": "1x 1000BASE-T | 1x Serial console (RJ-45)",
+      "USB": "1 x USB 3.0 Type-A (500mA)",
+      "Storage": "1 x 200 GB",
+      "Power supply configuration": "External power supply, AC input",
+      "AC input voltage": "100 to 240V AC",
+      "AC maximum current draw": "< 2A at 100V, < 1A at 240V",
+      "AC maximum power draw": "55W",
+      "AC frequency": "50 to 60 Hz",
+      "AC efficiency": ">88% at 50% load",
+      "Fans": "None",
+      "Noise": "0 dBA",
+      "Rack mounting": "Via optional rack mount kit",
+      "Weight": "3 lb (1.4 kg)",
+      "Temperature: operating": "32 to 104°F | (0 to 40°C)",
+      "Temperature: nonoperating": "-13 to 158°F (-25 to 70°C)",
+      "Humidity: operating": "90% noncondensing",
+      "Humidity: nonoperating": "10 to 90% | noncondensing",
+      "Altitude: operating": "9,843 ft (max) | 3,000 m (max)",
+      "Altitude: nonoperating": "15,000 ft (max)"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Table 2 1": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 2 2": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "vendor": "Cisco",
+  "model": "Secure Firewall ISA3000-4C",
+  "model_id": "secure-firewall-isa3000-4c",
+  "family": "Secure Firewall",
+  "series": "Secure Firewall ISA3000",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Secure Firewall ISA3000 Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/industrial-security-appliance-3000/data-sheet-c78-735839.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/industrial-security-appliance-3000/data-sheet-c78-735839.pdf",
+    "file": "datasheets/isa3000.html",
+    "library_last_updated": "2021-07-11",
+    "sha256": "bb8d6e2761867dcfb21823350100bff63b486a946f70ea32e616dbfefd4be1a2"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "ips_throughput_mbps": {
+        "value": 500,
+        "raw": "500 Mbps",
+        "label": "Throughput: NGIPS (1024B)",
+        "table": "Table 5",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "fw_avc_throughput_mbps": {
+        "value": 375,
+        "raw": "375 Mbps",
+        "label": "Throughput: Firewall (FW) + Application Visibility and Control (AVC) (1024B)",
+        "table": "Table 5",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 350,
+        "raw": "350 Mbps",
+        "label": "Throughput: FW + AVC + Intrusion Prevention System (IPS) (1024B)",
+        "table": "Table 5",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 50000,
+        "raw": "50,000",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 5",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 2700,
+        "raw": "2700",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 5",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "ipsec_throughput_mbps": {
+        "value": 50,
+        "raw": "50 Mbps",
+        "label": "IPsec VPN throughput (1024B TCP with Fastpath)",
+        "table": "Table 5",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_peers_max": {
+        "value": 25,
+        "raw": "25",
+        "label": "Maximum VPN peers",
+        "table": "Table 5",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {
+    "ftd": {
+      "Application Visibility and Control (AVC)": "Standard, supporting more than 4000 applications as well as geo locations, users, and websites",
+      "URL filtering": "More than 80 categories | More than 280 million URLs categorized",
+      "Defined interfaces": "200, 400 (with SecPlus license on ASA), 400 (FTD)",
+      "VLAN counts": "5, 100 (with SecPlus license on ASA), 100 (FTD)",
+      "IPv4 MACsec Access Control Entries (ACEs)": "1000 with default TCAM template",
+      "NAT": "Bidirectional, 128 unique subnet NAT entries, which can expand to tens of thousands of translated entries if designed properly"
+    }
+  },
+  "hardware": {
+    "dimensions_mm": {
+      "h": 130.0,
+      "w": 112.0,
+      "d": 160.0
+    },
+    "weight_kg": 1.9,
+    "mtbf_hours": 398130,
+    "power_supply": "Dual internal DC | Nominal: ± 12V DC, 24V DC, or 48V DC | Maximum range: 9.6V DC to 60V DC | Power consumption: 24W",
+    "fields": {
+      "platform": {
+        "raw": "4-core Intel ® Atom ® processor (industrial temp.) | 8-GB DRAM (soldered down) | 16-GB onboard flash memory | mSATA 64 GB | 1-GB removable SD flash memory card (industrial temp.) | Mini-USB connector for console | RJ-45 traditional console connector | Dedicated 10/100/1000 management port | Hardware-based anti-counterfeit, anti-tamper chip | Factory reset option",
+        "label": "Hardware",
+        "table": "Table 7",
+        "notes": [],
+        "shared": true
+      },
+      "dimensions": {
+        "raw": "11.2 x 13 x 16 cm (4.41 x 5.12 x 6.30 in.)",
+        "label": "Dimensions (WxHxD)",
+        "table": "Table 7",
+        "notes": [],
+        "shared": true
+      },
+      "weight": {
+        "raw": "1.9 kg (4.2 lb)",
+        "label": "Weight",
+        "table": "Table 7",
+        "notes": [],
+        "shared": true
+      },
+      "power_supply": {
+        "raw": "Dual internal DC | Nominal: ± 12V DC, 24V DC, or 48V DC | Maximum range: 9.6V DC to 60V DC | Power consumption: 24W",
+        "label": "Power supply and ranges",
+        "table": "Table 7",
+        "notes": [],
+        "shared": true
+      },
+      "mtbf": {
+        "raw": "ISA-3000-4C: 398,130 hours | ISA-3000-2C2F: 376,580 hours",
+        "label": "Mean time between failures (MTBF)",
+        "table": "Table 7",
+        "notes": [],
+        "shared": true
+      }
+    },
+    "raw": {
+      "Hardware": "4-core Intel ® Atom ® processor (industrial temp.) | 8-GB DRAM (soldered down) | 16-GB onboard flash memory | mSATA 64 GB | 1-GB removable SD flash memory card (industrial temp.) | Mini-USB connector for console | RJ-45 traditional console connector | Dedicated 10/100/1000 management port | Hardware-based anti-counterfeit, anti-tamper chip | Factory reset option",
+      "Alarm I/O": "Two alarm inputs to detect dry contact open or closed | One Form C alarm output relay",
+      "Dimensions (WxHxD)": "11.2 x 13 x 16 cm (4.41 x 5.12 x 6.30 in.)",
+      "Weight": "1.9 kg (4.2 lb)",
+      "Power supply and ranges": "Dual internal DC | Nominal: ± 12V DC, 24V DC, or 48V DC | Maximum range: 9.6V DC to 60V DC | Power consumption: 24W",
+      "Mean time between failures (MTBF)": "ISA-3000-4C: 398,130 hours | ISA-3000-2C2F: 376,580 hours"
+    }
+  },
+  "vm": null,
+  "footnotes": {}
+}

@@ -1,0 +1,399 @@
+{
+  "vendor": "Cisco",
+  "model": "Secure Firewall 3110",
+  "model_id": "secure-firewall-3110",
+  "family": "Secure Firewall",
+  "series": "Secure Firewall 3100",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Secure Firewall 3100 Series Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-3100-series-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-3100-series-ds.pdf",
+    "file": "datasheets/secure-firewall-3100.html",
+    "library_last_updated": "2026-10-06",
+    "sha256": "189ba90d3b4d96f319cf5a597e7a79f3766998a93d9ea428d3fbd853a6021e77"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd",
+    "asa"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 17000,
+        "raw": "17.0 Gbps",
+        "label": "Throughput: FW + AVC (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 17000,
+        "raw": "17.0 Gbps",
+        "label": "Throughput: FW + AVC + IPS (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 2000000,
+        "raw": "2 million",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 130000,
+        "raw": "130,000",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "tls_throughput_mbps": {
+        "value": 4800,
+        "raw": "4.8 Gbps",
+        "label": "TLS",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [
+          "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys."
+        ],
+        "unit": "Mbps"
+      },
+      "ips_throughput_mbps": {
+        "value": 17000,
+        "raw": "17.0 Gbps",
+        "label": "Throughput: NGIPS (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 8000,
+        "raw": "8 Gbps",
+        "label": "IPSec VPN Throughput (1024B TCP w/Fastpath)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_projected_mbps": {
+        "value": 11000,
+        "raw": "11.0 Gbps",
+        "label": "Projected IPSec VPN Throughput (1024B TCP w/Fastpath) with VPN Offload (FTD 7.2)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_peers_max": {
+        "value": 3000,
+        "raw": "3,000",
+        "label": "Maximum VPN Peers",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "ha_clustering": {
+        "value": "Active/active, Active/standby. Cisco Secure Firewall 3100 Series allows clustering of up to 8 chassis (no clustering on 3105)",
+        "raw": "Active/active, Active/standby. Cisco Secure Firewall 3100 Series allows clustering of up to 8 chassis (no clustering on 3105)",
+        "label": "High availability and clustering",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    },
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 18000,
+        "raw": "18.0 Gbps",
+        "label": "Stateful inspection firewall throughput",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 15000,
+        "raw": "15.0 Gbps",
+        "label": "Stateful inspection firewall throughput (multiprotocol)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+        ],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 2000000,
+        "raw": "2 million",
+        "label": "Concurrent firewall connections",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 300000,
+        "raw": "300,000",
+        "label": "New connections per second",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": []
+      },
+      "ipsec_throughput_mbps": {
+        "value": 8000,
+        "raw": "8 Gbps",
+        "label": "IPsec VPN throughput (450B UDP L2L test)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_projected_mbps": {
+        "value": 12000,
+        "raw": "12.0 Gbps",
+        "label": "Projected IPsec VPN throughput (450B UDP L2L test) with VPN Offload (ASA 9.18)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_peers_max": {
+        "value": 3000,
+        "raw": "3,000",
+        "label": "Maximum VPN Peers",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": []
+      },
+      "security_contexts": {
+        "value": {
+          "included": 2,
+          "max": 100
+        },
+        "raw": "2; 100",
+        "label": "Security contexts (included; maximum)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": []
+      },
+      "high_availability": {
+        "value": "Active/active and active/ standby",
+        "raw": "Active/active and active/ standby",
+        "label": "High availability",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": []
+      },
+      "clustering": {
+        "value": "8",
+        "raw": "8",
+        "label": "Clustering",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {
+    "ftd": {
+      "Local On-device Management": "Yes",
+      "Centralized management": "Centralized configuration, logging, monitoring, and reporting are performed by the Firewall Management Center or alternatively in the cloud with Cisco Defense Orchestrator",
+      "Application Visibility and Control (AVC)": "Standard, supporting more than 4000 applications, as well as geolocations, users, and websites",
+      "AVC: OpenAppID support for custom, open source, application detectors": "Standard",
+      "Cisco Security Intelligence": "Standard, with IP, URL, and DNS threat intelligence",
+      "Cisco Secure IPS": "Available; can passively detect endpoints and infrastructure for threat correlation and Indicators of Compromise (IoC) intelligence",
+      "Cisco Malware Defense": "Available; enables detection, blocking, tracking, analysis, and containment of targeted and persistent malware, addressing the attack continuum both during and after attacks. Integrated threat correlation with Cisco Secure Endpoint is also optionally available",
+      "Cisco Secure Malware Analytics": "Available",
+      "URL Filtering: number of categories": "More than 80",
+      "URL Filtering: number of URLs categorized": "More than 280 million",
+      "Automated threat feed and IPS signature updates": "Yes: class-leading Collective Security Intelligence (CSI) from the Cisco Talos Group | ( https://www.cisco.com/c/en/us/products/security/talos.html )",
+      "Third-party and open-source ecosystem": "Open API for integrations with third-party products; Snort ® and OpenAppID community resources for new and specific threats",
+      "Cisco Trust Anchor Technologies": "Secure Firewall 3100 Series platforms include Trust Anchor Technologies for supply chain and software image assurance. Please see the section below for additional details"
+    },
+    "asa": {
+      "Scalability": "VPN Load Balancing",
+      "Centralized management": "Centralized configuration, logging, monitoring, and reporting are performed by Cisco Security Manager or alternatively in the cloud with Cisco Defense Orchestrator",
+      "Adaptive Security Device Manager": "Web-based, local management for small-scale deployments"
+    }
+  },
+  "hardware": {
+    "dimensions_mm": {
+      "h": 44.0,
+      "w": 433.0,
+      "d": 508.0
+    },
+    "rack_units": 1,
+    "desktop": false,
+    "weight_kg": 10.5,
+    "psu_output_w": 400,
+    "operating_temp_c": [
+      0,
+      40
+    ],
+    "interfaces": "8 x 10M/100M/ | 1GBASE-T Ethernet interfaces (RJ- 45), 8 x 1/10 Gigabit (SFP) Ethernet interfaces",
+    "network_modules": "8 x 1/10G Options",
+    "interfaces_max": "Up to 24 total Ethernet ports, (8x1G RJ-45, 8x1/10G SFP, and network module)",
+    "management_ports": "1 x 1/10G SFP",
+    "storage": "1x 900 GB, 1x spare slot",
+    "power_supply": "Single 400W AC, Dual 400W AC optional. | Single/Dual 400W DC optional",
+    "power_redundancy": "1+1 AC or DC with dual supplies",
+    "cooling": "2 hot-swappable fan modules (with 2 fans each)",
+    "noise": "65 dBA@ 25C | 74 dBA maximum",
+    "fields": {
+      "dimensions": {
+        "raw": "1.75 x 17 x 20 in. | (4.4 x 43.3 x 50.8 cm)",
+        "label": "Dimensions (H x W x D)",
+        "table": "Table 4",
+        "notes": []
+      },
+      "form_factor": {
+        "raw": "1RU",
+        "label": "Form factor (rack units)",
+        "table": "Table 4",
+        "notes": []
+      },
+      "interfaces": {
+        "raw": "8 x 10M/100M/ | 1GBASE-T Ethernet interfaces (RJ- 45), 8 x 1/10 Gigabit (SFP) Ethernet interfaces",
+        "label": "Integrated I/O",
+        "table": "Table 4",
+        "notes": []
+      },
+      "network_modules": {
+        "raw": "8 x 1/10G Options",
+        "label": "Network modules",
+        "table": "Table 4",
+        "notes": []
+      },
+      "interfaces_max": {
+        "raw": "Up to 24 total Ethernet ports, (8x1G RJ-45, 8x1/10G SFP, and network module)",
+        "label": "Maximum number of interfaces",
+        "table": "Table 4",
+        "notes": []
+      },
+      "management_ports": {
+        "raw": "1 x 1/10G SFP",
+        "label": "Integrated network management ports",
+        "table": "Table 4",
+        "notes": []
+      },
+      "console": {
+        "raw": "1 x RJ-45 console",
+        "label": "Serial port",
+        "table": "Table 4",
+        "notes": []
+      },
+      "usb": {
+        "raw": "1 x USB 3.0 Type-A (900mA)",
+        "label": "USB",
+        "table": "Table 4",
+        "notes": []
+      },
+      "storage": {
+        "raw": "1x 900 GB, 1x spare slot",
+        "label": "Storage",
+        "table": "Table 4",
+        "notes": []
+      },
+      "power_supply": {
+        "raw": "Single 400W AC, Dual 400W AC optional. | Single/Dual 400W DC optional",
+        "label": "Power supply configuration",
+        "table": "Table 4",
+        "notes": [
+          "Dual power supplies are hot-swappable."
+        ]
+      },
+      "psu_output_power": {
+        "raw": "400W",
+        "label": "AC maximum output power",
+        "table": "Table 4",
+        "notes": []
+      },
+      "power_redundancy": {
+        "raw": "1+1 AC or DC with dual supplies",
+        "label": "Redundancy",
+        "table": "Table 4",
+        "notes": []
+      },
+      "cooling": {
+        "raw": "2 hot-swappable fan modules (with 2 fans each)",
+        "label": "Fans",
+        "table": "Table 4",
+        "notes": [
+          "Fans operate in a 3+1 redundant configuration where the system will continue to function with only 3 operational fans. The 3 remaining fans will run at full speed."
+        ]
+      },
+      "noise": {
+        "raw": "65 dBA@ 25C | 74 dBA maximum",
+        "label": "Noise",
+        "table": "Table 4",
+        "notes": []
+      },
+      "rack_mount": {
+        "raw": "Yes. Fixed mount brackets optional. | (2- post). Mount rails included (4-post EIA- 310-D rack)",
+        "label": "Rack mountable",
+        "table": "Table 4",
+        "notes": []
+      },
+      "weight": {
+        "raw": "23 lb (10.5 kg) 1 x power supplies, 1 x NM, fan module, 1x SSD",
+        "label": "Weight",
+        "table": "Table 4",
+        "notes": []
+      },
+      "operating_temp": {
+        "raw": "32 to 104°F | (0 to 40°C)",
+        "label": "Temperature: operating",
+        "table": "Table 4",
+        "notes": []
+      }
+    },
+    "raw": {
+      "Dimensions (H x W x D)": "1.75 x 17 x 20 in. | (4.4 x 43.3 x 50.8 cm)",
+      "Form factor (rack units)": "1RU",
+      "Integrated I/O": "8 x 10M/100M/ | 1GBASE-T Ethernet interfaces (RJ- 45), 8 x 1/10 Gigabit (SFP) Ethernet interfaces",
+      "Network modules": "8 x 1/10G Options",
+      "Maximum number of interfaces": "Up to 24 total Ethernet ports, (8x1G RJ-45, 8x1/10G SFP, and network module)",
+      "Integrated network management ports": "1 x 1/10G SFP",
+      "Serial port": "1 x RJ-45 console",
+      "USB": "1 x USB 3.0 Type-A (900mA)",
+      "Storage": "1x 900 GB, 1x spare slot",
+      "Power supply configuration": "Single 400W AC, Dual 400W AC optional. | Single/Dual 400W DC optional",
+      "AC input voltage": "100 to 240V AC",
+      "AC maximum input current": "< 6A at 100V",
+      "AC maximum output power": "400W",
+      "AC frequency": "50 to 60 Hz",
+      "AC efficiency": ">89% at 50% load",
+      "DC input voltage": "-48V to -60VDC",
+      "DC maximum input current": "< 12.5A at -48V",
+      "DC maximum output power": "400W",
+      "DC efficiency": ">88% at 50% load",
+      "Redundancy": "1+1 AC or DC with dual supplies",
+      "Fans": "2 hot-swappable fan modules (with 2 fans each)",
+      "Noise": "65 dBA@ 25C | 74 dBA maximum",
+      "Rack mountable": "Yes. Fixed mount brackets optional. | (2- post). Mount rails included (4-post EIA- 310-D rack)",
+      "Weight": "23 lb (10.5 kg) 1 x power supplies, 1 x NM, fan module, 1x SSD",
+      "Temperature: operating": "32 to 104°F | (0 to 40°C)",
+      "Temperature: nonoperating": "-4 to 149°F | (-20 to 65°C)",
+      "Humidity: operating": "10 to 85% | noncondensing",
+      "Humidity: nonoperating": "5 to 95% noncondensing",
+      "Altitude: operating": "10,000 ft (max)",
+      "Altitude: nonoperating": "40,000 ft (max)"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Table 2 1": "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys.",
+    "Table 3 1": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 3 2": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS.",
+    "Table 4 3": "FPR-3120 platform is designed to be NEBS ready. The availability of NEBS certification is pending."
+  }
+}

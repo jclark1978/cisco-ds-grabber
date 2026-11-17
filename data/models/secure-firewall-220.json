@@ -1,0 +1,396 @@
+{
+  "vendor": "Cisco",
+  "model": "Secure Firewall 220",
+  "model_id": "secure-firewall-220",
+  "family": "Secure Firewall",
+  "series": "Secure Firewall 200",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Secure Firewall 200 Series Data Sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-200-series/secure-firewall-200-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-200-series/secure-firewall-200-ds.pdf",
+    "file": "datasheets/secure-firewall-200.html",
+    "library_last_updated": "2026-10-06",
+    "sha256": "09654be6d3088398c3b1786276e03e3efcfa5db6097e9fe9c03933d5fb6c016e"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd",
+    "asa"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 1500,
+        "raw": "1.5 Gbps",
+        "label": "Throughput: Firewall + Application Visibility and Control (AVC) (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "avc_ips_throughput_mbps": {
+        "value": 1500,
+        "raw": "1.5 Gbps",
+        "label": "Throughput: AVC + Intrusion Prevention System (IPS) (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 1500,
+        "raw": "1.5 Gbps",
+        "label": "NGFW Throughput: FW + AVC + IPS (1024B)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 1200,
+        "raw": "1.2 Gbps",
+        "label": "IPSec VPN Throughput (1024B TCP w/Fastpath)",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "tls_throughput_mbps": {
+        "value": 700,
+        "raw": "0.7 Gbps",
+        "label": "TLS Decryption",
+        "table": "Table 2",
+        "software": "Threat Defense (FTD)",
+        "notes": [
+          "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys."
+        ],
+        "unit": "Mbps"
+      },
+      "concurrent_sessions": {
+        "value": 30000,
+        "raw": "30K",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "new_sessions_per_sec": {
+        "value": 6000,
+        "raw": "6K",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 50,
+        "raw": "50",
+        "label": "Maximum VPN peers",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vrf_max": {
+        "value": 5,
+        "raw": "5",
+        "label": "Maximum Virtual Router Instances (VRF)",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "high_availability": {
+        "value": "Active/Standby",
+        "raw": "Active/Standby",
+        "label": "High availability",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "instances_max": {
+        "value": null,
+        "raw": "Not supported",
+        "label": "Instances (multi-instance)",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "clustering": {
+        "value": null,
+        "raw": "Not supported",
+        "label": "Clustering",
+        "table": "Table 4",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    },
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 2000,
+        "raw": "2 Gbps",
+        "label": "Stateful inspection firewall throughput (150B UDP)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 2000,
+        "raw": "2 Gbps",
+        "label": "Stateful inspection firewall throughput (HTTP 1024 Byte)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 1500,
+        "raw": "1.5 Gbps",
+        "label": "IPsec VPN throughput (450B UDP L2L test)",
+        "table": "Table 3",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 80000,
+        "raw": "80K",
+        "label": "New connections per second",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "concurrent_sessions": {
+        "value": 100000,
+        "raw": "100K",
+        "label": "Concurrent firewall connections",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 50,
+        "raw": "50",
+        "label": "Maximum VPN Peers",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "high_availability": {
+        "value": "Active/Standby",
+        "raw": "Active/Standby",
+        "label": "High availability",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "security_contexts": {
+        "value": null,
+        "raw": "Not supported",
+        "label": "Security contexts",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      },
+      "clustering": {
+        "value": null,
+        "raw": "Not supported",
+        "label": "Clustering",
+        "table": "Table 5",
+        "software": "ASA",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {
+    "ftd": {
+      "Application Visibility and Control (AVC)": "Standard, supporting more than 8100 applications, as well as geolocations, users, and websites"
+    }
+  },
+  "hardware": {
+    "dimensions_mm": {
+      "h": 29.0,
+      "w": 234.0,
+      "d": 198.0
+    },
+    "desktop": true,
+    "weight_kg": 1.17,
+    "power_max_w": 19,
+    "power_typical_w": 12.7,
+    "operating_temp_c": [
+      0,
+      40
+    ],
+    "mtbf_hours": 700000,
+    "interfaces": "4x 1000BASE-T | 1x1G SFP",
+    "network_modules": "N/A",
+    "interfaces_max": "Up to 5 total Ethernet ports | (4 x 1000Base-T, 1x 1 Gigabit SFP)",
+    "management_ports": "1000BASE-T port",
+    "storage": "64GB",
+    "poe": "N/A",
+    "power_supply": "Single AC External 30W power supply",
+    "power_redundancy": "N/A",
+    "cooling": "Passive (fanless)",
+    "noise": "0 dBA",
+    "fields": {
+      "form_factor": {
+        "raw": "Compact (Can be placed on desktop. Rackmount and wall mount accessories are also available)",
+        "label": "Form factor",
+        "table": "Table 6",
+        "notes": []
+      },
+      "interfaces": {
+        "raw": "4x 1000BASE-T | 1x1G SFP",
+        "label": "Fixed ports",
+        "table": "Table 6",
+        "notes": []
+      },
+      "management_ports": {
+        "raw": "1000BASE-T port",
+        "label": "Management Ethernet",
+        "table": "Table 6",
+        "notes": []
+      },
+      "network_modules": {
+        "raw": "N/A",
+        "label": "Network modules",
+        "table": "Table 6",
+        "notes": []
+      },
+      "interfaces_max": {
+        "raw": "Up to 5 total Ethernet ports | (4 x 1000Base-T, 1x 1 Gigabit SFP)",
+        "label": "Maximum number of interfaces",
+        "table": "Table 6",
+        "notes": []
+      },
+      "console": {
+        "raw": "USB Type-C and RJ-45 | (Cisco serial)",
+        "label": "Console port",
+        "table": "Table 6",
+        "notes": []
+      },
+      "usb": {
+        "raw": "USB 3 Type A port",
+        "label": "USB port",
+        "table": "Table 6",
+        "notes": []
+      },
+      "storage": {
+        "raw": "64GB",
+        "label": "Storage",
+        "table": "Table 6",
+        "notes": []
+      },
+      "poe": {
+        "raw": "N/A",
+        "label": "Power over Ethernet",
+        "table": "Table 6",
+        "notes": []
+      },
+      "mtbf": {
+        "raw": "700,000 Hours",
+        "label": "Mean Time Between Failures (MTBF)",
+        "table": "Table 6",
+        "notes": []
+      },
+      "dimensions": {
+        "raw": "1.15” x 9.2” x 7.8” | (2.9 x 23.4 x 19.8 cm)",
+        "label": "Chassis dimensions (HxWxD)",
+        "table": "Table 6",
+        "notes": []
+      },
+      "weight": {
+        "raw": "2.6lb (1.17kg)",
+        "label": "Weight",
+        "table": "Table 6",
+        "notes": []
+      },
+      "cooling": {
+        "raw": "Passive (fanless)",
+        "label": "Cooling",
+        "table": "Table 6",
+        "notes": []
+      },
+      "rack_mount": {
+        "raw": "Yes",
+        "label": "Rack mountable",
+        "table": "Table 6",
+        "notes": []
+      },
+      "power_supply": {
+        "raw": "Single AC External 30W power supply",
+        "label": "Configuration",
+        "table": "Table 6",
+        "notes": []
+      },
+      "power_typical": {
+        "raw": "12.7 Watts",
+        "label": "Power consumption, typical",
+        "table": "Table 6",
+        "notes": []
+      },
+      "power_max": {
+        "raw": "19 Watts",
+        "label": "Power consumption, maximum",
+        "table": "Table 6",
+        "notes": []
+      },
+      "power_redundancy": {
+        "raw": "N/A",
+        "label": "Redundancy",
+        "table": "Table 6",
+        "notes": []
+      },
+      "operating_temp": {
+        "raw": "32° to 104°F (0° to 40°C)",
+        "label": "Temperature: operating",
+        "table": "Table 6",
+        "notes": []
+      },
+      "noise": {
+        "raw": "0 dBA",
+        "label": "Acoustic noise",
+        "table": "Table 6",
+        "notes": []
+      }
+    },
+    "raw": {
+      "Form factor": "Compact (Can be placed on desktop. Rackmount and wall mount accessories are also available)",
+      "Fixed ports": "4x 1000BASE-T | 1x1G SFP",
+      "Management Ethernet": "1000BASE-T port",
+      "Network modules": "N/A",
+      "Maximum number of interfaces": "Up to 5 total Ethernet ports | (4 x 1000Base-T, 1x 1 Gigabit SFP)",
+      "Console port": "USB Type-C and RJ-45 | (Cisco serial)",
+      "USB port": "USB 3 Type A port",
+      "Storage": "64GB",
+      "Power over Ethernet": "N/A",
+      "Transceiver support": "Refer to Cisco Secure Firewall (CSF) 200 Hardware Installation Guide",
+      "Mean Time Between Failures (MTBF)": "700,000 Hours",
+      "Chassis dimensions (HxWxD)": "1.15” x 9.2” x 7.8” | (2.9 x 23.4 x 19.8 cm)",
+      "Weight": "2.6lb (1.17kg)",
+      "Cooling": "Passive (fanless)",
+      "Rack mountable": "Yes",
+      "Configuration": "Single AC External 30W power supply",
+      "AC input voltage": "100–240V AC",
+      "AC input frequency": "50-60Hz",
+      "AC current draw, maximum": "1A",
+      "Power consumption, typical": "12.7 Watts",
+      "Power consumption, maximum": "19 Watts",
+      "Redundancy": "N/A",
+      "Temperature: operating": "32° to 104°F (0° to 40°C)",
+      "Humidity: operating": "5% to 85% (non-condensing)",
+      "Altitude: operating": "up to 10,000 feet (3048 m)",
+      "Acoustic noise": "0 dBA",
+      "Temperature: nonoperating": "-13° to 158°F (-25° to 70°C)",
+      "Humidity: nonoperating": "5% to 95% (non-condensing)",
+      "Altitude: nonoperating": "0 to 15,000 ft (4570 m)"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Table 2 [1]": "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys.",
+    "Table 3 [2]": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+  }
+}

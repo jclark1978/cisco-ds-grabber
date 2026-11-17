@@ -1,0 +1,780 @@
+<!-- Cisco Secure Firewall 3100 Series Data Sheet | https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-3100-series-ds.html | Updated 2026-10-06 -->
+<div id="eot-doc-wrapper">
+
+<code>
+<link href="wemdcmt.css"/>
+<link href="/etc/designs/cdc/transformation/wemdcmt.css"/></code>
+<div class="WordSection1">
+<p class="pBody"> </p>
+<p class="pToC_Subhead1"><a name="_Toc100080673"></a><a name="_Toc127400731"></a><a name="_Toc181233219"></a><a name="_Toc181318547"></a><a name="_Toc242122869">Cisco Secure Firewall 3100 Series</a></p>
+<p class="pBody">The mid-range Cisco Secure Firewall 3100 Series supports your evolving world. It makes hybrid work and zero trust practical, with the flexibility to ensure strong return on investment.</p>
+<p class="pBody">The Cisco Secure Firewall 3100 Series is a family of threat-focused security appliances that delivers business resiliency and superior threat defense. <b>Each model offers outstanding performance for multiple firewall use cases, even when advanced threat functions are enabled</b>. These performance capabilities are enabled by a modern CPU architecture coupled with purpose-built hardware that optimizes firewall, cryptographic, and threat inspection functions.</p>
+<p class="pBody">The five models in the 3100 Series deliver a range of performance levels to address use cases from the Internet edge to the data center and private cloud. The 3100 Series supports also clustering to deliver increased performance that can scale to meet your needs as your organization grows.</p>
+<p class="pBody">Each model in the series can run either ASA or Firewall Threat Defense (FTD) software and the platform can be deployed in both firewall and dedicated IPS modes. For inline sets and passive interfaces, the 3100 series supports Q-in-Q (stacked VLAN) with up to two 802.1Q headers in a packet. </p>
+<p class="pToC_Subhead1"><a name="_Toc100080674"></a><a name="_Toc127400732"></a><a name="_Toc181233220"></a><a name="_Toc181318548"></a><a name="_Toc242122870">Model overview</a></p>
+<p class="pBody"></p>
+<p class="pBody"> </p>
+<p class="pBody"></p>
+<p class="pToC_Subhead1"><a name="_Toc100080675"></a><a name="_Toc127400733"></a><a name="_Toc181233221"></a><a name="_Toc181318549"></a><a name="_Toc242122871">Cisco Secure Firewall 3100 series summary</a></p>
+<p class="pTableCaptionCMT"><a name="table1"></a><b>Table 1.<span>        </span></b>Cisco Secure Firewall 3100 Series performance and specification highlights</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Secure Firewall Models</p> </td>
+<td> <p class="Cellhead1">Firewall</p> </td>
+<td> <p class="Cellhead1">FW+AVC+IPS</p> </td>
+<td> <p class="Cellhead1">IPS Throughput</p> </td>
+<td> <p class="Cellhead1">Interfaces</p> </td>
+<td> <p class="Cellhead1">Optional interfaces</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>3105</b></p> </td>
+<td> <p class="pChart_bodyCMT">10G</p> </td>
+<td> <p class="pChart_bodyCMT">10G</p> </td>
+<td> <p class="pChart_bodyCMT">10G</p> </td>
+<td> <p class="pChart_bodyCMT">8 x RJ45, 8 x 1/10G SFP+</p> </td>
+<td> <p class="pChart_bodyCMT">10G SFP+</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>3110</b></p> </td>
+<td> <p class="pChart_bodyCMT">18G</p> </td>
+<td> <p class="pChart_bodyCMT">17G</p> </td>
+<td> <p class="pChart_bodyCMT">17G</p> </td>
+<td> <p class="pChart_bodyCMT">8 x RJ45, 8 x 1/10G SFP+</p> </td>
+<td> <p class="pChart_bodyCMT">10G SFP+</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>3120</b></p> </td>
+<td> <p class="pChart_bodyCMT">22G</p> </td>
+<td> <p class="pChart_bodyCMT">21G</p> </td>
+<td> <p class="pChart_bodyCMT">21G</p> </td>
+<td> <p class="pChart_bodyCMT">8 x RJ45, 8 x 1/10G SFP+</p> </td>
+<td> <p class="pChart_bodyCMT">10G SFP+</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>3130</b></p> </td>
+<td> <p class="pChart_bodyCMT">42G</p> </td>
+<td> <p class="pChart_bodyCMT">38G</p> </td>
+<td> <p class="pChart_bodyCMT">38G</p> </td>
+<td> <p class="pChart_bodyCMT">8 x RJ45, 8 x 1/10/25G SFP+</p> </td>
+<td> <p class="pChart_bodyCMT">10G/25G/40G SFP+, 4X40G NM</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>3140</b></p> </td>
+<td> <p class="pChart_bodyCMT">49G</p> </td>
+<td> <p class="pChart_bodyCMT">45G</p> </td>
+<td> <p class="pChart_bodyCMT">45G</p> </td>
+<td> <p class="pChart_bodyCMT">8 x RJ45, 8 x 1/10/25G SFP+</p> </td>
+<td> <p class="pChart_bodyCMT">10G/25G/40G SFP+, 4x40G NM</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc100080676"></a><a name="_Toc127400734"></a><a name="_Toc181233222"></a><a name="_Toc181318550"></a><a name="_Toc242122872">Performance specifications and feature details</a></p>
+<p class="pTableCaptionCMT"><a name="table2"></a><b>Table 2.<span>        </span></b>Cisco Secure Firewall 3100 Series performance and capabilities, running on Firewall Threat Defense (FTD) software</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Features</p> </td>
+<td> <p class="Cellhead1">3105</p> </td>
+<td> <p class="Cellhead1">3110</p> </td>
+<td> <p class="Cellhead1">3120</p> </td>
+<td> <p class="Cellhead1">3130</p> </td>
+<td> <p class="Cellhead1">3140</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">10 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">17.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">21.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">38.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">45.0 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: FW + AVC + IPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">10 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">17.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">21.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">38.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">45.0 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum concurrent sessions, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">1.5 million</p> </td>
+<td> <p class="pChart_bodyCMT">2 million</p> </td>
+<td> <p class="pChart_bodyCMT">4 million</p> </td>
+<td> <p class="pChart_bodyCMT">6 million</p> </td>
+<td> <p class="pChart_bodyCMT">10 million</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum new connections per second, with AVC</b></p> </td>
+<td> <p class="pChart_bodyCMT">90,000</p> </td>
+<td> <p class="pChart_bodyCMT">130,000</p> </td>
+<td> <p class="pChart_bodyCMT">170,000</p> </td>
+<td> <p class="pChart_bodyCMT">240,000</p> </td>
+<td> <p class="pChart_bodyCMT">300,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>TLS<sup class="cSuperscript">1</sup></b></p> </td>
+<td> <p class="pChart_bodyCMT">3.2 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">4.8 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">6.7 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">9.1 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">11.5 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Throughput: NGIPS (1024B)</b></p> </td>
+<td> <p class="pChart_bodyCMT">10.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">17.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">21.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">38.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">45.0 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPSec VPN Throughput<br/> (1024B TCP w/Fastpath)</b></p> </td>
+<td> <p class="pChart_bodyCMT">5.5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">17.8 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">22.4 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Projected IPSec VPN Throughput<br/> (1024B TCP w/Fastpath) with VPN Offload (FTD 7.2) </b></p> </td>
+<td> <p class="pChart_bodyCMT">NA</p> </td>
+<td> <p class="pChart_bodyCMT">11.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">13.5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">33.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">39.4 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN Peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">2,000</p> </td>
+<td> <p class="pChart_bodyCMT">3,000</p> </td>
+<td> <p class="pChart_bodyCMT">7,000</p> </td>
+<td> <p class="pChart_bodyCMT">15,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Local On-device Management</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+<td> <p class="pChart_bodyCMT">Yes</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Centralized management</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Centralized configuration, logging, monitoring, and reporting are performed by the Firewall Management Center or alternatively in the cloud with Cisco Defense Orchestrator</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Application Visibility and Control (AVC)</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Standard, supporting more than 4000 applications, as well as geolocations, users, and websites</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AVC: OpenAppID support for custom, open source, application detectors</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Standard</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco Security Intelligence</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Standard, with IP, URL, and DNS threat intelligence</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco Secure IPS</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Available; can passively detect endpoints and infrastructure for threat correlation and Indicators of Compromise (IoC) intelligence</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco Malware Defense</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Available; enables detection, blocking, tracking, analysis, and containment of targeted and persistent malware, addressing the attack continuum both during and after attacks. Integrated threat correlation with Cisco Secure Endpoint is also optionally available</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco Secure Malware Analytics</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Available</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>URL Filtering: number of categories</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">More than 80</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>URL Filtering: number of URLs categorized</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">More than 280 million</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Automated threat feed and IPS signature updates</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Yes: class-leading Collective Security Intelligence (CSI) from the Cisco Talos Group <br/> (<a href="https://www.cisco.com/c/en/us/products/security/talos.html">https://www.cisco.com/c/en/us/products/security/talos.html</a>)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Third-party and open-source ecosystem</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Open API for integrations with third-party products; Snort<sup class="cSuperscript">®</sup> and OpenAppID community resources for new and specific threats</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High availability and clustering</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Active/active, Active/standby. Cisco Secure Firewall 3100 Series allows clustering of up to 8 chassis (no clustering on 3105)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Cisco Trust Anchor Technologies</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Secure Firewall 3100 Series platforms include Trust Anchor Technologies for supply chain and software image assurance. Please see the section below for additional details</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<sup class="cSuperscript">1</sup> Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys. 
+   </div>
+<p class="pBody"><b>Note:</b> Performance will vary depending on features activated, and network traffic protocol mix, and packet size characteristics. Performance is subject to change with new software releases. Consult your Cisco representative for detailed sizing guidance.</p>
+<p class="pTableCaptionCMT"><a name="table3"></a><b>Table 3.<span>        </span></b>ASA Performance and capabilities on Secure Firewall 3100 appliances</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Features</p> </td>
+<td> <p class="Cellhead1">3105</p> </td>
+<td> <p class="Cellhead1">3110</p> </td>
+<td> <p class="Cellhead1">3120</p> </td>
+<td> <p class="Cellhead1">3130</p> </td>
+<td> <p class="Cellhead1">3140</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection firewall throughput<sup class="cSuperscript">1</sup></b></p> </td>
+<td> <p class="pChart_bodyCMT">10.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">18.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">22.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">42.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">49.0 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Stateful inspection firewall throughput (multiprotocol)<sup class="cSuperscript">2</sup></b></p> </td>
+<td> <p class="pChart_bodyCMT">9.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">15.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">17.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">39.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">43.0 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Concurrent firewall connections</b></p> </td>
+<td> <p class="pChart_bodyCMT">1.5 million</p> </td>
+<td> <p class="pChart_bodyCMT">2 million</p> </td>
+<td> <p class="pChart_bodyCMT">4 million</p> </td>
+<td> <p class="pChart_bodyCMT">6 million</p> </td>
+<td> <p class="pChart_bodyCMT">10 million</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>New connections per second</b></p> </td>
+<td> <p class="pChart_bodyCMT">150,000</p> </td>
+<td> <p class="pChart_bodyCMT">300,000</p> </td>
+<td> <p class="pChart_bodyCMT">500,000</p> </td>
+<td> <p class="pChart_bodyCMT">875,000</p> </td>
+<td> <p class="pChart_bodyCMT">1,100,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>IPsec VPN throughput<br/> (450B UDP L2L test)</b></p> </td>
+<td> <p class="pChart_bodyCMT">5.5 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">8 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">10 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">14 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">17 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Projected IPsec VPN throughput<br/> (450B UDP L2L test) with VPN Offload (ASA 9.18)</b></p> </td>
+<td> <p class="pChart_bodyCMT">7.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">12.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">15.4 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">28.0 Gbps</p> </td>
+<td> <p class="pChart_bodyCMT">33.0 Gbps</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum VPN Peers</b></p> </td>
+<td> <p class="pChart_bodyCMT">2,000</p> </td>
+<td> <p class="pChart_bodyCMT">3,000</p> </td>
+<td> <p class="pChart_bodyCMT">7,000</p> </td>
+<td> <p class="pChart_bodyCMT">15,000</p> </td>
+<td> <p class="pChart_bodyCMT">20,000</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Security contexts (included; maximum)</b></p> </td>
+<td> <p class="pChart_bodyCMT">2; 100</p> </td>
+<td> <p class="pChart_bodyCMT">2; 100</p> </td>
+<td> <p class="pChart_bodyCMT">2; 100</p> </td>
+<td> <p class="pChart_bodyCMT">2; 100</p> </td>
+<td> <p class="pChart_bodyCMT">2; 100</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>High availability</b></p> </td>
+<td> <p class="pChart_bodyCMT">Active/active and active/ standby</p> </td>
+<td> <p class="pChart_bodyCMT">Active/active and active/ standby</p> </td>
+<td> <p class="pChart_bodyCMT">Active/active and active/ standby</p> </td>
+<td> <p class="pChart_bodyCMT">Active/active and active/ standby</p> </td>
+<td> <p class="pChart_bodyCMT">Active/active and active/ standby</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Clustering</b></p> </td>
+<td> <p class="pChart_bodyCMT">N/A</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+<td> <p class="pChart_bodyCMT">8</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Scalability</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">VPN Load Balancing</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Centralized management</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Centralized configuration, logging, monitoring, and reporting are performed by Cisco Security Manager or alternatively in the cloud with Cisco Defense Orchestrator</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Adaptive Security Device Manager</b></p> </td>
+<td colspan="5"> <p class="pChart_bodyCMT">Web-based, local management for small-scale deployments</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<sup class="cSuperscript">1</sup> Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions. 
+   </div>
+<div class="pDefault">
+<sup class="cSuperscript">2</sup> “Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications like HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS. 
+   </div>
+<p class="pToC_Subhead1"><a name="_Toc100080677"></a><a name="_Toc127400735"></a><a name="_Toc181233223"></a><a name="_Toc181318551"></a><a name="_Toc242122873">Hardware specifications</a></p>
+<p class="pTableCaptionCMT"><a name="table4"></a><b>Table 4.<span>        </span></b>Cisco Secure Firewall 3100 Series hardware specifications</p>
+<div>
+<table>
+<thead>
+<tr>
+<td rowspan="2"> <p class="Cellhead1">Features</p> </td>
+<td colspan="5"> <p class="Cellhead1">Cisco Secure Firewall Model</p> </td>
+</tr>
+<tr>
+<td> <p class="Cellhead1">3105</p> </td>
+<td> <p class="Cellhead1">3110</p> </td>
+<td> <p class="Cellhead1">3120</p> </td>
+<td> <p class="Cellhead1">3130</p> </td>
+<td> <p class="Cellhead1">3140</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Dimensions (H x W x D)</b></p> </td>
+<td> <p class="pChart_bodyCMT">1.75 x 17 x 20 in.</p> <p class="pChart_bodyCMT">(4.4 x 43.3 x 50.8 cm)</p> </td>
+<td> <p class="pChart_bodyCMT">1.75 x 17 x 20 in.</p> <p class="pChart_bodyCMT">(4.4 x 43.3 x 50.8 cm)</p> </td>
+<td> <p class="pChart_bodyCMT">1.75 x 17 x 20 in.</p> <p class="pChart_bodyCMT">(4.4 x 43.3 x 50.8 cm)</p> </td>
+<td> <p class="pChart_bodyCMT">1.75 x 17 x 20 in.</p> <p class="pChart_bodyCMT">(4.4 x 43.3 x 50.8 cm)</p> </td>
+<td> <p class="pChart_bodyCMT">1.75 x 17 x 20 in.</p> <p class="pChart_bodyCMT">(4.4 x 43.3 x 50.8 cm)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Form factor (rack units)</b></p> </td>
+<td> <p class="pChart_bodyCMT">1RU</p> </td>
+<td> <p class="pChart_bodyCMT">1RU</p> </td>
+<td> <p class="pChart_bodyCMT">1RU</p> </td>
+<td> <p class="pChart_bodyCMT">1RU</p> </td>
+<td> <p class="pChart_bodyCMT">1RU</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Integrated I/O</b></p> </td>
+<td> <p class="pChart_bodyCMT">8 x 10M/100M/</p> <p class="pChart_bodyCMT">1GBASE-T Ethernet interfaces (RJ- 45), 8 x 1/10 Gigabit (SFP) Ethernet interfaces</p> </td>
+<td> <p class="pChart_bodyCMT">8 x 10M/100M/</p> <p class="pChart_bodyCMT">1GBASE-T Ethernet interfaces (RJ- 45), 8 x 1/10 Gigabit (SFP) Ethernet interfaces</p> </td>
+<td> <p class="pChart_bodyCMT">8 x 10M/100M/</p> <p class="pChart_bodyCMT">1GBASE-T Ethernet interfaces (RJ- 45), 8 x 1/10 Gigabit (SFP) Ethernet interfaces</p> </td>
+<td> <p class="pChart_bodyCMT">8 x 10M/100M/</p> <p class="pChart_bodyCMT">1GBASE-T Ethernet interfaces (RJ- 45), 8 x 1/10/25 Gigabit (SFP) Ethernet interfaces</p> </td>
+<td> <p class="pChart_bodyCMT">8 x 10M/100M/</p> <p class="pChart_bodyCMT">1GBASE-T Ethernet interfaces (RJ- 45), 8 x 1/10/25 Gigabit (SFP) Ethernet interfaces</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Network modules</b></p> </td>
+<td> <p class="pChart_bodyCMT">8 x 1/10G Options</p> </td>
+<td> <p class="pChart_bodyCMT">8 x 1/10G Options</p> </td>
+<td> <p class="pChart_bodyCMT">8 x 1/10G Options</p> </td>
+<td> <p class="pChart_bodyCMT">8 x 1/10/25G,</p> <p class="pChart_bodyCMT">4 x 40G Options, </p> </td>
+<td> <p class="pChart_bodyCMT">8 x 1/10/25G,</p> <p class="pChart_bodyCMT">4 x 40G Options</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Maximum number of interfaces</b></p> </td>
+<td> <p class="pChart_bodyCMT">Up to 24 total Ethernet ports, (8x1G RJ-45, 8x1/10G SFP, and network module)</p> </td>
+<td> <p class="pChart_bodyCMT">Up to 24 total Ethernet ports, (8x1G RJ-45, 8x1/10G SFP, and network module)</p> </td>
+<td> <p class="pChart_bodyCMT">Up to 24 total Ethernet ports, (8x1G RJ-45, 8x1/10G SFP, and network module)</p> </td>
+<td> <p class="pChart_bodyCMT">Up to 24 total Ethernet ports (8x1G RJ-45, 8x1/10/25G SFP, and network module)</p> </td>
+<td> <p class="pChart_bodyCMT">Up to 24 total Ethernet ports (8x1G RJ-45, 8x1/10/25G SFP, and network module)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Integrated network management ports</b></p> </td>
+<td> <p class="pChart_bodyCMT">1 x 1/10G SFP</p> </td>
+<td> <p class="pChart_bodyCMT">1 x 1/10G SFP</p> </td>
+<td> <p class="pChart_bodyCMT">1 x 1/10G SFP</p> </td>
+<td> <p class="pChart_bodyCMT">1 x 1/10G SFP</p> </td>
+<td> <p class="pChart_bodyCMT">1 x 1/10G SFP</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Serial port</b></p> </td>
+<td> <p class="pChart_bodyCMT">1 x RJ-45 console</p> </td>
+<td> <p class="pChart_bodyCMT">1 x RJ-45 console</p> </td>
+<td> <p class="pChart_bodyCMT">1 x RJ-45 console</p> </td>
+<td> <p class="pChart_bodyCMT">1 x RJ-45 console</p> </td>
+<td> <p class="pChart_bodyCMT">1 x RJ-45 console</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>USB</b></p> </td>
+<td> <p class="pChart_bodyCMT">1 x USB 3.0 Type-A (900mA)</p> </td>
+<td> <p class="pChart_bodyCMT">1 x USB 3.0 Type-A (900mA)</p> </td>
+<td> <p class="pChart_bodyCMT">1 x USB 3.0 Type-A (900mA)</p> </td>
+<td> <p class="pChart_bodyCMT">1 x USB 3.0 Type-A (900mA)</p> </td>
+<td> <p class="pChart_bodyCMT">1 x USB 3.0 Type-A (900mA)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Storage</b></p> </td>
+<td> <p class="pChart_bodyCMT">1x 900 GB, 1x spare slot</p> </td>
+<td> <p class="pChart_bodyCMT">1x 900 GB, 1x spare slot</p> </td>
+<td> <p class="pChart_bodyCMT">1x 900 GB, 1x spare slot</p> </td>
+<td> <p class="pChart_bodyCMT">1x 900 GB, 1x spare slot</p> </td>
+<td> <p class="pChart_bodyCMT">1x 900 GB, 1x spare slot</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Power supply configuration</b></p> </td>
+<td> <p class="pChart_bodyCMT">Single 400W AC, Dual 400W AC optional.</p> <p class="pChart_bodyCMT">Single/Dual 400W DC optional<sup class="cSuperscript">1</sup></p> </td>
+<td> <p class="pChart_bodyCMT">Single 400W AC, Dual 400W AC optional.</p> <p class="pChart_bodyCMT">Single/Dual 400W DC optional<sup class="cSuperscript">1</sup></p> </td>
+<td> <p class="pChart_bodyCMT">Single 400W AC, Dual 400W AC optional.</p> <p class="pChart_bodyCMT">Single/Dual 400W DC optional<sup class="cSuperscript">1</sup></p> </td>
+<td> <p class="pChart_bodyCMT">Dual 400W AC.</p> <p class="pChart_bodyCMT">Single/dual 400W DC optional<sup class="cSuperscript">1</sup></p> </td>
+<td> <p class="pChart_bodyCMT">Dual 400W AC.</p> <p class="pChart_bodyCMT">Single/dual 400W DC optional<sup class="cSuperscript">1</sup></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC input voltage</b></p> </td>
+<td> <p class="pChart_bodyCMT">100 to 240V AC</p> </td>
+<td> <p class="pChart_bodyCMT">100 to 240V AC</p> </td>
+<td> <p class="pChart_bodyCMT">100 to 240V AC</p> </td>
+<td> <p class="pChart_bodyCMT">100 to 240V AC</p> </td>
+<td> <p class="pChart_bodyCMT">100 to 240V AC</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC maximum input current</b></p> </td>
+<td> <p class="pChart_bodyCMT">&lt; 6A at 100V</p> </td>
+<td> <p class="pChart_bodyCMT">&lt; 6A at 100V</p> </td>
+<td> <p class="pChart_bodyCMT">&lt; 6A at 100V</p> </td>
+<td> <p class="pChart_bodyCMT">&lt; 6A at 100V</p> </td>
+<td> <p class="pChart_bodyCMT">&lt; 6A at 100V</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC maximum output power</b></p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC frequency</b></p> </td>
+<td> <p class="pChart_bodyCMT">50 to 60 Hz</p> </td>
+<td> <p class="pChart_bodyCMT">50 to 60 Hz</p> </td>
+<td> <p class="pChart_bodyCMT">50 to 60 Hz</p> </td>
+<td> <p class="pChart_bodyCMT">50 to 60 Hz</p> </td>
+<td> <p class="pChart_bodyCMT">50 to 60 Hz</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>AC<span> </span>efficiency</b></p> </td>
+<td> <p class="pChart_bodyCMT">&gt;89%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+<td> <p class="pChart_bodyCMT">&gt;89%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+<td> <p class="pChart_bodyCMT">&gt;89%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+<td> <p class="pChart_bodyCMT">&gt;89%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+<td> <p class="pChart_bodyCMT">&gt;89%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>DC<span> </span>input<span> </span>voltage</b></p> </td>
+<td> <p class="pChart_bodyCMT">-48V<span> </span>to<span> </span>-60VDC</p> </td>
+<td> <p class="pChart_bodyCMT">-48V<span> </span>to<span> </span>-60VDC</p> </td>
+<td> <p class="pChart_bodyCMT">-48V<span> </span>to<span> </span>-60VDC</p> </td>
+<td> <p class="pChart_bodyCMT">-48V<span> </span>to<span> </span>-60VDC</p> </td>
+<td> <p class="pChart_bodyCMT">-48V<span> </span>to<span> </span>-60VDC</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>DC<span> </span>maximum<span> </span>input<span> </span>current</b></p> </td>
+<td> <p class="pChart_bodyCMT">&lt;<span> </span>12.5A<span> </span>at<span> </span>-48V</p> </td>
+<td> <p class="pChart_bodyCMT">&lt;<span> </span>12.5A<span> </span>at<span> </span>-48V</p> </td>
+<td> <p class="pChart_bodyCMT">&lt;<span> </span>12.5A<span> </span>at<span> </span>-48V</p> </td>
+<td> <p class="pChart_bodyCMT">&lt;<span> </span>12.5A<span> </span>at<span> </span>-48V</p> </td>
+<td> <p class="pChart_bodyCMT">&lt;<span> </span>12.5A<span> </span>at<span> </span>-48V</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>DC maximum output<span> </span>power</b></p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+<td> <p class="pChart_bodyCMT">400W</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>DC<span> </span>efficiency</b></p> </td>
+<td> <p class="pChart_bodyCMT">&gt;88%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+<td> <p class="pChart_bodyCMT">&gt;88%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+<td> <p class="pChart_bodyCMT">&gt;88%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+<td> <p class="pChart_bodyCMT">&gt;88%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+<td> <p class="pChart_bodyCMT">&gt;88%<span> </span>at<span> </span>50%<span> </span>load</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Redundancy</b></p> </td>
+<td> <p class="pChart_bodyCMT">1+1<span> </span>AC<span> </span>or<span> </span>DC<span> </span>with<span> </span>dual<span> </span>supplies</p> </td>
+<td> <p class="pChart_bodyCMT">1+1<span> </span>AC<span> </span>or<span> </span>DC<span> </span>with<span> </span>dual<span> </span>supplies</p> </td>
+<td> <p class="pChart_bodyCMT">1+1<span> </span>AC<span> </span>or<span> </span>DC<span> </span>with<span> </span>dual<span> </span>supplies</p> </td>
+<td> <p class="pChart_bodyCMT">1+1<span> </span>AC<span> </span>or<span> </span>DC<span> </span>with<span> </span>dual<span> </span>supplies</p> </td>
+<td> <p class="pChart_bodyCMT">1+1<span> </span>AC<span> </span>or<span> </span>DC<span> </span>with<span> </span>dual<span> </span>supplies</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Fans</b></p> </td>
+<td> <p class="pChart_bodyCMT">2 hot-swappable fan modules (with 2 fans each)<sup class="cSuperscript">2</sup></p> </td>
+<td> <p class="pChart_bodyCMT">2 hot-swappable fan modules (with 2 fans each)<sup class="cSuperscript">2</sup></p> </td>
+<td> <p class="pChart_bodyCMT">2 hot-swappable fan modules (with 2 fans each)<sup class="cSuperscript">2</sup></p> </td>
+<td> <p class="pChart_bodyCMT">2 hot-swappable fan modules (with 2 fans each)<sup class="cSuperscript">2</sup></p> </td>
+<td> <p class="pChart_bodyCMT">2 hot-swappable fan modules (with 2 fans each)<sup class="cSuperscript">2</sup></p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Noise</b></p> </td>
+<td> <p class="pChart_bodyCMT">65<span> </span>dBA@<span> </span>25C</p> <p class="pChart_bodyCMT">74<span> </span>dBA<span> </span>maximum</p> </td>
+<td> <p class="pChart_bodyCMT">65<span> </span>dBA@<span> </span>25C</p> <p class="pChart_bodyCMT">74<span> </span>dBA<span> </span>maximum</p> </td>
+<td> <p class="pChart_bodyCMT">65<span> </span>dBA@<span> </span>25C</p> <p class="pChart_bodyCMT">74<span> </span>dBA<span> </span>maximum</p> </td>
+<td> <p class="pChart_bodyCMT">65<span> </span>dBA@<span> </span>25C</p> <p class="pChart_bodyCMT">74<span> </span>dBA<span> </span>maximum</p> </td>
+<td> <p class="pChart_bodyCMT">65<span> </span>dBA@<span> </span>25C</p> <p class="pChart_bodyCMT">74<span> </span>dBA<span> </span>maximum</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Rack<span> </span>mountable</b></p> </td>
+<td> <p class="pChart_bodyCMT">Yes. Fixed mount<span> </span>brackets<span> </span>optional.</p> <p class="pChart_bodyCMT">(2- post). Mount rails<span> </span>included (4-post EIA-<span> </span>310-D<span> </span>rack)</p> </td>
+<td> <p class="pChart_bodyCMT">Yes. Fixed mount<span> </span>brackets<span> </span>optional.</p> <p class="pChart_bodyCMT">(2- post). Mount rails<span> </span>included (4-post EIA-<span> </span>310-D<span> </span>rack)</p> </td>
+<td> <p class="pChart_bodyCMT">Yes. Fixed mount<span> </span>brackets<span> </span>optional.</p> <p class="pChart_bodyCMT">(2- post). Mount rails<span> </span>included (4-post EIA-<span> </span>310-D<span> </span>rack)</p> </td>
+<td> <p class="pChart_bodyCMT">Yes. Fixed mount<span> </span>brackets<span> </span>optional.</p> <p class="pChart_bodyCMT">(2- post). Mount rails<span> </span>included (4-post EIA-<span> </span>310-D<span> </span>rack)</p> </td>
+<td> <p class="pChart_bodyCMT">Yes. Fixed mount<span> </span>brackets<span> </span>optional.</p> <p class="pChart_bodyCMT">(2- post). Mount rails<span> </span>included (4-post EIA-<span> </span>310-D<span> </span>rack)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Weight</b></p> </td>
+<td> <p class="pChart_bodyCMT">23 lb (10.5 kg) 1 x power supplies, 1 x NM, fan module, 1x SSD</p> </td>
+<td> <p class="pChart_bodyCMT">23 lb (10.5 kg) 1 x power supplies, 1 x NM, fan module, 1x SSD</p> </td>
+<td> <p class="pChart_bodyCMT">23 lb (10.5 kg) 1 x power supplies, 1 x NM, fan module, 1x SSD</p> </td>
+<td> <p class="pChart_bodyCMT">25 lb (11.4 kg) 2 x power supplies, 1 x NM, fan module, 1x SSD</p> </td>
+<td> <p class="pChart_bodyCMT">25 lb (11.4 kg) 2 x power supplies, 1 x NM, fan module, 1x SSD</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Temperature: operating</b></p> </td>
+<td> <p class="pChart_bodyCMT">32 to 104°F<br/> (0 to 40°C)</p> </td>
+<td> <p class="pChart_bodyCMT">32 to 104°F<br/> (0 to 40°C)</p> </td>
+<td> <p class="pChart_bodyCMT">32 to 104°F<br/> (0 to 40°C)</p> <p class="pChart_bodyCMT">or NEBS operation (see below)<sup class="cSuperscript">3</sup></p> </td>
+<td> <p class="pChart_bodyCMT">32 to 104°F<br/> (0 to 40°C)</p> </td>
+<td> <p class="pChart_bodyCMT">32 to 104°F<br/> (0 to 40°C)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Temperature: nonoperating</b></p> </td>
+<td> <p class="pChart_bodyCMT">-4 to 149°F</p> <p class="pChart_bodyCMT">(-20 to 65°C)</p> </td>
+<td> <p class="pChart_bodyCMT">-4 to 149°F</p> <p class="pChart_bodyCMT">(-20 to 65°C)</p> </td>
+<td> <p class="pChart_bodyCMT">-4 to 149°F</p> <p class="pChart_bodyCMT">(-20 to 65°C)</p> </td>
+<td> <p class="pChart_bodyCMT">-4 to 149°F</p> <p class="pChart_bodyCMT">(-20 to 65°C)</p> </td>
+<td> <p class="pChart_bodyCMT">-4 to 149°F</p> <p class="pChart_bodyCMT">(-20 to 65°C)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Humidity: operating</b></p> </td>
+<td> <p class="pChart_bodyCMT">10 to 85%</p> <p class="pChart_bodyCMT">noncondensing</p> </td>
+<td> <p class="pChart_bodyCMT">10 to 85%</p> <p class="pChart_bodyCMT">noncondensing</p> </td>
+<td> <p class="pChart_bodyCMT">10 to 85%</p> <p class="pChart_bodyCMT">noncondensing</p> </td>
+<td> <p class="pChart_bodyCMT">10 to 85%</p> <p class="pChart_bodyCMT">noncondensing</p> </td>
+<td> <p class="pChart_bodyCMT">10 to 85%</p> <p class="pChart_bodyCMT">noncondensing</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Humidity: nonoperating</b></p> </td>
+<td> <p class="pChart_bodyCMT">5 to 95% noncondensing</p> </td>
+<td> <p class="pChart_bodyCMT">5 to 95% noncondensing</p> </td>
+<td> <p class="pChart_bodyCMT">5 to 95% noncondensing</p> </td>
+<td> <p class="pChart_bodyCMT">5 to 95% noncondensing</p> </td>
+<td> <p class="pChart_bodyCMT">5 to 95% noncondensing</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Altitude: operating</b></p> </td>
+<td> <p class="pChart_bodyCMT">10,000 ft (max)</p> </td>
+<td> <p class="pChart_bodyCMT">10,000 ft (max)</p> </td>
+<td> <p class="pChart_bodyCMT">10,000 ft (max) or NEBS operation (see below)<sup class="cSuperscript">3</sup></p> </td>
+<td> <p class="pChart_bodyCMT">10,000 ft (max)</p> </td>
+<td> <p class="pChart_bodyCMT">10,000 ft (max)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Altitude: nonoperating</b></p> </td>
+<td> <p class="pChart_bodyCMT">40,000 ft (max)</p> </td>
+<td> <p class="pChart_bodyCMT">40,000 ft (max)</p> </td>
+<td> <p class="pChart_bodyCMT">40,000 ft (max)</p> </td>
+<td> <p class="pChart_bodyCMT">40,000 ft (max)</p> </td>
+<td> <p class="pChart_bodyCMT">40,000 ft (max)</p> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>NEBS operation<br/> (FPR- 3120 Only)<sup class="cSuperscript">3</sup></b></p> </td>
+<td> <p class="pChart_bodyCMT"> </p> </td>
+<td> <p class="pChart_bodyCMT"> </p> </td>
+<td> <p class="pChart_bodyCMT">Operating altitude: 0 to 13,000 ft (3962 m)</p> <p class="pChart_bodyCMT">Operating temperature: Long term: 0 to 45°C, up to 6,000 ft (1829 m) Long term: 0 to 35°C, 6,000 to 13,000 ft</p> <p class="pChart_bodyCMT">(1829 to 3964 m) Short term: -5 to 55°C, up to 6,000 ft<br/> (1829 m)</p> </td>
+<td> <p class="pChart_bodyCMT"> </p> </td>
+<td> <p class="pChart_bodyCMT"> </p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pDefault">
+<sup class="cSuperscript">1</sup> Dual power supplies are hot-swappable. 
+   </div>
+<div class="pDefault">
+<sup class="cSuperscript">2</sup> Fans operate in a 3+1 redundant configuration where the system will continue to function with only 3 operational fans. The 3 remaining fans will run at full speed. 
+   </div>
+<div class="pDefault">
+<sup class="cSuperscript">3</sup> FPR-3120 platform is designed to be NEBS ready. The availability of NEBS certification is pending. 
+   </div>
+<p class="pTableCaptionCMT"><a name="table5"></a><b>Table 5.<span>        </span></b>Cisco Secure Firewall 3100 Series NEBS, Regulatory, Safety, and EMC Compliance</p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">Specification</p> </td>
+<td> <p class="Cellhead1">Description</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Regulatory compliance</b></p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>Products comply with CE markings per directives 2004/108/EC and 2006/108/EC 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>Safety</b></p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>UL 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CAN/CSA-C22.2 No. 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC 60950-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>AS/NZS 62368-1 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>GB4943 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>EMC: emissions</b></p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>FCC 47CFR15 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>AS/NZS CISPR 32 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55032/CISPR 32 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>ICES-003 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>VCCI Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>KS C 9832 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>CNS-13438 Class A 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-3-2 Power Line Harmonics 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-3-3 Voltage Changes, Fluctuations, and Flicker 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><a name="_bookmark2"></a><b>EMC: Immunity</b></p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-2 Electrostatic Discharge Immunity 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-3 Radiated Immunity 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-4 EFT-B Immunity 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-5 Surge 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-6 Immunity to Conducted Disturbances 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>IEC/EN61000-4-11 Voltage Dips, Short Interruptions, and Voltage Variations 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>KS C 9835 
+        </div> </td>
+</tr>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>EMC: ETSI/EN</b></p> </td>
+<td>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN 300 386 Telecommunications Network Equipment (EMC) 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55032/CISPR 35 Multimedia Equipment (Emissions) 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55024/CISPR 24 Information Technology Equipment (Immunity) 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN55035/CISPR 35 Multimedia Equipment (Immunity) 
+        </div>
+<div class="pCellBulletCMT">
+<span>●<span>  </span></span>EN61000-6-1 Generic Immunity Standard 
+        </div> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pToC_Subhead1"><a name="_Toc535294674"></a><a name="_Toc20865476"></a><a name="_Toc73063231"></a><a name="_Toc100080678"></a><a name="_Toc127400736"></a><a name="_Toc181233224"></a><a name="_Toc181318552"></a><a name="_Toc242122874">Cisco Services</a></p>
+<p class="pSubhead2CMT">Get faster results with expert guidance</p>
+<p class="pBody">Cisco Professional Services provide industry-leading expertise to help you plan, design, implement, and optimize your network. So you can drive better outcomes from the start and get more value – faster.</p>
+<p class="pBody">Cisco Support, powered by Cisco IQ, helps you prevent issues before they happen. You get automated recommendations, early risk detection, and an always-current view of every asset, software version, and configuration across your environment. But we know a list isn’t enough. Cisco IQ also instantly analyzes this data and summarizes the most critical observations. So your teams can focus on what matters most.</p>
+<p class="pBody"><a href="https://www.cisco.com/site/us/en/services/index.html">Explore Cisco Services</a></p>
+<p class="pToC_Subhead1"><a name="_Toc242122875">Cisco Capital</a></p>
+<p class="pSubhead2CMT">Flexible payment solutions to help you achieve your objectives</p>
+<p class="pBody">Cisco Capital makes it easier to get the right technology to achieve your objectives, enable business transformation and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. <a href="https://www.cisco.com/go/financing">Learn more</a>.</p>
+<p class="pToC_Subhead1"><a name="_Toc78276608"></a><a name="_Toc126880214"></a><a name="_Toc127400737"></a><a name="_Toc181233225"></a><a name="_Toc181318553"></a><a name="_Toc242122876">Document history</a></p>
+<div>
+<table>
+<thead>
+<tr>
+<td> <p class="Cellhead1">New or Revised Topic</p> </td>
+<td> <p class="Cellhead1">Described In</p> </td>
+<td> <p class="Cellhead1">Date</p> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <p class="pChart_bodyCMT"><b>3105 model added</b></p> </td>
+<td> <p class="pChart_bodyCMT"><a href="#table1">Tables 1</a>, <a href="#table2">2</a>, <a href="#table3">3</a>, <a href="#table4">4</a></p> </td>
+<td> <p class="pChart_bodyCMT">March xx, 2023</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="pBody"> </p>
+<p class="pBody"> </p>
+<p class="pBody"> </p>
+<p class="pBody"> </p>
+</div>
+<cdc:do></cdc:do>
+<div class="row full visitedlinks">
+<div class="col full">
+</div>
+</div>
+</div>

@@ -1,0 +1,324 @@
+{
+  "vendor": "Cisco",
+  "model": "Secure Firewall 1210CE",
+  "model_id": "secure-firewall-1210ce",
+  "family": "Secure Firewall",
+  "series": "Secure Firewall 1200",
+  "form_factor": "appliance",
+  "source": {
+    "title": "Cisco Secure Firewall 1200 Series Data Sheet Enterprise Security Appliances",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-1200-series-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-1200-series-ds.pdf",
+    "file": "datasheets/secure-firewall-1200.html",
+    "library_last_updated": "2025-07-09",
+    "sha256": "f923a7c3f423185a335a6ea5eb1e68f41765f43ef5169994804ec5f26a404892"
+  },
+  "default_image": "ftd",
+  "images": [
+    "ftd",
+    "asa"
+  ],
+  "specs_by_image": {
+    "ftd": {
+      "fw_avc_throughput_mbps": {
+        "value": 6000,
+        "raw": "6.0 Gbps",
+        "label": "Throughput: FW + AVC (1024B)",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ips_throughput_mbps": {
+        "value": 6000,
+        "raw": "6.0 Gbps",
+        "label": "Throughput: Next-Generation Intrusion Prevention System (NGIPS) (1024B)",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ngfw_throughput_mbps": {
+        "value": 6000,
+        "raw": "6.0 Gbps",
+        "label": "Throughput: FW + AVC + IPS (1024B)",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 5000,
+        "raw": "5.0 Gbps",
+        "label": "IPSec VPN Throughput (1024B TCP w/Fastpath)",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "tls_throughput_mbps": {
+        "value": 1000,
+        "raw": "1.0 Gbps",
+        "label": "TLS decryption",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": [
+          "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys."
+        ],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 35000,
+        "raw": "35K",
+        "label": "Maximum new connections per second, with AVC",
+        "table": "Table 6",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "concurrent_sessions": {
+        "value": 200000,
+        "raw": "200K",
+        "label": "Maximum concurrent sessions, with AVC",
+        "table": "Table 8",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 200,
+        "raw": "200",
+        "label": "Maximum VPN Peers",
+        "table": "Table 8",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      },
+      "vrf_max": {
+        "value": 5,
+        "raw": "5",
+        "label": "Maximum virtual router instances (VRF)",
+        "table": "Table 8",
+        "software": "Threat Defense (FTD)",
+        "notes": []
+      }
+    },
+    "asa": {
+      "fw_throughput_mbps": {
+        "value": 6500,
+        "raw": "6.5 Gbps",
+        "label": "Stateful inspection firewall throughput",
+        "table": "Table 7",
+        "software": "ASA",
+        "notes": [
+          "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions."
+        ],
+        "unit": "Mbps"
+      },
+      "fw_throughput_multiprotocol_mbps": {
+        "value": 6000,
+        "raw": "6.0 Gbps",
+        "label": "Stateful inspection firewall throughput (multiprotocol)",
+        "table": "Table 7",
+        "software": "ASA",
+        "notes": [
+          "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications such as HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+        ],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 5500,
+        "raw": "5.5 Gbps",
+        "label": "IPsec VPN throughput (450B UDP L2L test)",
+        "table": "Table 7",
+        "software": "ASA",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "new_sessions_per_sec": {
+        "value": 175000,
+        "raw": "175K",
+        "label": "New connections per second",
+        "table": "Table 7",
+        "software": "ASA",
+        "notes": []
+      },
+      "concurrent_sessions": {
+        "value": 200000,
+        "raw": "200K",
+        "label": "Concurrent firewall connections",
+        "table": "Table 9",
+        "software": "ASA",
+        "notes": []
+      },
+      "vpn_peers_max": {
+        "value": 200,
+        "raw": "200",
+        "label": "Maximum VPN Peers",
+        "table": "Table 9",
+        "software": "ASA",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": {
+    "dimensions_mm": {
+      "h": 28.2,
+      "w": 274.3,
+      "d": 172.2
+    },
+    "desktop": true,
+    "weight_kg": 1.38,
+    "power_max_w": 40,
+    "power_typical_w": 32,
+    "operating_temp_c": [
+      0,
+      40
+    ],
+    "interfaces": "8x 1000BASE-T",
+    "transceiver_slots": "-",
+    "management_ports": "1000BASE-T port",
+    "storage": "Integrated SSD, 480GB",
+    "poe": "-",
+    "power_supply": "Single input, external power supply",
+    "cooling": "Integrated blower, side exhaust",
+    "noise": "23.5 dBA @ 80.6°F(27°C) | 42.7 dBA @ maximum fan speed",
+    "fields": {
+      "form_factor": {
+        "raw": "Compact appliance for desktop use. Can be rack-mounted or wall-mounted via optional accessories.",
+        "label": "Form factor",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "console": {
+        "raw": "USB Type-C and RJ-45 (Cisco serial)",
+        "label": "Console port",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "management_ports": {
+        "raw": "1000BASE-T port",
+        "label": "Management Ethernet",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "usb": {
+        "raw": "USB 3 Type A port",
+        "label": "USB port",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "storage": {
+        "raw": "Integrated SSD, 480GB",
+        "label": "Storage",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "power_supply": {
+        "raw": "Single input, external power supply",
+        "label": "Power supply",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "cooling": {
+        "raw": "Integrated blower, side exhaust",
+        "label": "Cooling",
+        "table": "Table 3",
+        "notes": [],
+        "shared": true
+      },
+      "interfaces": {
+        "raw": "8x 1000BASE-T",
+        "label": "Integrated interfaces",
+        "table": "Table 5",
+        "notes": []
+      },
+      "transceiver_slots": {
+        "raw": "-",
+        "label": "Transceiver slots",
+        "table": "Table 5",
+        "notes": []
+      },
+      "poe": {
+        "raw": "-",
+        "label": "Power over Ethernet",
+        "table": "Table 5",
+        "notes": []
+      },
+      "dimensions": {
+        "raw": "1.11” x 10.8” x 6.8” | 2.82 x 27.43 x 17.22 cm",
+        "label": "Chassis Dimensions (HxWxD) Excluding rubber feet",
+        "table": "Table 10",
+        "notes": []
+      },
+      "weight": {
+        "raw": "3.04 lb (1.38 kg)",
+        "label": "Weight",
+        "table": "Table 10",
+        "notes": []
+      },
+      "operating_temp": {
+        "raw": "32 to 104°F (0 to 40°C)",
+        "label": "Temperature: operating",
+        "table": "Table 10",
+        "notes": [
+          "Derate the maximum operating temperature 2.7° F (1.5° C) per 1000 ft (304 m) above 6,000 ft (1829 m) altitude."
+        ]
+      },
+      "noise": {
+        "raw": "23.5 dBA @ 80.6°F(27°C) | 42.7 dBA @ maximum fan speed",
+        "label": "Acoustic noise",
+        "table": "Table 10",
+        "notes": []
+      },
+      "power_typical": {
+        "raw": "32W",
+        "label": "Power consumption, typical",
+        "table": "Table 10",
+        "notes": []
+      },
+      "power_max": {
+        "raw": "40W",
+        "label": "Power consumption, maximum",
+        "table": "Table 10",
+        "notes": []
+      }
+    },
+    "raw": {
+      "Form factor": "Compact appliance for desktop use. Can be rack-mounted or wall-mounted via optional accessories.",
+      "Console port": "USB Type-C and RJ-45 (Cisco serial)",
+      "Management Ethernet": "1000BASE-T port",
+      "USB port": "USB 3 Type A port",
+      "Storage": "Integrated SSD, 480GB",
+      "Power supply": "Single input, external power supply",
+      "Cooling": "Integrated blower, side exhaust",
+      "Integrated interfaces": "8x 1000BASE-T",
+      "Transceiver slots": "-",
+      "Power over Ethernet": "-",
+      "Chassis Dimensions (HxWxD) Excluding rubber feet": "1.11” x 10.8” x 6.8” | 2.82 x 27.43 x 17.22 cm",
+      "Weight": "3.04 lb (1.38 kg)",
+      "Temperature: operating": "32 to 104°F (0 to 40°C)",
+      "Humidity: operating": "5 to 85% (noncondensing)",
+      "Altitude: operating": "0 to 10,000 ft (3048 m)",
+      "Acoustic noise": "23.5 dBA @ 80.6°F(27°C) | 42.7 dBA @ maximum fan speed",
+      "Temperature: nonoperating": "-13 to 158°F (-25 to 70°C)",
+      "Humidity: nonoperating": "5 to 95% (noncondensing)",
+      "Altitude: nonoperating": "0 to 15,000 ft (4570 m)",
+      "AC input voltage": "100-240V AC",
+      "AC input frequency": "50–60 Hz",
+      "AC current draw, maximum": "0.4A (100V) | 0.17A (240V)",
+      "Power consumption, typical": "32W",
+      "Power consumption, maximum": "40W"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Table 6 [1]": "Throughput measured with 50% TLS 1.2 traffic with AES256-SHA with RSA 2048B keys.",
+    "Table 7 [2]": "Throughput measured with 1500B User Datagram Protocol (UDP) traffic measured under ideal test conditions.",
+    "Table 7 [3]": "“Multiprotocol” refers to a traffic profile consisting primarily of TCP-based protocols and applications such as HTTP, SMTP, FTP, IMAPv4, BitTorrent, and DNS."
+  }
+}

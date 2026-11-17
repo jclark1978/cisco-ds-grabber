@@ -1,0 +1,7 @@
+Summary tables vs detailed tables: 74 match, 6 differ
+  DIFF Secure Firewall 1220CX: summary 'Firewall Throughput' = 9.0 Gbps vs asa fw_throughput_mbps = 15 Gbps
+  DIFF Secure Firewall 1230: summary 'Firewall Throughput' = 13 Gbps vs asa fw_throughput_mbps = 18 Gbps
+  DIFF Secure Firewall 1230: summary 'IPS' = 13 Gbps vs ftd ips_throughput_mbps = 11 Gbps
+  DIFF Secure Firewall 1240: summary 'Firewall Throughput' = 18 Gbps vs asa fw_throughput_mbps = 20 Gbps
+  DIFF Secure Firewall 1240: summary 'IPS' = 18 Gbps vs ftd ips_throughput_mbps = 15 Gbps
+  DIFF Secure Firewall 1250: summary 'Firewall Throughput' = 24 Gbps vs asa fw_throughput_mbps = 20 Gbps
