@@ -378,6 +378,246 @@
     ],
     "file": "data/models/secure-firewall-isa3000-4c.json"
   },
+  "meraki-mx67": {
+    "model": "Meraki MX67",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx67.json"
+  },
+  "meraki-mx67c": {
+    "model": "Meraki MX67C",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx67c.json"
+  },
+  "meraki-mx67w": {
+    "model": "Meraki MX67W",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx67w.json"
+  },
+  "meraki-mx68": {
+    "model": "Meraki MX68",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx68.json"
+  },
+  "meraki-mx68cw": {
+    "model": "Meraki MX68CW",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx68cw.json"
+  },
+  "meraki-mx68w": {
+    "model": "Meraki MX68W",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx68w.json"
+  },
+  "meraki-mx75": {
+    "model": "Meraki MX75",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx75.json"
+  },
+  "meraki-mx85": {
+    "model": "Meraki MX85",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx85.json"
+  },
+  "meraki-mx95": {
+    "model": "Meraki MX95",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx95.json"
+  },
+  "meraki-mx105": {
+    "model": "Meraki MX105",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx105.json"
+  },
+  "meraki-mx250": {
+    "model": "Meraki MX250",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx250.json"
+  },
+  "meraki-mx450": {
+    "model": "Meraki MX450",
+    "series": "Meraki MX",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-mx450.json"
+  },
+  "cisco-c8110l-g2-mx": {
+    "model": "Cisco C8110L-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8110l-g2-mx.json"
+  },
+  "cisco-c8111-c-g2-mx": {
+    "model": "Cisco C8111-C-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8111-c-g2-mx.json"
+  },
+  "cisco-c8111-g2-mx": {
+    "model": "Cisco C8111-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8111-g2-mx.json"
+  },
+  "cisco-c8121-cw-g2-mx": {
+    "model": "Cisco C8121-CW-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8121-cw-g2-mx.json"
+  },
+  "cisco-c8121-g2-mx": {
+    "model": "Cisco C8121-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8121-g2-mx.json"
+  },
+  "cisco-c8121-w-g2-mx": {
+    "model": "Cisco C8121-W-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8121-w-g2-mx.json"
+  },
+  "cisco-c8235-g2-mx": {
+    "model": "Cisco C8235-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8235-g2-mx.json"
+  },
+  "cisco-c8355-g2-mx": {
+    "model": "Cisco C8355-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8355-g2-mx.json"
+  },
+  "cisco-c8455-g2-mx": {
+    "model": "Cisco C8455-G2-MX",
+    "series": "Cisco 8000 Secure Routers (MX)",
+    "family": "Meraki MX",
+    "form_factor": "appliance",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/cisco-c8455-g2-mx.json"
+  },
+  "meraki-vmx-large": {
+    "model": "Meraki vMX Large",
+    "series": "Meraki vMX",
+    "family": "Meraki MX",
+    "form_factor": "virtual",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-vmx-large.json"
+  },
+  "meraki-vmx-medium": {
+    "model": "Meraki vMX Medium",
+    "series": "Meraki vMX",
+    "family": "Meraki MX",
+    "form_factor": "virtual",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-vmx-medium.json"
+  },
+  "meraki-vmx-small": {
+    "model": "Meraki vMX Small",
+    "series": "Meraki vMX",
+    "family": "Meraki MX",
+    "form_factor": "virtual",
+    "images": [
+      "mx"
+    ],
+    "file": "data/models/meraki-vmx-small.json"
+  },
   "secure-firewall-1210ce": {
     "model": "Secure Firewall 1210CE",
     "series": "Secure Firewall 1200",

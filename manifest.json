@@ -48,6 +48,18 @@
       "title": "Cisco Secure Firewall ISA3000 Data Sheet",
       "url": "https://www.cisco.com/c/en/us/products/collateral/security/industrial-security-appliance-3000/data-sheet-c78-735839.html"
     },
+    "meraki-mx": {
+      "bytes": 138470,
+      "downloaded": "2026-11-17T20:42:38+00:00",
+      "file": "meraki-mx.html",
+      "last_updated": "2026-11-09",
+      "pdf_file": "pdf/meraki-mx.pdf",
+      "pdf_sha256": "8f771623ab6c52ac47670cebf77b8e48609a496c568e2d027c432f3f7f683b7f",
+      "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.pdf",
+      "sha256": "9c27ca297b0f915d274806b3e473271cf210ca193e533ece27e6c8aab8351a9e",
+      "title": "MX Family Data Sheet Meraki MX Cloud-Managed Security and SD-WAN",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.html"
+    },
     "secure-firewall-1200": {
       "bytes": 37640,
       "downloaded": "2026-11-17T20:21:47+00:00",
@@ -145,6 +157,6 @@
       "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/threat-defense-virtual-ds.html"
     }
   },
-  "generated": "2026-11-17T20:22:21+00:00",
+  "generated": "2026-11-17T20:42:38+00:00",
   "source": "https://www.cisco.com"
 }

@@ -45,6 +45,30 @@ firepower-9300-sm-56,Firepower 9300 SM-56,Firepower 9300,appliance,ftd,,70000,68
 firepower-9300-sm-56,Firepower 9300 SM-56,Firepower 9300,appliance,asa,,,,,,,30000,80000,64000,60000000,2000000,20000,3,,47.7,2024-10-29
 secure-firewall-isa3000-2c2f,Secure Firewall ISA3000-2C2F,Secure Firewall ISA3000,appliance,ftd,,375,350,500,,,50,,,50000,2700,25,,,1.9,2021-07-11
 secure-firewall-isa3000-4c,Secure Firewall ISA3000-4C,Secure Firewall ISA3000,appliance,ftd,,375,350,500,,,50,,,50000,2700,25,,,1.9,2021-07-11
+meraki-mx67,Meraki MX67,Meraki MX,appliance,mx,,,,,,,400,,,,,,,14,0.7,2026-11-09
+meraki-mx67c,Meraki MX67C,Meraki MX,appliance,mx,,,,,,,400,,,,,,,17,0.85,2026-11-09
+meraki-mx67w,Meraki MX67W,Meraki MX,appliance,mx,,,,,,,400,,,,,,,23,0.83,2026-11-09
+meraki-mx68,Meraki MX68,Meraki MX,appliance,mx,,,,,,,400,,,,,,,79,1.12,2026-11-09
+meraki-mx68cw,Meraki MX68CW,Meraki MX,appliance,mx,,,,,,,400,,,,,,,89,1.18,2026-11-09
+meraki-mx68w,Meraki MX68W,Meraki MX,appliance,mx,,,,,,,400,,,,,,,87,1.16,2026-11-09
+meraki-mx75,Meraki MX75,Meraki MX,appliance,mx,,,,,,,1000,,,,,,,96,0.85,2026-11-09
+meraki-mx85,Meraki MX85,Meraki MX,appliance,mx,,,,,,,1000,,,,,,1,55,3.7,2026-11-09
+meraki-mx95,Meraki MX95,Meraki MX,appliance,mx,,,,,,,2500,,,,,,1,109,3.17,2026-11-09
+meraki-mx105,Meraki MX105,Meraki MX,appliance,mx,,,,,,,3500,,,,,,1,123,4.87,2026-11-09
+meraki-mx250,Meraki MX250,Meraki MX,appliance,mx,,,,,,,4000,,,,,,1,190,7.3,2026-11-09
+meraki-mx450,Meraki MX450,Meraki MX,appliance,mx,,,,,,,6500,,,,,,1,190,7.3,2026-11-09
+cisco-c8110l-g2-mx,Cisco C8110L-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,750,,,,,,,13,0.76,2026-11-09
+cisco-c8111-c-g2-mx,Cisco C8111-C-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,1200,,,,,,,45,1.451,2026-11-09
+cisco-c8111-g2-mx,Cisco C8111-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,1200,,,,,,,22,0.87,2026-11-09
+cisco-c8121-cw-g2-mx,Cisco C8121-CW-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,1200,,,,,,,87,1.783,2026-11-09
+cisco-c8121-g2-mx,Cisco C8121-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,1200,,,,,,,26,1.15,2026-11-09
+cisco-c8121-w-g2-mx,Cisco C8121-W-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,1200,,,,,,,64,1.696,2026-11-09
+cisco-c8235-g2-mx,Cisco C8235-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,4000,,,,,,1,,3.17,2026-11-09
+cisco-c8355-g2-mx,Cisco C8355-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,5000,,,,,,1,,4.19,2026-11-09
+cisco-c8455-g2-mx,Cisco C8455-G2-MX,Cisco 8000 Secure Routers (MX),appliance,mx,,,,,,,10000,,,,,,1,,5.6,2026-11-09
+meraki-vmx-large,Meraki vMX Large,Meraki vMX,virtual,mx,AWS Azure Google Cloud Alibaba Cloud,,,,,,1000,,,,,,,,,2026-11-09
+meraki-vmx-medium,Meraki vMX Medium,Meraki vMX,virtual,mx,AWS Azure Google Cloud Alibaba Cloud,,,,,,500,,,,,,,,,2026-11-09
+meraki-vmx-small,Meraki vMX Small,Meraki vMX,virtual,mx,AWS Azure Google Cloud Alibaba Cloud,,,,,,250,,,,,,,,,2026-11-09
 secure-firewall-1210ce,Secure Firewall 1210CE,Secure Firewall 1200,appliance,ftd,,6000,6000,6000,,1000,5000,,,200000,35000,200,,40,1.38,2025-07-09
 secure-firewall-1210ce,Secure Firewall 1210CE,Secure Firewall 1200,appliance,asa,,,,,,,5500,6500,6000,200000,175000,200,,40,1.38,2025-07-09
 secure-firewall-1210cp,Secure Firewall 1210CP,Secure Firewall 1200,appliance,ftd,,6000,6000,6000,,1000,5000,,,200000,35000,200,,40,1.44,2025-07-09

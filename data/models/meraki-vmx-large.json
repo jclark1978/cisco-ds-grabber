@@ -1,0 +1,88 @@
+{
+  "vendor": "Cisco",
+  "model": "Meraki vMX Large",
+  "model_id": "meraki-vmx-large",
+  "family": "Meraki MX",
+  "series": "Meraki vMX",
+  "form_factor": "virtual",
+  "source": {
+    "title": "MX Family Data Sheet Meraki MX Cloud-Managed Security and SD-WAN",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.pdf",
+    "file": "datasheets/meraki-mx.html",
+    "library_last_updated": "2026-11-09",
+    "sha256": "9c27ca297b0f915d274806b3e473271cf210ca193e533ece27e6c8aab8351a9e"
+  },
+  "default_image": "mx",
+  "images": [
+    "mx"
+  ],
+  "specs_by_image": {
+    "mx": {
+      "recommended_use": {
+        "value": "Extend secure SD-WAN connectivity from branch sites to resources in public and private cloud environments",
+        "raw": "Extend secure SD-WAN connectivity from branch sites to resources in public and private cloud environments",
+        "label": "Recommended",
+        "table": "Spec table 8",
+        "software": "Meraki MX",
+        "notes": []
+      },
+      "ngfw_throughput_mbps": {
+        "value": 1000,
+        "raw": "1 Gbps",
+        "label": "NGFW",
+        "table": "Spec table 8",
+        "software": "Meraki MX",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "advanced_security_throughput_mbps": {
+        "value": 1000,
+        "raw": "1 Gbps",
+        "label": "Advanced security services",
+        "table": "Spec table 8",
+        "software": "Meraki MX",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 1000,
+        "raw": "1 Gbps",
+        "label": "Maximum site-to-site VPN throughput",
+        "table": "Spec table 8",
+        "software": "Meraki MX",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_tunnels_max": {
+        "value": 1000,
+        "raw": "1,000",
+        "label": "Maximum concurrent site-to-site VPN tunnels",
+        "table": "Spec table 8",
+        "software": "Meraki MX",
+        "notes": []
+      },
+      "client_vpn": {
+        "value": "Yes",
+        "raw": "Yes",
+        "label": "Client VPN support",
+        "table": "Spec table 8",
+        "software": "Meraki MX",
+        "notes": []
+      }
+    }
+  },
+  "other_by_image": {
+    "hardware": {
+      "Interfaces": "Virtual",
+      "Supported cloud platforms": "AWS Azure Google Cloud Alibaba Cloud"
+    }
+  },
+  "hardware": null,
+  "vm": {
+    "platform": "AWS Azure Google Cloud Alibaba Cloud",
+    "size": "Large"
+  },
+  "footnotes": {},
+  "printed_as": "vMX – Large"
+}

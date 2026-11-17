@@ -1,4 +1,4 @@
-81 models from 11 datasheets
+105 models from 12 datasheets
 
 asa-virtual  (Cisco Secure Firewall ASA Virtual (ASAv) Data Sheet, updated 2024-10-25)
   perf     asa    72 values  Table 1. Specifications for 9.20 and later- ESXi/KVM/OpenStack
@@ -20,6 +20,16 @@ firepower-9300  (Cisco Firepower 9300 Series Data Sheet, updated 2024-10-29)
 isa3000  (Cisco Secure Firewall ISA3000 Data Sheet, updated 2021-07-11)
   perf     ftd    26 values  Table 5. Perfo rmance using Cisco Firepower Threat Defense (FTD)
   hardware -      12 values  Table 7. Phys ical specifications
+
+meraki-mx  (MX Family Data Sheet Meraki MX Cloud-Managed Security and SD-WAN, updated 2026-11-09)
+  mixed    mx     39 values  Spec table 1 (uncaptioned)
+  mixed    mx     56 values  Spec table 2 (uncaptioned)
+  mixed    mx     51 values  Spec table 3 (uncaptioned)
+  mixed    mx     51 values  Spec table 4 (uncaptioned)
+  mixed    mx     28 values  Spec table 5 (uncaptioned)
+  mixed    mx     42 values  Spec table 6 (uncaptioned)
+  mixed    mx     45 values  Spec table 7 (uncaptioned)
+  mixed    mx     24 values  Spec table 8 (uncaptioned)
 
 secure-firewall-1200  (Cisco Secure Firewall 1200 Series Data Sheet Enterprise Security Appliances, updated 2025-07-09)
   hardware -      23 values  Table 3. 1200 Series Hardware Features – Compact Models
@@ -75,6 +85,9 @@ Models by series:
   Firepower 1000: Firepower 1010, Firepower 1010E, Firepower 1120, Firepower 1140, Firepower 1150
   Firepower 9300: Firepower 9300 3x SM-56, Firepower 9300 SM-40, Firepower 9300 SM-48, Firepower 9300 SM-56
   Secure Firewall ISA3000: Secure Firewall ISA3000-2C2F, Secure Firewall ISA3000-4C
+  Meraki MX: Meraki MX67, Meraki MX67C, Meraki MX67W, Meraki MX68, Meraki MX68CW, Meraki MX68W, Meraki MX75, Meraki MX85, Meraki MX95, Meraki MX105, Meraki MX250, Meraki MX450
+  Cisco 8000 Secure Routers (MX): Cisco C8110L-G2-MX, Cisco C8111-C-G2-MX, Cisco C8111-G2-MX, Cisco C8121-CW-G2-MX, Cisco C8121-G2-MX, Cisco C8121-W-G2-MX, Cisco C8235-G2-MX, Cisco C8355-G2-MX, Cisco C8455-G2-MX
+  Meraki vMX: Meraki vMX Large, Meraki vMX Medium, Meraki vMX Small
   Secure Firewall 1200: Secure Firewall 1210CE, Secure Firewall 1210CP, Secure Firewall 1220CX, Secure Firewall 1230, Secure Firewall 1240, Secure Firewall 1250
   Secure Firewall 200: Secure Firewall 220, Secure Firewall 240P
   Secure Firewall 3100: Secure Firewall 3105, Secure Firewall 3110, Secure Firewall 3120, Secure Firewall 3130, Secure Firewall 3140

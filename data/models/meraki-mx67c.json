@@ -1,0 +1,146 @@
+{
+  "vendor": "Cisco",
+  "model": "Meraki MX67C",
+  "model_id": "meraki-mx67c",
+  "family": "Meraki MX",
+  "series": "Meraki MX",
+  "form_factor": "appliance",
+  "source": {
+    "title": "MX Family Data Sheet Meraki MX Cloud-Managed Security and SD-WAN",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.pdf",
+    "file": "datasheets/meraki-mx.html",
+    "library_last_updated": "2026-11-09",
+    "sha256": "9c27ca297b0f915d274806b3e473271cf210ca193e533ece27e6c8aab8351a9e"
+  },
+  "default_image": "mx",
+  "images": [
+    "mx"
+  ],
+  "specs_by_image": {
+    "mx": {
+      "recommended_use": {
+        "value": "Small branch with up to 50 devices",
+        "raw": "Small branch with up to 50 devices",
+        "label": "Recommended",
+        "table": "Spec table 1",
+        "software": "Meraki MX",
+        "notes": []
+      },
+      "fw_throughput_mbps": {
+        "value": 700,
+        "raw": "700 Mbps",
+        "label": "Firewall throughput",
+        "table": "Spec table 1",
+        "software": "Meraki MX",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "advanced_security_throughput_mbps": {
+        "value": 400,
+        "raw": "400 Mbps",
+        "label": "Advanced security services throughput",
+        "table": "Spec table 1",
+        "software": "Meraki MX",
+        "notes": [
+          "Throughput with advanced security services enabled, including IDS, AMP, and Secure Malware Analytics (formerly Threat Grid), can reach the same levels as with NGFW using Trusted Traffic Exclusions. Learn more ."
+        ],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 400,
+        "raw": "400 Mbps",
+        "label": "Maximum site-to-site VPN throughput",
+        "table": "Spec table 1",
+        "software": "Meraki MX",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_tunnels_max": {
+        "value": 50,
+        "raw": "50",
+        "label": "Maximum site-to-site VPN tunnels",
+        "table": "Spec table 1",
+        "software": "Meraki MX",
+        "notes": [
+          "The maximum number of VPN tunnels is based on lab testing scenarios where no client traffic is transferring over the VPN tunnels. For information on recommended maximum site-to-site and client VPN tunnels, visit MX Sizing Principles ."
+        ]
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": {
+    "dimensions_mm": {
+      "h": 27.0,
+      "w": 239.0,
+      "d": 176.0
+    },
+    "desktop": true,
+    "weight_kg": 0.85,
+    "power_idle_w": 6,
+    "power_max_w": 17,
+    "interfaces": "4x 1GE RJ-45",
+    "wan_interfaces": "1x 1GE RJ-45 | 1x integrated CAT 6 LTE | cellular modem",
+    "power_supply": "30W DC",
+    "fields": {
+      "wan_interfaces": {
+        "raw": "1x 1GE RJ-45 | 1x integrated CAT 6 LTE | cellular modem",
+        "label": "WAN interfaces (dedicated)",
+        "table": "Spec table 1",
+        "notes": []
+      },
+      "interfaces": {
+        "raw": "4x 1GE RJ-45",
+        "label": "LAN interfaces (fixed)",
+        "table": "Spec table 1",
+        "notes": []
+      },
+      "form_factor": {
+        "raw": "Desktop or wall mount",
+        "label": "Mounting",
+        "table": "Spec table 1",
+        "notes": []
+      },
+      "dimensions": {
+        "raw": "9.4 x 6.9 x 1.1 in. | (239 x 176 x 27 mm)",
+        "label": "Dimensions (w x d x h)",
+        "table": "Spec table 1",
+        "notes": []
+      },
+      "weight": {
+        "raw": "1.87 lb (0.85 kg)",
+        "label": "Weight",
+        "table": "Spec table 1",
+        "notes": []
+      },
+      "power_supply": {
+        "raw": "30W DC",
+        "label": "Power supply",
+        "table": "Spec table 1",
+        "notes": []
+      },
+      "power_load": {
+        "raw": "6W/17W",
+        "label": "Power load (idle/max)",
+        "table": "Spec table 1",
+        "notes": []
+      }
+    },
+    "raw": {
+      "WAN interfaces (dedicated)": "1x 1GE RJ-45 | 1x integrated CAT 6 LTE | cellular modem",
+      "LAN interfaces (fixed)": "4x 1GE RJ-45",
+      "Mounting": "Desktop or wall mount",
+      "Dimensions (w x d x h)": "9.4 x 6.9 x 1.1 in. | (239 x 176 x 27 mm)",
+      "Weight": "1.87 lb (0.85 kg)",
+      "Power supply": "30W DC",
+      "Power load (idle/max)": "6W/17W",
+      "Humidity": "5% to 95%"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Spec table 1 1": "Throughput with advanced security services enabled, including IDS, AMP, and Secure Malware Analytics (formerly Threat Grid), can reach the same levels as with NGFW using Trusted Traffic Exclusions. Learn more .",
+    "Spec table 1 2": "The maximum number of VPN tunnels is based on lab testing scenarios where no client traffic is transferring over the VPN tunnels. For information on recommended maximum site-to-site and client VPN tunnels, visit MX Sizing Principles ."
+  },
+  "printed_as": "MX67C"
+}

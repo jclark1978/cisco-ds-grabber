@@ -1,6 +1,6 @@
 # Datasheet index
 
-12 Cisco Secure Firewall datasheets from https://www.cisco.com.
+13 Cisco Secure Firewall datasheets from https://www.cisco.com.
 
 | Datasheet | Updated (Cisco) | HTML | PDF |
 |---|---|---|---|
@@ -8,6 +8,7 @@
 | [Cisco Firepower 1000 Series Data Sheet](https://www.cisco.com/c/en/us/products/collateral/security/firepower-1000-series/datasheet-c78-742469.html) | 2023-10-23 | [firepower-1000.html](firepower-1000.html) | [pdf](pdf/firepower-1000.pdf) |
 | [Cisco Firepower 9300 Series Data Sheet](https://www.cisco.com/c/en/us/products/collateral/security/firepower-9000-series/datasheet-c78-742471.html) | 2024-10-29 | [firepower-9300.html](firepower-9300.html) | [pdf](pdf/firepower-9300.pdf) |
 | [Cisco Secure Firewall ISA3000 Data Sheet](https://www.cisco.com/c/en/us/products/collateral/security/industrial-security-appliance-3000/data-sheet-c78-735839.html) | 2021-07-11 | [isa3000.html](isa3000.html) | [pdf](pdf/isa3000.pdf) |
+| [MX Family Data Sheet Meraki MX Cloud-Managed Security and SD-WAN](https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.html) | 2026-11-09 | [meraki-mx.html](meraki-mx.html) | [pdf](pdf/meraki-mx.pdf) |
 | [Cisco Secure Firewall 1200 Series Data Sheet Enterprise Security Appliances](https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-1200-series-ds.html) | 2025-07-09 | [secure-firewall-1200.html](secure-firewall-1200.html) | [pdf](pdf/secure-firewall-1200.pdf) |
 | [Cisco Secure Firewall 200 Series Data Sheet](https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-200-series/secure-firewall-200-ds.html) | 2026-10-06 | [secure-firewall-200.html](secure-firewall-200.html) | [pdf](pdf/secure-firewall-200.pdf) |
 | [Cisco Secure Firewall 3100 Series Data Sheet](https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-3100-series-ds.html) | 2026-10-06 | [secure-firewall-3100.html](secure-firewall-3100.html) | [pdf](pdf/secure-firewall-3100.pdf) |

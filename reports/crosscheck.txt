@@ -1,4 +1,94 @@
 Summary tables vs detailed tables: 74 match, 6 differ
+  meraki-mx: summary model 'MA-SFP-1GB-SX' not found in detailed tables
+  meraki-mx: summary model 'MA-SFP-1GB-TX' not found in detailed tables
+  meraki-mx: summary model 'MA-SFP-10GB-SR' not found in detailed tables
+  meraki-mx: summary model 'MA-CBL-TA-1M' not found in detailed tables
+  meraki-mx: summary model 'MA-CBL-TA-3M' not found in detailed tables
+  meraki-mx: summary model 'MA-PWR-30WAC' not found in detailed tables
+  meraki-mx: summary model 'MA-PWR-100WAC' not found in detailed tables
+  meraki-mx: summary model 'MA-PWR-100WAC-A' not found in detailed tables
+  meraki-mx: summary model 'MA-PWR-150WAC' not found in detailed tables
+  meraki-mx: summary model 'MA-PWR-250WAC' not found in detailed tables
+  meraki-mx: summary model 'MA-C84-PWR-250W' not found in detailed tables
+  meraki-mx: summary model 'MA-FAN-18K' not found in detailed tables
+  meraki-mx: summary model 'MA-ANT-MX' not found in detailed tables
+  meraki-mx: summary model 'MA-C84-RACK-KIT' not found in detailed tables
+  meraki-mx: summary model 'MA-WMNTBR-PWR-ADP' not found in detailed tables
+  meraki-mx: summary model 'MA-PWR-150WAC-ADP' not found in detailed tables
+  meraki-mx: summary model 'MA-PWR-250WAC-ADP' not found in detailed tables
+  meraki-mx: summary model '5G-ANT-C8111' not found in detailed tables
+  meraki-mx: summary model '5G-ANT-C8121' not found in detailed tables
+  meraki-mx: summary model 'C8110L-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8110L-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8110L-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8111-G2-MX/ | C8111-C-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8111-G2-MX/ | C8111-C-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8111-G2-MX/ | C8111-C-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8121-G2-MX/ C8121-W-G2-MX/ C8121-CW-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8121-G2-MX/ C8121-W-G2-MX/ C8121-CW-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8121-G2-MX/ C8121-W-G2-MX/ C8121-CW-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'MX67-HW' not found in detailed tables
+  meraki-mx: summary model 'MX67-HW' not found in detailed tables
+  meraki-mx: summary model 'MX67-HW' not found in detailed tables
+  meraki-mx: summary model 'MX67W-HW' not found in detailed tables
+  meraki-mx: summary model 'MX67W-HW' not found in detailed tables
+  meraki-mx: summary model 'MX67W-HW' not found in detailed tables
+  meraki-mx: summary model 'MX67C-HW-NA (North America)' not found in detailed tables
+  meraki-mx: summary model 'MX67C-HW-WW (worldwide)' not found in detailed tables
+  meraki-mx: summary model 'MX67C-HW-WW (worldwide)' not found in detailed tables
+  meraki-mx: summary model 'MX68-HW' not found in detailed tables
+  meraki-mx: summary model 'MX68-HW' not found in detailed tables
+  meraki-mx: summary model 'MX68-HW' not found in detailed tables
+  meraki-mx: summary model 'MX68W-HW' not found in detailed tables
+  meraki-mx: summary model 'MX68W-HW' not found in detailed tables
+  meraki-mx: summary model 'MX68W-HW' not found in detailed tables
+  meraki-mx: summary model 'MX68CW-HW-NA (North America)' not found in detailed tables
+  meraki-mx: summary model 'MX68CW-HW-WW (worldwide)' not found in detailed tables
+  meraki-mx: summary model 'MX68CW-HW-WW (worldwide)' not found in detailed tables
+  meraki-mx: summary model 'MX75-HW' not found in detailed tables
+  meraki-mx: summary model 'MX75-HW' not found in detailed tables
+  meraki-mx: summary model 'MX75-HW' not found in detailed tables
+  meraki-mx: summary model 'MX85-HW' not found in detailed tables
+  meraki-mx: summary model 'MX85-HW' not found in detailed tables
+  meraki-mx: summary model 'MX85-HW' not found in detailed tables
+  meraki-mx: summary model 'MX95-HW' not found in detailed tables
+  meraki-mx: summary model 'MX95-HW' not found in detailed tables
+  meraki-mx: summary model 'MX95-HW' not found in detailed tables
+  meraki-mx: summary model 'MX105-HW' not found in detailed tables
+  meraki-mx: summary model 'MX105-HW' not found in detailed tables
+  meraki-mx: summary model 'MX105-HW' not found in detailed tables
+  meraki-mx: summary model 'MX250-HW' not found in detailed tables
+  meraki-mx: summary model 'MX250-HW' not found in detailed tables
+  meraki-mx: summary model 'MX250-HW' not found in detailed tables
+  meraki-mx: summary model 'MX450-HW' not found in detailed tables
+  meraki-mx: summary model 'MX450-HW' not found in detailed tables
+  meraki-mx: summary model 'MX450-HW' not found in detailed tables
+  meraki-mx: summary model 'C8455-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8455-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8455-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8355-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8355-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8355-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8235-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8235-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'C8235-G2-MX' not found in detailed tables
+  meraki-mx: summary model 'vMX' not found in detailed tables
+  meraki-mx: summary model 'vMX' not found in detailed tables
+  meraki-mx: summary model 'vMX' not found in detailed tables
+  meraki-mx: summary model 'vMX' not found in detailed tables
+  meraki-mx: summary model 'vMX' not found in detailed tables
+  meraki-mx: summary model 'vMX' not found in detailed tables
+  meraki-mx: summary model 'MX' not found in detailed tables
+  meraki-mx: summary model 'MX' not found in detailed tables
+  meraki-mx: summary model 'MX' not found in detailed tables
+  meraki-mx: summary model 'MX' not found in detailed tables
+  meraki-mx: summary model 'MX' not found in detailed tables
+  meraki-mx: summary model 'C8K-MK' not found in detailed tables
+  meraki-mx: summary model 'C8K-MK' not found in detailed tables
+  meraki-mx: summary model 'C8K-MK' not found in detailed tables
+  meraki-mx: summary model 'C8K-MK' not found in detailed tables
+  meraki-mx: summary model 'C8K-MK' not found in detailed tables
+  meraki-mx: summary model 'C8K-MK' not found in detailed tables
   DIFF Secure Firewall 1220CX: summary 'Firewall Throughput' = 9.0 Gbps vs asa fw_throughput_mbps = 15 Gbps
   DIFF Secure Firewall 1230: summary 'Firewall Throughput' = 13 Gbps vs asa fw_throughput_mbps = 18 Gbps
   DIFF Secure Firewall 1230: summary 'IPS' = 13 Gbps vs ftd ips_throughput_mbps = 11 Gbps

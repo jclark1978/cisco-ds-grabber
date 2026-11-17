@@ -17,9 +17,12 @@ Keeps a current local library of Cisco Secure Firewall datasheets and converts t
 | Secure Firewall ISA3000 | ISA3000-2C2F, ISA3000-4C | yes |
 | Threat Defense Virtual | 4 to 64 vCPU on ESXi/KVM/OpenStack, AWS, Azure, GCP, OCI, Alibaba | yes (`vm` records) |
 | ASA Virtual | ASAv5 to ASAv100 and ASAv-U, per platform | yes (`vm` records) |
+| Meraki MX | MX67, MX67W, MX67C, MX68, MX68W, MX68CW, MX75, MX85, MX95, MX105, MX250, MX450 | yes |
+| Cisco 8000 Secure Routers running MX | C8110L, C8111, C8111-C, C8121, C8121-W, C8121-CW, C8235, C8355, C8455 (-G2-MX) | yes |
+| Meraki vMX | Small, Medium, Large | yes (virtual) |
 | Threat Defense Container | | downloaded only |
 
-81 models. Whether a family is still sold isn't recorded; check Cisco's end-of-sale notices (Firepower 1000 and 4100 are older lines).
+105 models. Meraki Z-Series teleworker gateways are not included (their current datasheets are on documentation.meraki.com in a different format). Whether a family is still sold isn't recorded; check Cisco's end-of-sale notices (Firepower 1000 and 4100 are older lines).
 
 ## What you get
 
@@ -48,7 +51,9 @@ Cisco publishes separate numbers for each software image on the same hardware:
 - **FTD** (Secure Firewall Threat Defense): the NGFW image. Throughput is "FW + AVC", "FW + AVC + IPS", "NGIPS", all at 1024B.
 - **ASA**: the classic firewall image. Throughput is stateful inspection at 1500B UDP (or "multiprotocol").
 
-Records keep them apart in `specs_by_image.ftd` and `specs_by_image.asa`. The same field name in both images is not the same test (FTD IPsec is 1024B TCP with Fastpath; ASA IPsec is 450B UDP L2L). Every value keeps Cisco's printed `label`, the `software` it was measured on, the `table` it came from, and footnote text in `notes`. `default_image` is `ftd` when the model has FTD numbers. The 6120 and 6130 only have ASA numbers in Cisco's datasheet.
+- **MX** (Meraki MX firmware): Meraki MX, the Cisco 8000 Secure Routers sold as -MX models, and vMX. Meraki publishes firewall, advanced security services (IDS/AMP/Malware Analytics), site-to-site VPN throughput and VPN tunnels, with little test detail.
+
+Records keep them apart in `specs_by_image.ftd`, `.asa` and `.mx`. The same field name in both images is not the same test (FTD IPsec is 1024B TCP with Fastpath; ASA IPsec is 450B UDP L2L). Every value keeps Cisco's printed `label`, the `software` it was measured on, the `table` it came from, and footnote text in `notes`. `default_image` is `ftd` when the model has FTD numbers. The 6120 and 6130 only have ASA numbers in Cisco's datasheet.
 
 ## Record shape
 
@@ -79,6 +84,8 @@ Records keep them apart in `specs_by_image.ftd` and `specs_by_image.asa`. The sa
 }
 ```
 
+Meraki fields (`mx`): `fw_throughput_mbps`, `ngfw_throughput_mbps` (vMX prints "NGFW"), `advanced_security_throughput_mbps`, `ipsec_throughput_mbps` (site-to-site VPN), `vpn_tunnels_max`, `recommended_use`. Meraki hardware adds `wan_interfaces`, `convertible_interfaces`, `power_idle_w`, `power_max_with_poe_w`.
+
 Virtual records have `form_factor: "virtual"`, `hardware: null` and `vm: {platform, vcpu, instance_type, license_tier}`.
 
 Fields: FTD `fw_avc_throughput_mbps`, `ngfw_throughput_mbps`, `ips_throughput_mbps`, `avc_ips_throughput_mbps`, `tls_throughput_mbps`, `ipsec_throughput_mbps`, `ipsec_throughput_projected_mbps`, `concurrent_sessions`, `new_sessions_per_sec`, `vpn_peers_max`, `vrf_max`, `instances_max`, plus HA/clustering text. ASA `fw_throughput_mbps`, `fw_throughput_multiprotocol_mbps`, `ipsec_throughput_mbps`, `concurrent_sessions`, `new_sessions_per_sec`, `vpn_peers_max`, `security_contexts {included, max}`, `fw_latency_us`, and for ASAv `ravpn_sessions_max`, `vlans_max`, `vcpu`, `memory`. Mapping lives in `labels.yaml`.
@@ -101,7 +108,7 @@ python cisco_extract.py datasheets/secure-firewall-3100.html   # see the raw tab
 3. **Extract** (`cisco_extract.py`): captioned HTML tables become span-aware grids (each cell knows the source cell it came from), with superscript markers split out. Plain-number footnotes belong to the table just before them; bracketed `[n]` notes are document-wide.
 4. **Normalize** (`cisco_normalize.py` + `labels.yaml`): find the model header row, map labels to fields, parse units, attach footnotes, derive hardware fields, cross-check against the summary tables.
 
-Quirks handled: model columns covering several models ("1010 / 1010E", the 1200's "1210" = 1210CE and 1210CP), header cells spanning extra empty columns, labels spanning several rows (joined per model), a small table nested inside the 6100's interface row, one cell listing several models' weights, "(1220CX model only)" rows, and a misaligned header in the 1200 1U hardware table (majority value used, flagged in `notes`).
+Quirks handled: model columns covering several models ("1010 / 1010E", the 1200's "1210" = 1210CE and 1210CP), header cells spanning extra empty columns, labels spanning several rows (joined per model), a small table nested inside the 6100's interface row, one cell listing several models' weights, "(1220CX model only)" rows, a misaligned header in the 1200 1U hardware table (majority value used, flagged in `notes`), and Meraki's uncaptioned tables that mix performance and hardware rows. The C8110L-G2-MX dimensions are printed in a different order than their "w x d x h" label; height and width are swapped and `hardware.dimensions_note` says so.
 
 Known source inconsistency: the 1200 summary table's "Firewall Throughput" and "IPS" columns disagree with the detailed tables for 1220CX, 1230, 1240 and 1250 (`reports/crosscheck.txt`). The detailed tables are used.
 

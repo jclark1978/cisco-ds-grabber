@@ -1,0 +1,158 @@
+{
+  "vendor": "Cisco",
+  "model": "Meraki MX105",
+  "model_id": "meraki-mx105",
+  "family": "Meraki MX",
+  "series": "Meraki MX",
+  "form_factor": "appliance",
+  "source": {
+    "title": "MX Family Data Sheet Meraki MX Cloud-Managed Security and SD-WAN",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.html",
+    "pdf_url": "https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.pdf",
+    "file": "datasheets/meraki-mx.html",
+    "library_last_updated": "2026-11-09",
+    "sha256": "9c27ca297b0f915d274806b3e473271cf210ca193e533ece27e6c8aab8351a9e"
+  },
+  "default_image": "mx",
+  "images": [
+    "mx"
+  ],
+  "specs_by_image": {
+    "mx": {
+      "recommended_use": {
+        "value": "Large branch with up to 750 devices",
+        "raw": "Large branch with up to 750 devices",
+        "label": "Recommended",
+        "table": "Spec table 6",
+        "software": "Meraki MX",
+        "notes": []
+      },
+      "fw_throughput_mbps": {
+        "value": 5000,
+        "raw": "5 Gbps",
+        "label": "Firewall throughput",
+        "table": "Spec table 6",
+        "software": "Meraki MX",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "advanced_security_throughput_mbps": {
+        "value": 2500,
+        "raw": "2.5 Gbps",
+        "label": "Advanced security services throughput",
+        "table": "Spec table 6",
+        "software": "Meraki MX",
+        "notes": [
+          "Throughput with advanced security services enabled, including IDS, AMP, and Secure Malware Analytics (formerly Threat Grid), can reach the same levels as with NGFW using Trusted Traffic Exclusions. Learn more ."
+        ],
+        "unit": "Mbps"
+      },
+      "ipsec_throughput_mbps": {
+        "value": 3500,
+        "raw": "3.5 Gbps",
+        "label": "Maximum site-to-site VPN throughput",
+        "table": "Spec table 6",
+        "software": "Meraki MX",
+        "notes": [],
+        "unit": "Mbps"
+      },
+      "vpn_tunnels_max": {
+        "value": 1000,
+        "raw": "1,000",
+        "label": "Maximum site-to-site VPN tunnels",
+        "table": "Spec table 6",
+        "software": "Meraki MX",
+        "notes": [
+          "The maximum number of VPN tunnels is based on lab testing scenarios where no client traffic is transferring over the VPN tunnels. For information on recom­mended maximum site-to-site and client VPN tunnels, visit MX Sizing Principles ."
+        ]
+      }
+    }
+  },
+  "other_by_image": {},
+  "hardware": {
+    "dimensions_mm": {
+      "h": 44.0,
+      "w": 484.6,
+      "d": 315.0
+    },
+    "rack_units": 1,
+    "desktop": false,
+    "weight_kg": 4.87,
+    "power_idle_w": 53,
+    "power_max_w": 123,
+    "operating_temp_c": [
+      0,
+      45
+    ],
+    "interfaces": "4x 1GE RJ-45 2x 10GE SFP+",
+    "wan_interfaces": "2x 10GE SFP+ 2x 2.5GE RJ-45 1x PoE+",
+    "power_supply": "Modular 100-127 V 200-240 V (50/60 Hz) 2x 150W PSU",
+    "fields": {
+      "wan_interfaces": {
+        "raw": "2x 10GE SFP+ 2x 2.5GE RJ-45 1x PoE+",
+        "label": "WAN interfaces (dedicated)",
+        "table": "Spec table 6",
+        "notes": []
+      },
+      "interfaces": {
+        "raw": "4x 1GE RJ-45 2x 10GE SFP+",
+        "label": "LAN interfaces (fixed)",
+        "table": "Spec table 6",
+        "notes": []
+      },
+      "form_factor": {
+        "raw": "1RU",
+        "label": "Mounting",
+        "table": "Spec table 6",
+        "notes": []
+      },
+      "dimensions": {
+        "raw": "19.08 x 12.4 x 1.73 in. (484.6 x 315 x 44 mm)",
+        "label": "Dimensions (w x d x h)",
+        "table": "Spec table 6",
+        "notes": []
+      },
+      "weight": {
+        "raw": "10.74 lb (4.87 kg) | (with 2 fans and 2 PSUs)",
+        "label": "Weight",
+        "table": "Spec table 6",
+        "notes": []
+      },
+      "power_supply": {
+        "raw": "Modular 100-127 V 200-240 V (50/60 Hz) 2x 150W PSU",
+        "label": "Power supply",
+        "table": "Spec table 6",
+        "notes": []
+      },
+      "power_load": {
+        "raw": "53W/123W",
+        "label": "Power load (idle/max)",
+        "table": "Spec table 6",
+        "notes": []
+      },
+      "operating_temp": {
+        "raw": "32°F to 113°F (0° to 45°C)",
+        "label": "Operating temperature",
+        "table": "Spec table 6",
+        "notes": []
+      }
+    },
+    "raw": {
+      "WAN interfaces (dedicated)": "2x 10GE SFP+ 2x 2.5GE RJ-45 1x PoE+",
+      "LAN interfaces (fixed)": "4x 1GE RJ-45 2x 10GE SFP+",
+      "Mounting": "1RU",
+      "Dimensions (w x d x h)": "19.08 x 12.4 x 1.73 in. (484.6 x 315 x 44 mm)",
+      "Weight": "10.74 lb (4.87 kg) | (with 2 fans and 2 PSUs)",
+      "Power supply": "Modular 100-127 V 200-240 V (50/60 Hz) 2x 150W PSU",
+      "Power load (idle/max)": "53W/123W",
+      "Operating temperature": "32°F to 113°F (0° to 45°C)",
+      "Humidity": "5% to 95%"
+    }
+  },
+  "vm": null,
+  "footnotes": {
+    "Spec table 6 1": "Throughput with advanced security services enabled, including IDS, AMP, and Secure Malware Analytics (formerly Threat Grid), can reach the same levels as with NGFW using Trusted Traffic Exclusions. Learn more .",
+    "Spec table 6 2": "The maximum number of VPN tunnels is based on lab testing scenarios where no client traffic is transferring over the VPN tunnels. For information on recom­mended maximum site-to-site and client VPN tunnels, visit MX Sizing Principles ."
+  },
+  "printed_as": "MX105"
+}

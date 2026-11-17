@@ -28,6 +28,7 @@ extra_pages:
   - https://www.cisco.com/c/en/us/products/collateral/security/firewalls/threat-defense-virtual-ds.html
   - https://www.cisco.com/c/en/us/products/collateral/security/industrial-security-appliance-3000/data-sheet-c78-735839.html
   - https://www.cisco.com/c/en/us/products/collateral/security/adaptive-security-virtual-appliance-asav/adapt-security-virtual-appliance-ds.html
+  - https://www.cisco.com/c/en/us/products/collateral/security/meraki-cloud-managed-security-appliances/mx-family-ds.html
 
 include:
   - '/c/en/us/products/collateral/security/.*(-ds|datasheet-c78-\d+|data-sheet-c78-\d+)\.html$'
@@ -50,3 +51,4 @@ names:
   threat-defense-virtual-ds: threat-defense-virtual
   threat-defense-container-ds: threat-defense-container
   adapt-security-virtual-appliance-ds: asa-virtual
+  mx-family-ds: meraki-mx

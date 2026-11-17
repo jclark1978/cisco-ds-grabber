@@ -53,6 +53,15 @@ perf:
     - {re: '^high availability',                                field: high_availability, type: text}
     - {re: '^clustering',                                       field: clustering, type: text}
 
+  mx:   # Meraki MX firmware (MX appliances, Cisco 8000 routers running MX, vMX)
+    - {re: '^firewall throughput',                              field: fw_throughput_mbps, type: throughput}
+    - {re: '^ngfw',                                             field: ngfw_throughput_mbps, type: throughput}
+    - {re: 'advanced security',                                 field: advanced_security_throughput_mbps, type: throughput}
+    - {re: 'site-to-site vpn throughput',                       field: ipsec_throughput_mbps, type: throughput}
+    - {re: 'site-to-site vpn tunnels|concurrent site-to-site',  field: vpn_tunnels_max, type: count}
+    - {re: '^recommended',                                      field: recommended_use, type: text}
+    - {re: 'client vpn',                                        field: client_vpn, type: text}
+
 # Feature rows that are the same marketing text on every model. Kept in
 # other_by_image, not reported as unmapped.
 feature_rows: 'centralized management|device manager|on-device management|^avc|application visibility and control|openappid|security intelligence|^cisco .*(ips|malware|trust anchor)|url filtering|threat feed|ecosystem|^scalability$|multi-instance capable|defined interfaces|vlan counts|macsec|^nat$'
@@ -61,7 +70,13 @@ hardware:
   - {re: 'dimensions',                         field: dimensions}
   - {re: 'form factor',                        field: form_factor}
   - {re: 'rack mount',                         field: rack_mount}
-  - {re: 'integrated (i/o|interfaces)|fixed ports|^network interfaces', field: interfaces}
+  - {re: 'integrated (i/o|interfaces)|fixed ports|^network interfaces|^lan interfaces', field: interfaces}
+  - {re: '^wan interfaces',                    field: wan_interfaces}
+  - {re: '^convertible interfaces',            field: convertible_interfaces}
+  - {re: '^mounting',                          field: form_factor}
+  - {re: 'power load|system power',            field: power_load}
+  - {re: 'system \+ poe load',                 field: power_load_with_poe}
+  - {re: 'poe budget|number of poe',           field: poe}
   - {re: 'transceiver slots|sfp\+ transceiver', field: transceiver_slots}
   - {re: 'network modules?',                   field: network_modules}
   - {re: 'maximum number of interfaces',       field: interfaces_max}
@@ -75,7 +90,7 @@ hardware:
   - {re: 'ac maximum output power',            field: psu_output_power}
   - {re: 'power supply configuration|power supplies / configuration|^configuration$|^power supply$', field: power_supply}
   - {re: 'redundancy',                         field: power_redundancy}
-  - {re: 'temperature: (standard )?operating', field: operating_temp}
+  - {re: 'temperature: (standard )?operating|^operating temperature', field: operating_temp}
   - {re: 'noise|acoustic',                     field: noise}
   - {re: '^fans|cooling',                      field: cooling}
   - {re: 'console port|serial port',           field: console}
@@ -87,7 +102,7 @@ hardware:
 
 # Hardware rows kept in hardware.raw only (electrical detail, environment,
 # NEBS). Not reported as unmapped.
-hardware_raw_only: '(ac|dc|hvdc|lvdc).*(voltage|current|frequency|efficiency|output power)|current draw|altitude|humidity|nonoperating|nebs|transceiver support|alarm i/o'
+hardware_raw_only: '^interfaces$|supported cloud platforms|(ac|dc|hvdc|lvdc).*(voltage|current|frequency|efficiency|output power)|current draw|altitude|humidity|nonoperating|nebs|transceiver support|alarm i/o|^humidity'
 
 # Per-datasheet settings. Keys are the file names in datasheets/.
 #   family / series / model_prefix: naming. Model = model_prefix + column header.
@@ -96,6 +111,11 @@ hardware_raw_only: '(ac|dc|hvdc|lvdc).*(voltage|current|frequency|efficiency|out
 #   single_column_models: models a 2-column (label | value) table applies to.
 #   table_scope: caption regex -> models, for tables that cover a subset.
 #   nested_rows: row labels whose cells are a sub-table (kept whole for every model).
+#   untitled_tables: {kind, image} for datasheets whose spec tables have no
+#     caption (Meraki). kind mixed = performance and hardware rows in one table.
+#   rename: [regex, replacement] applied to model column headers.
+#   series_rules: [{re, series}] picks the series from the model name.
+#   virtual_re: model names that are virtual appliances (in a hardware datasheet).
 #   virtual: build vm records (one per platform x column).
 #   exclude: true -> downloaded but not converted.
 datasheets:
@@ -165,5 +185,19 @@ datasheets:
     virtual: true
     column_re: 'ASAv'
     aux_header_re: 'instance type|vm type|machine type|shape'
+  meraki-mx:
+    family: Meraki MX
+    series: Meraki MX
+    model_prefix: ''
+    column_re: '^(MX\d|\d{4}[A-Z]?-[A-Z\-]*G2-MX|vMX)'
+    untitled_tables: {kind: mixed, image: mx}
+    rename:
+      - ['^(MX\S+)$', 'Meraki \1']
+      - ['^(\d{4}\S*-G2-MX)$', 'Cisco C\1']   # printed without the C of the part number
+      - ['^vMX\W+(\w+)$', 'Meraki vMX \1']
+    series_rules:
+      - {re: '^Cisco C8', series: 'Cisco 8000 Secure Routers (MX)'}
+      - {re: 'vMX', series: 'Meraki vMX'}
+    virtual_re: 'vMX'
   threat-defense-container:
     exclude: true

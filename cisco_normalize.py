@@ -33,7 +33,7 @@ from cisco_extract import extract
 
 DEFAULT_COLUMN_RE = r"^\d{3,4}[A-Z]{0,3}(\s*/\s*\d{3,4}[A-Z]{0,3})?$"
 NULLS = {"", "-", "–", "na", "n/a", "tbd", "none", "not supported", "not available"}
-IMAGE_NAMES = {"ftd": "Threat Defense (FTD)", "asa": "ASA"}
+IMAGE_NAMES = {"ftd": "Threat Defense (FTD)", "asa": "ASA", "mx": "Meraki MX"}
 
 
 # ---------------------------------------------------------------- parsing
@@ -99,9 +99,13 @@ def dims_mm(raw: str, label: str):
     if m:
         order = "".join(m.groups()).lower()
     trip = r"(\d+(?:\.\d+)?)\s*(?:[a-z]*\s*)?x\s*(\d+(?:\.\d+)?)\s*(?:[a-z]*\s*)?x\s*(\d+(?:\.\d+)?)"
-    m = re.search(trip + r"\s*cm", raw, re.I)
-    factor = 10
+    m = re.search(trip + r"\s*mm", raw, re.I)
+    factor = 1
     if not m:
+        m = re.search(trip + r"\s*cm", raw, re.I)
+        factor = 10
+    if not m:
+        factor = 10
         m = re.search(r"(\d+(?:\.\d+)?)\s*cm\s*[a-z]?\s*x\s*(\d+(?:\.\d+)?)\s*cm\s*[a-z]?\s*x\s*(\d+(?:\.\d+)?)\s*cm", raw, re.I)
     if not m:
         m = re.search(trip, raw, re.I)
@@ -158,15 +162,31 @@ def derive_hardware(hw: dict, code: str = "") -> dict:
     out = {}
     f = {k: for_model(v["raw"], code) for k, v in hw.items() if isinstance(v, dict) and "raw" in v}
     if "dimensions" in f:
-        out["dimensions_mm"] = dims_mm(f["dimensions"], hw["dimensions"]["label"])
+        d = dims_mm(f["dimensions"], hw["dimensions"]["label"])
+        if d and all(d.values()) and d["h"] > d["w"] and d["h"] > d["d"]:
+            # A firewall is never taller than it is wide or deep: the source printed
+            # the numbers in a different order than its label says.
+            d = {"h": d["w"], "w": d["h"], "d": d["d"]}
+            out["dimensions_note"] = ("Source numbers do not follow the label's order "
+                                      f"({hw['dimensions']['label']}); height and width swapped.")
+        out["dimensions_mm"] = d
     ru = rack_units([f.get("form_factor", ""), f.get("rack_mount", "")])
     out["rack_units"] = ru
     ff = (f.get("form_factor") or "").lower()
-    out["desktop"] = bool(re.search(r"compact|desktop", ff)) if ff else None
+    out["desktop"] = bool(re.search(r"compact|desktop|wall mount", ff)) if ff else None
     if "weight" in f:
         out["weight_kg"] = weight_kg(f["weight"])
     if "power_max" in f:
         out["power_max_w"] = watts(f["power_max"])
+    if "power_load" in f:  # Meraki "Power load (idle/max)": 5W/14W
+        m = re.search(r"(\d+(?:\.\d+)?)\s*W?\s*/\s*(\d+(?:\.\d+)?)\s*W", f["power_load"])
+        if m:
+            out["power_idle_w"] = clean_number(float(m.group(1)))
+            out["power_max_w"] = clean_number(float(m.group(2)))
+    if "power_load_with_poe" in f:
+        m = re.search(r"/\s*(\d+(?:\.\d+)?)\s*W", f["power_load_with_poe"])
+        if m:
+            out["power_max_with_poe_w"] = clean_number(float(m.group(1)))
     if "power_typical" in f:
         out["power_typical_w"] = watts(f["power_typical"])
     if "psu_output_power" in f:
@@ -176,7 +196,7 @@ def derive_hardware(hw: dict, code: str = "") -> dict:
     if "mtbf" in f:
         n = re.search(r"(\d[\d,]{4,})\s*hours", f["mtbf"], re.I)
         out["mtbf_hours"] = int(num(n.group(1))) if n else None
-    for k in ("interfaces", "transceiver_slots", "network_modules", "interfaces_max", "management_ports",
+    for k in ("interfaces", "wan_interfaces", "convertible_interfaces", "transceiver_slots", "network_modules", "interfaces_max", "management_ports",
               "storage", "poe", "power_supply", "power_redundancy", "cooling", "noise"):
         if k in f:
             out[k] = f[k]
@@ -298,6 +318,9 @@ class Builder:
 
     # -- records
     def record(self, ds: str, cfg: dict, meta: dict, model: str, extra: dict | None = None) -> dict:
+        printed = model
+        for pat, repl in cfg.get("rename", []):
+            model = re.sub(pat, repl, model)
         name = f"{cfg.get('model_prefix', '')}{model}".strip()
         mid = slug(name)
         if mid not in self.records:
@@ -324,7 +347,17 @@ class Builder:
                 "vm": None,
                 "footnotes": {},
             }
-            note = (cfg.get("model_notes") or {}).get(model)
+            for rule in cfg.get("series_rules", []):
+                if re.search(rule["re"], name):
+                    rec["series"] = rule["series"]
+                    break
+            if cfg.get("virtual_re") and re.search(cfg["virtual_re"], name):
+                rec["form_factor"] = "virtual"
+                rec["hardware"] = None
+                rec["vm"] = {"platform": None, "size": name.split()[-1]}
+            if printed != model and cfg.get("rename"):
+                rec["printed_as"] = printed
+            note = (cfg.get("model_notes") or {}).get(printed)
             if note:
                 rec["note"] = note
             if extra:
@@ -351,6 +384,16 @@ class Builder:
         m = manifest.get(ds, {})
         meta["pdf_url"] = m.get("pdf_url")
         meta["sha256"] = m.get("sha256")
+        ut = cfg.get("untitled_tables")
+        if ut:
+            col_re = re.compile(cfg.get("column_re", DEFAULT_COLUMN_RE), re.I)
+            k = 0
+            for t in meta["tables"]:
+                g = t["grid"]
+                if t["caption"] is None and g and any(col_re.search(c["text"]) for c in unique_cells(g[0][1:])):
+                    k += 1
+                    t["caption"] = f"Spec table {k} (uncaptioned)"
+                    t["kind"], t["image"] = ut["kind"], ut.get("image")
         used = [t for t in meta["tables"] if t["kind"]]
         self.summaries.append((ds, cfg, meta, [t for t in meta["tables"] if is_summary(t)]))
         self.report.append(f"\n{ds}  ({meta['title']}, updated {meta['updated']})")
@@ -380,10 +423,10 @@ class Builder:
         kind, image = t["kind"], t["image"]
         tnotes, gnotes = t["footnotes"], meta["footnotes"]
         table_wide = resolve_notes(title_markers, tnotes, gnotes)
-        table_ref = re.match(r"(Table \d+)", t["caption"] or "")
+        table_ref = re.match(r"(Table \d+|Spec table \d+)", t["caption"] or "")
         table_ref = table_ref.group(1) if table_ref else t["caption"]
         software = None
-        if kind == "perf":
+        if kind in ("perf", "mixed"):
             software = IMAGE_NAMES.get(image, image)
             if t.get("software_note"):
                 software += f", {t['software_note']}"
@@ -416,7 +459,15 @@ class Builder:
                 continue  # section heading or empty row
             block = len(rows) > 1
             nested = block and any(re.search(n, label, re.I) for n in cfg.get("nested_rows", []))
-            rule = self.map_label(kind, image, label)
+            row_kind = kind
+            if kind == "mixed":
+                rule = self.map_label("perf", image, label)
+                row_kind = "perf"
+                if rule is None:
+                    rule = self.map_label("hardware", None, label)
+                    row_kind = "hardware" if rule or not re.search(self.labels.get("feature_rows", "^$"), label, re.I) else "perf"
+            else:
+                rule = self.map_label(kind, image, label)
             only = re.search(r"\(([\w\-]+) models? only\)", label, re.I)
             for rec, span in targets:
                 if only and span is None and not rec["model"].upper().endswith(only.group(1).upper()):
@@ -449,7 +500,9 @@ class Builder:
                 notes += [n for n in table_wide if n not in notes]
                 if conflict:
                     notes.append("Source table columns disagree for this model; majority value used.")
-                self.store(rec, kind, image, label, rule, raw, notes, table_ref, software, feature_re,
+                if rec.get("vm") is not None and re.search(r"cloud platforms", label, re.I):
+                    rec["vm"]["platform"] = raw
+                self.store(rec, row_kind, image, label, rule, raw, notes, table_ref, software, feature_re,
                            shared=span is None and len(targets) > 1)
                 count += 1
             for rec, _ in targets:
